@@ -1,0 +1,19 @@
+.search-form {
+    display: flex;
+    gap: 10px;
+
+    &--small {
+        .input-group {
+            flex-grow: 1;
+        }
+
+        .input {
+            height: 44px;
+        }
+
+        .button {
+            min-height: 44px;
+            min-width: 120px;
+        }
+    }
+}

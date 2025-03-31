@@ -1,0 +1,42 @@
+<header class="header compensate-for-scrollbar">
+    <div class="header__mobile container">
+        <a class="header__logo" href="#">
+            <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+        </a>
+
+        <button class="header__button" type="button" title="Поиск">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#search_icon" />
+            </svg>
+        </button>
+
+        <button class="js-mobile-menu-toggler header__button" type="button" title="Меню">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#burger_icon" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="mobile-menu">
+
+    </div>
+
+    <div class="header__desktop container">
+
+        <div class="search-block">
+            <form class="search-form search-form--small" action="">
+                <label class="input-group">
+                    <span class="input-group__container">
+                        <svg class="input-group__icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#search_icon" />
+                        </svg>
+
+                        <input class="input" type="text" name="q" value="" placeholder="Поиск">
+                    </span>
+                </label>
+
+                <button class="search-form__submit button button--primary" type="submit">Найти</button>
+            </form>
+        </div>
+    </div>
+</header>

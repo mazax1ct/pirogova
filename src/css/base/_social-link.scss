@@ -1,0 +1,30 @@
+.social-link {
+    align-items: center;
+    background-color: var(--accent_2);
+    border-radius: 50%;
+    color: var(--accent);
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    min-width: 35px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 35px;
+    @include hover {
+        background-color: var(--accent);
+        color: #fff;
+    }
+    @media(min-width: $hd) {
+        height: 40px;
+        width: 40px;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 20px;
+        width: 20px;
+        @media(min-width: $hd) {
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

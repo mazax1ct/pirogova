@@ -1,0 +1,42 @@
+.pager {
+    @include list-reset;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 64px;
+    @media(min-width: $fhd) {
+        gap: 24px;
+        margin-top: 112px;
+    }
+
+    &__item {}
+
+    &__link {
+        align-items: center;
+        border: 2px solid var(--beige);
+        color: var(--green);
+        display: flex;
+        font-weight: 700;
+        height: 32px;
+        justify-content: center;
+        min-width: 32px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-decoration: none;
+        transition: color 0.3s, background-color 0.3s;
+        @include hover {
+            background-color: var(--beige);
+        }
+
+        &.is-active {
+            background-color: var(--beige);
+        }
+        @media(min-width: $fhd) {
+            border-width: 4px;
+            height: 48px;
+            min-width: 48px;
+        }
+    }
+}

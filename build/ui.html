@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>UI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    
+
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Demi.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-RocaOne-Rg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__mobile container">
+            <a class="header__logo" href="#">
+                <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+            </a>
+    
+            <button class="header__button" type="button" title="Поиск">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#search_icon" />
+                </svg>
+            </button>
+    
+            <button class="js-mobile-menu-toggler header__button" type="button" title="Меню">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#burger_icon" />
+                </svg>
+            </button>
+        </div>
+    
+        <div class="mobile-menu">
+    
+        </div>
+    
+        <div class="header__desktop container">
+    
+            <div class="search-block">
+                <form class="search-form search-form--small" action="">
+                    <label class="input-group">
+                        <span class="input-group__container">
+                            <svg class="input-group__icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+    
+                            <input class="input" type="text" name="q" value="" placeholder="Поиск">
+                        </span>
+                    </label>
+    
+                    <button class="search-form__submit button button--primary" type="submit">Найти</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Услуги и цены</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Оформление медкнижек в Ивантеевке
+                </li>
+            </ul>
+
+            <h2>Кнопки</h2>
+
+            <button class="button button--primary" type="button">Кнопка</button>
+
+            <a class="button button--primary" href="#">Ссылка</a>
+
+            <button class="button button--primary button--h_52" type="button">Кнопка</button>
+
+            <a class="button button--primary button--h_52" href="#">Ссылка</a>
+
+            <button class="button button--primary" type="button" disabled>Кнопка</button>
+
+            <a class="button button--primary disabled">Ссылка</a>
+
+            <button class="button button--primary button--h_52" type="button" disabled>Кнопка</button>
+
+            <a class="button button--primary button--h_52 disabled">Ссылка</a>
+
+            <br> <br>
+
+            <button class="button button--secondary" type="button">Кнопка</button>
+
+            <a class="button button--secondary" href="#">Ссылка</a>
+
+            <button class="button button--secondary button--h_52" type="button">Кнопка</button>
+
+            <a class="button button--secondary button--h_52" href="#">Ссылка</a>
+
+            <button class="button button--secondary" type="button" disabled>Кнопка</button>
+
+            <a class="button button--secondary disabled">Ссылка</a>
+
+            <button class="button button--secondary button--h_52" type="button" disabled>Кнопка</button>
+
+            <a class="button button--secondary button--h_52 disabled">Ссылка</a>
+
+            <br> <br>
+
+            <h2>Чекбоксы</h2>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" disabled>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" disabled checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br> <br>
+
+            <h2>Радио</h2>
+
+            <label class="radio">
+                <input type="radio" value="1" name="var" checked>
+                <span class="radio__icon"></span>
+                <span class="radio__text">Вариант 1</span>
+            </label>
+
+            <br>
+
+            <label class="radio">
+                <input type="radio" value="2" name="var">
+                <span class="radio__icon"></span>
+                <span class="radio__text">Вариант 2</span>
+            </label>
+
+            <br>
+
+            <label class="radio">
+                <input type="radio" value="3" name="var">
+                <span class="radio__icon"></span>
+                <span class="radio__text">Вариант 3</span>
+            </label>
+
+            <br>
+
+            <label class="radio">
+                <input type="radio" value="4" name="var" disabled>
+                <span class="radio__icon"></span>
+                <span class="radio__text">Вариант 4</span>
+            </label>
+
+            <br>
+
+            <label class="radio">
+                <input type="radio" value="5" name="var_1" disabled checked>
+                <span class="radio__icon"></span>
+                <span class="radio__text">Вариант 5</span>
+            </label>
+
+            <br> <br>
+
+            <h2>Поля ввода</h2>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <input class="input" type="text" name="inp_1" value="" placeholder="Поиск">
+                </span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <svg class="input-group__icon" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+
+                    <input class="input" type="text" name="inp_1" value="" placeholder="Поиск">
+                </span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <input class="input error" type="text" name="inp_2" value="" placeholder="Поиск">
+                </span>
+                <span class="error-text">Ошибка: поле не заполнено</span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <input class="input" type="text" name="inp_3" value="Пример заполненного поля ввода" placeholder="Поиск">
+                </span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <input class="input error" type="text" name="inp_4" value="Пример заполненного поля ввода с ошибкой" placeholder="Поиск">
+                </span>
+                <span class="error-text">Ошибка: поле заполнено не верно</span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <input class="input" type="text" name="inp_5" value="" placeholder="Поиск" disabled>
+                </span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <input class="input" type="text" name="inp_6" value="Пример выключенного заполненного поля ввода" placeholder="Поиск" disabled>
+                </span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <textarea class="textarea" placeholder="Комментарий"></textarea>
+                </span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <textarea class="textarea"
+                      placeholder="Комментарий">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum hic, sint voluptate mollitia sunt alias, nulla unde dicta eum. Maxime a veniam modi dolorum. Laborum repellendus, commodi totam aliquid iure.</textarea>
+                </span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <textarea class="textarea" placeholder="Комментарий" disabled></textarea>
+                </span>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <span class="input-group__container">
+                    <textarea class="textarea" placeholder="Комментарий"
+                      disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum hic, sint voluptate mollitia sunt alias, nulla unde dicta eum. Maxime a veniam modi dolorum. Laborum repellendus, commodi totam aliquid iure.</textarea>
+                </span>
+            </label>
+
+            <br>
+
+            <h2>Комбобокс</h2>
+
+            <div class="combobox combobox--small" style="max-width: 300px">
+                <button class="js-combobox-toggler combobox__value-block" type="button">
+                    <div class="combobox__value is-active">M/140</div>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#chevron_down_light"></use>
+                    </svg>
+                </button>
+
+                <div class="combobox__dropdown">
+                    <div class="combobox__list">
+                        <a class="combobox__link" href="#">12 мес</a>
+                        <a class="combobox__link" href="#">18 мес</a>
+                        <a class="combobox__link" href="#">XXS/104</a>
+                        <a class="combobox__link is-active" href="#">M/140</a>
+                        <a class="combobox__link" href="#">XL</a>
+                        <a class="combobox__link" href="#">58</a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="combobox" style="max-width: 300px">
+                <button class="js-combobox-toggler combobox__value-block" type="button">
+                    <div class="combobox__value is-active">M/140</div>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#chevron_down_light"></use>
+                    </svg>
+                </button>
+
+                <div class="combobox__dropdown">
+                    <div class="combobox__list">
+                        <a class="combobox__link" href="#">12 мес</a>
+                        <a class="combobox__link" href="#">18 мес</a>
+                        <a class="combobox__link" href="#">XXS/104</a>
+                        <a class="combobox__link is-active" href="#">M/140</a>
+                        <a class="combobox__link" href="#">XL</a>
+                        <a class="combobox__link" href="#">58</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        <img src="images/logo.png" srcset="images/logo.png 2x" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                    </div>
+    
+                    <div class="footer__socials">
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Наш Телеграм">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы на YouTube">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы в Одноклассниках">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#ok_icon" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer__top-center">
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">УСЛУГИ</li>
+                        <li><a href="#">Взрослое отделение</a></li>
+                        <li><a href="#">Детское отделение</a></li>
+                        <li><a href="#">Стоматология</a></li>
+                        <li><a href="#">Диагностика</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">КЛИНИКА</li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Попечительский совет</a></li>
+                        <li><a href="#">Отделения</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">ПАЦИЕНТАМ</li>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </div>
+                </div>
+    
+                <div class="footer__top-right">
+                    <div class="footer__images">
+                        <a class="ocenka" href="#" target="_blank" rel="noreferrer nofollow" title="Независимая оценка качества оказания услуг медицинскими организациями">
+                            <img src="images/content/footer/ocenka_kachestva.png" alt="Независимая оценка качества оказания услуг медицинскими организациями">
+                        </a>
+    
+                        <a class="gosuslugi" href="#" target="_blank" rel="noreferrer nofollow" title="Госуслуги">
+                            <img src="images/content/footer/gosuslugi.png" alt="Госуслуги">
+                        </a>
+                    </div>
+    
+                    <div class="footer__copyright">
+                        © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer__bottom-menu">
+                    <li><a href="#">Лицензии</a></li>
+                    <li><a href="#">Надзорные органы</a></li>
+                    <li><a href="#">Противодействие коррупции</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Публикации</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+    
+                <div class="footer__copyright">
+                    © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

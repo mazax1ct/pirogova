@@ -1,0 +1,100 @@
+.header {
+    background-color: var(--bg);
+    left: 0;
+    min-height: var(--header_min_height);
+    position: fixed;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    @media(min-width: $hd) {
+        position: static;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    /*&.is-out {
+        transform: translateY(-100%);
+    }*/
+    &.is-scrolled {
+        @media(max-width: $hd - 0.02px) {
+            box-shadow: 0 0 3px 0 rgba(#000, 0.1);
+        }
+        /*position: fixed;
+        transition: transform 0.2s;*/
+    }
+
+    &.is-open {
+        & > .container {
+            position: relative;
+            z-index: 11;
+        }
+    }
+
+    &__mobile {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        @media(min-width: $hd) {
+            display: none;
+        }
+
+        .header__logo {
+            margin-right: auto;
+            width: 200px;
+        }
+    }
+
+    &__desktop {
+        @media(max-width: $hd - 0.02px) {
+            display: none;
+        }
+
+        .header__logo {}
+    }
+
+    &__logo {
+        display: block;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__button {
+        @include active-area;
+        @include button-reset;
+        color: var(--accent);
+        height: 24px;
+        position: relative;
+        transition: color 0.3s;
+        width: 24px;
+        z-index: 1;
+        @include hover {
+            color: var(--secondary_3);
+        }
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+
+.mobile-menu {
+    background-color: var(--bg);
+    display: none;
+    height: calc(100dvh - var(--header_min_height));
+    left: 0;
+    position: fixed;
+    top: var(--header_min_height);
+    width: 100%;
+    z-index: 10;
+    @media(min-width: $hd) {
+        display: none !important;
+    }
+}
+
+.search-block {}

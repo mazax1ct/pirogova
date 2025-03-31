@@ -1,0 +1,128 @@
+.checkbox {
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+
+    a {
+        text-decoration: none;
+        @include hover {
+            text-decoration: underline;
+        }
+    }
+
+    input {
+        position: absolute;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        width: 1px;
+
+        &:checked ~ .checkbox__icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%235C619D' d='M10,17C10,17,10,17,10,17c-0.3,0-0.5-0.1-0.7-0.3l-4-4.1c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l3.3,3.4l7.3-7.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-8,8C10.5,16.9,10.3,17,10,17z'/%3E%3C/svg%3E%0A");
+        }
+
+        &:not(:disabled) ~ .checkbox__icon {
+            cursor: pointer;
+        }
+
+        &:disabled ~ .checkbox__icon {
+            border-color: var(--secondary);
+            user-select: none;
+        }
+
+        &:disabled ~ .checkbox__text {
+            color: var(--secondary);
+
+            a {
+                color: var(--secondary);
+            }
+        }
+
+        &:checked:disabled ~ .checkbox__icon {
+            border-color: var(--secondary);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23929396' d='M10,17C10,17,10,17,10,17c-0.3,0-0.5-0.1-0.7-0.3l-4-4.1c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l3.3,3.4l7.3-7.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-8,8C10.5,16.9,10.3,17,10,17z'/%3E%3C/svg%3E%0A");
+        }
+    }
+
+    &__icon {
+        border: 1px solid var(--accent);
+        border-radius: 2px;
+        background-color: #fff;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        display: block;
+        height: 16px;
+        min-width: 16px;
+        width: 16px;
+    }
+
+    &__text {
+        align-self: center;
+    }
+}
+
+.radio {
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+
+    a {
+        text-decoration: none;
+        @include hover {
+            text-decoration: underline;
+        }
+    }
+
+    input {
+        position: absolute;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        width: 1px;
+
+        &:checked ~ .radio__icon {
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11.5' stroke='%235C619D'/%3E%3Ccircle cx='12' cy='12' r='6' fill='%235C619D'/%3E%3C/svg%3E%0A");
+        }
+
+        &:not(:disabled) ~ .radio__icon {
+            cursor: pointer;
+        }
+
+        &:disabled ~ .radio__icon {
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11.5' stroke='%23929396'/%3E%3C/svg%3E%0A");
+            user-select: none;
+        }
+
+        &:disabled ~ .radio__text {
+            color: #C7CDD5;
+
+            a {
+                color: #C7CDD5;
+            }
+        }
+
+        &:checked:disabled ~ .radio__icon {
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11.5' stroke='%23929396'/%3E%3Ccircle cx='12' cy='12' r='6' fill='%23929396'/%3E%3C/svg%3E%0A");
+        }
+    }
+
+    &__icon {
+        border-radius: 50%;
+        background-color: #fff;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11.5' stroke='%235C619D'/%3E%3C/svg%3E%0A");
+        background-position: 50% 50%;
+        display: block;
+        height: 16px;
+        min-width: 16px;
+        width: 16px;
+    }
+
+    &__text {
+        align-self: center;
+    }
+}

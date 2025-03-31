@@ -1,0 +1,10 @@
+.form {
+    &__row {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+            @media(min-width: $fhd) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.accordions {
+    border-radius: 7px;
+    border: 1px solid var(--blue_6);
+}
+
+.accordion {
+    border-bottom: 1px solid var(--blue_6);
+
+    &:first-child {
+        .accordion__toggler {
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+        }
+    }
+
+    &:last-child {
+        border-bottom: none;
+
+        .accordion__toggler {
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }
+    }
+
+    &__toggler {
+        @include button-reset;
+        align-items: center;
+        background-color: var(--light_blue_4);
+        display: flex;
+        gap: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        justify-content: space-between;
+        line-height: 1.25;
+        padding: 16px;
+        text-align: left;
+        width: 100%;
+        @media(min-width: $sm) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        @media(min-width: $hd) {
+            font-size: 18px;
+            line-height: 1.22222;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        &.is-active {
+            border-bottom-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            border-bottom: 1px solid var(--blue_6);
+
+            svg {
+                fill: var(--blue_1);
+                transform: rotate(180deg);
+            }
+        }
+
+        svg {
+            fill: var(--blue_3);
+            height: 20px;
+            min-width: 20px;
+            width: 20px;
+        }
+    }
+
+    &__body {
+        display: none;
+
+        &--simple {
+            padding: 16px;
+            @media(min-width: $sm) {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            p {
+                line-height: 1,6875;
+                margin-bottom: 16px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &--analysis {
+            padding: 16px;
+            @media(min-width: $sm) {
+                padding: 24px;
+            }
+        }
+
+        .accordion__toggler {
+            background-color: var(--white_1);
+        }
+
+        .accordion__toggler--blue {
+            background-color: var(--light_blue_1);
+        }
+    }
+
+    &__body-title {
+        color: var(--blue_1);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25;
+        padding: 16px;
+        @media(min-width: $sm) {
+            padding: 16px 24px;
+        }
+        @media(min-width: $hd) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--blue_6);
+        }
+    }
+}
