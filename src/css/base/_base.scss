@@ -43,7 +43,7 @@ html {
     &__content {
         flex: 1 0 auto;
         padding-top: calc(var(--header_min_height) + 15px);
-        @media(min-width: $hd) {
+        @media(min-width: $md) {
             padding-top: 15px;
         }
     }
@@ -51,7 +51,7 @@ html {
     &__section {
         &:not(:last-child) {
             margin-bottom: 60px;
-            @media(min-width: $hd) {
+            @media(min-width: $md) {
                 margin-bottom: 120px;
             }
         }
@@ -95,7 +95,7 @@ h2 {
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 16px;
-    @media(min-width: $hd) {
+    @media(min-width: $md) {
         font-size: 36px;
         margin-bottom: 38px;
     }
@@ -106,7 +106,7 @@ h3 {
     font-size: 16px;
     line-height: 1.2;
     margin-bottom: 16px;
-    @media(min-width: $hd) {
+    @media(min-width: $md) {
         font-size: 20px;
     }
 }
@@ -247,72 +247,6 @@ ul {
 
 .text-right {
     text-align: right;
-}
-
-.phone {
-    align-items: center;
-    background-color: var(--bg);
-    display: inline-flex;
-    gap: 4px;
-    padding: 6px;
-    text-decoration: none;
-
-    svg {
-        fill: currentColor;
-        height: 24px;
-        min-width: 24px;
-        width: 24px;
-    }
-}
-
-.email {
-    align-items: center;
-    display: inline-flex;
-    gap: 4px;
-    text-decoration: none;
-
-    svg {
-        fill: currentColor;
-        height: 24px;
-        min-width: 24px;
-        width: 24px;
-    }
-}
-
-.warning {
-    display: flex;
-    gap: 8px;
-    font-size: 15px;
-    line-height: 1.33333;
-    @media(min-width: $fhd) {
-        font-size: 18px;
-    }
-
-    &:not(:first-child) {
-        margin-top: 20px;
-    }
-
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
-    &__icon {
-        height: 24px;
-        min-width: 24px;
-        width: 24px;
-
-        &--alert {
-            fill: #F14A58;
-        }
-
-        &--success {
-            fill: #5BC438;
-        }
-    }
-
-    &__text {
-        align-self: center;
-    }
 }
 
 .accent {

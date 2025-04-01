@@ -1,0 +1,143 @@
+.banner {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    @media(min-width: $md) {
+        align-items: center;
+        border-radius: 40px;
+        display: flex;
+        min-height: 500px;
+    }
+
+    &--light {
+        background-color: var(--accent_2);
+
+        .banner__title {
+            color: var(--accent);
+        }
+    }
+
+    &--dark {
+        background-color: var(--accent);
+        color: #fff;
+
+        .button--secondary {
+            border-color: transparent;
+        }
+    }
+
+    &__text-block {
+        padding: 30px 24px;
+        @media(min-width: $md) {
+            padding: 45px;
+            width: 50%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 14px;
+        @media(min-width: $md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        @media(min-width: $md) {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 25px;
+        @media(min-width: $md) {
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .button {
+            padding-left: 40px;
+            padding-right: 40px;
+            @media(max-width: $md - 0.02px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+        @media(min-width: $md) {
+            position: absolute;
+            z-index: 1;
+        }
+        @media(max-width: $md - 0.02px) {
+            height: 330px;
+        }
+
+        &--type_1 {
+            @media(min-width: $md) {
+                height: calc(100% - 25px);
+                left: 50%;
+                top: 25px;
+                width: 50%;
+            }
+
+            img {
+                clip-path: url("../images/mask/mask_1.svg#clip-path");
+                left: 15px;
+                @media(max-width: $md - 0.02px) {
+                    max-width: initial;
+                    position: relative;
+                    width: 430px;
+                }
+                @media(min-width: 490px) and (max-width: $md - 0.02px) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                @media(min-width: $sm) {
+                    clip-path: url("../images/mask/mask_2.svg#clip-path");
+                }
+                @media(min-width: $sm) and (max-width: $md - 0.02px) {
+                    width: 684px;
+                }
+                @media(min-width: $md) {
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+
+        &--type_2 {
+            @media(min-width: $md) {
+                left: calc(50% + 45px);
+                top: 50%;
+                transform: translateY(-50%);
+                width: 700px;
+            }
+
+            img {
+                border-radius: 50%;
+                width: 545px;
+                @media(max-width: $md - 0.02px) {
+                    left: 50%;
+                    max-width: initial;
+                    position: relative;
+                    transform: translateX(-50%);
+                }
+                @media(min-width: $sm) {
+                    width: 700px;
+                }
+            }
+        }
+
+        img {
+            display: block;
+        }
+    }
+}

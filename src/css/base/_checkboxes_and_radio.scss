@@ -97,10 +97,10 @@
         }
 
         &:disabled ~ .radio__text {
-            color: #C7CDD5;
+            color: var(--secondary);
 
             a {
-                color: #C7CDD5;
+                color: var(--secondary);
             }
         }
 

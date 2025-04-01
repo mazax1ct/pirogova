@@ -10,9 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
     <meta name="format-detection" content="telephone=no">
 
-    
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Gosmed.ru" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
 
     <link rel="preload" href="fonts/subset-AvenirNextCyr-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/subset-AvenirNextCyr-Demi.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/subset-RocaOne-Rg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
@@ -23,29 +29,169 @@
 
 <body class="page">
     <header class="header compensate-for-scrollbar">
-        <div class="header__mobile container">
-            <a class="header__logo" href="#">
-                <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
-            </a>
+        <div class="container">
+            <div class="header__top">
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
     
-            <button class="header__button" type="button" title="Поиск">
-                <svg aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#search_icon" />
-                </svg>
-            </button>
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
     
-            <button class="js-mobile-menu-toggler header__button" type="button" title="Меню">
-                <svg aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#burger_icon" />
-                </svg>
-            </button>
-        </div>
+                    <div class="header__top-links">
+                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
     
-        <div class="mobile-menu">
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
     
-        </div>
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
     
-        <div class="header__desktop container">
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__middle">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <button class="header__search-toggler header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-mobile-menu-toggler header__burger header__button" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="mobile-menu">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Направления</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Диагностика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Пациентам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+    
+                    <div class="header__top-links">
+                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
     
             <div class="search-block">
                 <form class="search-form search-form--small" action="">
@@ -63,6 +209,8 @@
                 </form>
             </div>
         </div>
+    
+    
     </header>
 
     <div class="page__content">
@@ -342,7 +490,7 @@
             <div class="footer__top">
                 <div class="footer__top-left">
                     <div class="footer__logo">
-                        <img src="images/logo.png" srcset="images/logo.png 2x" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                        <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
                     </div>
     
                     <div class="footer__socials">

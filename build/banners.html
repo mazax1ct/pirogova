@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>UI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Gosmed.ru" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Demi.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-RocaOne-Rg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="container">
+            <div class="header__top">
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
+    
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+    
+                    <div class="header__top-links">
+                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__middle">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <button class="header__search-toggler header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-mobile-menu-toggler header__burger header__button" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="mobile-menu">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Направления</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Диагностика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Пациентам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+    
+                    <div class="header__top-links">
+                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="search-block">
+                <form class="search-form search-form--small" action="">
+                    <label class="input-group">
+                        <span class="input-group__container">
+                            <svg class="input-group__icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+    
+                            <input class="input" type="text" name="q" value="" placeholder="Поиск">
+                        </span>
+                    </label>
+    
+                    <button class="search-form__submit button button--primary" type="submit">Найти</button>
+                </form>
+            </div>
+        </div>
+    
+    
+    </header>
+
+    <div class="page__content">
+        <div class="container">
+            <div class="page__section">
+                <div class="banner banner--dark">
+                    <div class="banner__text-block">
+                        <h1 class="banner__title">Rezūm™ – новейший малоинвазивный метод лечения аденомы простаты</h1>
+                
+                        <div class="banner__text">
+                            <p>Быстро и эффективно! Вся операция длится&nbsp;10-15&nbsp;минут. Можно делать под местной анестезией.</p>
+                        </div>
+                
+                        <div class="banner__buttons">
+                            <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                
+                    <div class="banner__image banner__image--type_1">
+                        <img src="images/content/banners/banner_1.jpg" srcset="images/content/banners/banner_1@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__section">
+                <div class="banner banner--dark">
+                    <div class="banner__text-block">
+                        <h1 class="banner__title">Центр ключевых<br> направлений лечения</h1>
+                
+                        <div class="banner__buttons">
+                            <a class="button button--secondary button--h_52" href="#">Записаться на диагностику</a>
+                        </div>
+                    </div>
+                
+                    <div class="banner__image banner__image--type_2">
+                        <img src="images/content/banners/banner_2.jpg" srcset="images/content/banners/banner_2@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__section">
+                <div class="banner banner--light">
+                    <div class="banner__text-block">
+                        <h1 class="banner__title">Аритмология</h1>
+                
+                        <div class="banner__text">
+                            <p>Основная цель аритмологии — восстановление нормального сердечного ритма и предотвращение возможных осложнений, а также улучшение качества жизни пациентов с сердечными заболеваниями.</p>
+                        </div>
+                
+                        <div class="banner__buttons">
+                            <a class="button button--primary button--h_52" href="#">Записаться на диагностику</a>
+                        </div>
+                    </div>
+                
+                    <div class="banner__image banner__image--type_1">
+                        <img src="images/content/banners/banner_3.jpg" srcset="images/content/banners/banner_3@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__section">
+                <div class="banner banner--dark">
+                    <div class="banner__text-block">
+                        <h1 class="banner__title">Диагностические<br> исследования</h1>
+                
+                        <div class="banner__text">
+                            <p>Предоставляем полный спектр современных диагностических исследований: от рентгена до сложнейших лучевых и изотопных методик с использованием контрастных веществ и новейших радиофармпрепаратов.</p>
+                        </div>
+                
+                        <div class="banner__buttons">
+                            <a class="button button--secondary button--h_52" href="#">Записаться на диагностику</a>
+                        </div>
+                    </div>
+                
+                    <div class="banner__image banner__image--type_2">
+                        <img src="images/content/banners/banner_4.jpg" srcset="images/content/banners/banner_4@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__section">
+                <div class="banner banner--dark">
+                    <div class="banner__text-block">
+                        <h1 class="banner__title">Кардиология и Сердечно-сосудистая хирургия</h1>
+                
+                        <div class="banner__text">
+                            <p>Мы предлагаем полный спектр медицинских услуг, включая консультации кардиологов, современные методы диагностики (ЭКГ, УЗИ сердца, Холтеровское мониторирование) и индивидуальные программы лечения.</p>
+                        </div>
+                
+                        <div class="banner__buttons">
+                            <a class="button button--secondary button--h_52" href="#">Записаться на диагностику</a>
+                            <a class="button button--secondary button--h_52" href="#">Позвонить</a>
+                        </div>
+                    </div>
+                
+                    <div class="banner__image banner__image--type_1">
+                        <img src="images/content/banners/banner_5.jpg" srcset="images/content/banners/banner_5@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                    </div>
+    
+                    <div class="footer__socials">
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Наш Телеграм">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы на YouTube">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы в Одноклассниках">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#ok_icon" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer__top-center">
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">УСЛУГИ</li>
+                        <li><a href="#">Взрослое отделение</a></li>
+                        <li><a href="#">Детское отделение</a></li>
+                        <li><a href="#">Стоматология</a></li>
+                        <li><a href="#">Диагностика</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">КЛИНИКА</li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Попечительский совет</a></li>
+                        <li><a href="#">Отделения</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">ПАЦИЕНТАМ</li>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </div>
+                </div>
+    
+                <div class="footer__top-right">
+                    <div class="footer__images">
+                        <a class="ocenka" href="#" target="_blank" rel="noreferrer nofollow" title="Независимая оценка качества оказания услуг медицинскими организациями">
+                            <img src="images/content/footer/ocenka_kachestva.png" alt="Независимая оценка качества оказания услуг медицинскими организациями">
+                        </a>
+    
+                        <a class="gosuslugi" href="#" target="_blank" rel="noreferrer nofollow" title="Госуслуги">
+                            <img src="images/content/footer/gosuslugi.png" alt="Госуслуги">
+                        </a>
+                    </div>
+    
+                    <div class="footer__copyright">
+                        © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer__bottom-menu">
+                    <li><a href="#">Лицензии</a></li>
+                    <li><a href="#">Надзорные органы</a></li>
+                    <li><a href="#">Противодействие коррупции</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Публикации</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+    
+                <div class="footer__copyright">
+                    © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

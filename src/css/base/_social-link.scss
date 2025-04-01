@@ -13,7 +13,7 @@
         background-color: var(--accent);
         color: #fff;
     }
-    @media(min-width: $hd) {
+    @media(min-width: $md) {
         height: 40px;
         width: 40px;
     }
@@ -22,7 +22,7 @@
         fill: currentColor;
         height: 20px;
         width: 20px;
-        @media(min-width: $hd) {
+        @media(min-width: $md) {
             height: 24px;
             width: 24px;
         }
