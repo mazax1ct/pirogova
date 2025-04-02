@@ -38,6 +38,52 @@ var resize_scroll = function(e) {
 $(document).ready(function() {
   //запуск функции навешивания класса на шапку
   resize_scroll();
+
+  //выравнивание размеров кнопок в табах
+  $('.tabs-nav').each(function() {
+
+    let cnt = $(this).find('.tabs-nav__button').length;
+
+    if(cnt > 0){
+      $(this).addClass('tabs-nav--cnt_' + cnt);
+    }
+  });
+
+  //слайдер карточек
+  $('.js-cards-slider').each(function(index, el) {
+    var slider = el.children[0].children[0];
+
+    new Swiper(slider, {
+      loop: true,
+      spaceBetween: 20,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2
+        },
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3
+        },
+        1200: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 30
+        }
+      },
+
+      navigation: {
+        nextEl: '.js-cards-slider-next[data-slider="'+el.dataset.slider+'"]',
+        prevEl: '.js-cards-slider-prev[data-slider="'+el.dataset.slider+'"]',
+      },
+
+      pagination: {
+        el: '.js-cards-slider-pagination[data-slider="'+el.dataset.slider+'"]',
+        type: 'bullets',
+        clickable: true
+      },
+    });
+  });
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе

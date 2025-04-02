@@ -1,0 +1,26 @@
+.title-block {
+    margin-bottom: 20px;
+    @media(min-width: $sm) {
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    @media(min-width: $md) {
+        margin-bottom: 38px;
+    }
+
+    h2 {
+        @media(min-width: $sm) {
+            margin-bottom: 0;
+            width: 50%;
+        }
+    }
+
+    & > a {
+        @include active-area;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,161 @@
+.doctor-card {
+    border-radius: 30px;
+    background-color: var(--accent_2);
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    @include hover {
+        .doctor-card__image {
+            img {
+                transform: scale(1.02);
+            }
+        }
+    }
+    @media(max-width: $sm - 0.02px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media(min-width: $sm) and (max-width: $md - 0.02px) {
+        max-width: 100%;
+    }
+
+    &--small {
+        .doctor-card__image {
+            img {
+                height: 230px;
+            }
+        }
+    }
+
+    &__image {
+        border-radius: 30px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            height: 260px;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s;
+            transform: scale(1);
+            width: 100%;
+        }
+    }
+
+    &__info {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 20px 24px 24px;
+        @media(min-width: $md) {
+            padding: 20px 34px 34px;
+        }
+    }
+
+    &__title {
+        font-family: var(--primary_font);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        @media(min-width: $md) {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__about {
+        margin-bottom: 12px;
+    }
+
+    &__exp,
+    &__min-price {
+        color: var(--accent);
+        font-weight: 700;
+    }
+
+    &__exp {
+        margin-bottom: 18px;
+    }
+
+    &__min-price {
+        margin-bottom: 24px;
+    }
+
+    &__reviews {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 12px;
+        white-space: nowrap;
+    }
+
+    &__reviews-inner {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__na_popravku {
+        min-width: 100px;
+        width: 100px;
+    }
+
+    &__reviews-stars {
+        display: flex;
+        gap: 4px;
+
+        img {
+            min-width: 20px;
+            width: 20px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: auto;
+        width: 100%;
+        @media(min-width: $sm) {
+            flex-direction: row;
+            gap: 12px;
+        }
+
+        .button {
+            width: 100%;
+            @media(min-width: $sm) {
+                width: calc(100% / 2 - 12px / 2);
+            }
+        }
+    }
+
+    &__more {
+        @include active-area;
+        margin-top: auto;
+
+        &::after {
+            height: 100%;
+            @media(min-width: $sm) {
+                height: 100%;
+            }
+        }
+    }
+
+    &__action {
+        position: relative;
+        z-index: 2;
+    }
+
+    .button--secondary {
+        background-color: var(--accent_2);
+        @include hover {
+            background-color: var(--accent);
+            color: #fff;
+        }
+    }
+}

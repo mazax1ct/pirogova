@@ -1,0 +1,142 @@
+.tabs-nav {
+    @include scrollbar;
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    @media(min-width: $md) {
+        margin-bottom: 30px;
+    }
+
+    &--type_1 {
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 5px;
+        @media(min-width: $md) {
+            border-radius: 17px;
+            font-size: 16px;
+        }
+
+        .tabs-nav__button {
+            border-radius: 10px;
+            color: var(--text);
+            height: 50px;
+            padding: 0 18px;
+            @media(min-width: $md) {
+                border-radius: 12px;
+                height: 60px;
+            }
+
+            &.is-active {
+                background-color: var(--accent_2);
+                color: var(--text);
+            }
+
+            &:not(.is-active) {
+                @include hover {
+                    background-color: var(--accent_2);
+                    color: var(--text);
+                }
+            }
+        }
+    }
+
+    &--type_2 {
+        border-radius: 10px;
+        background-color: #fff;
+        font-size: 16px;
+        @media(min-width: $md) {
+            border-radius: 20px;
+            font-size: 20px;
+        }
+
+        .tabs-nav__button {
+            border-radius: 10px;
+            font-weight: 500;
+            height: 48px;
+            padding: 0 16px;
+            @media(min-width: $md) {
+                border-radius: 20px;
+                font-weight: 700;
+                height: 70px;
+            }
+
+            &.is-active {
+                background-color: var(--accent);
+                color: #fff;
+            }
+
+            &:not(.is-active) {
+                @include hover {
+                    background-color: var(--accent_2);
+                    color: var(--text);
+                }
+            }
+        }
+    }
+
+    &--type_3 {
+        border-radius: 10px;
+        background-color: #fff;
+        font-size: 16px;
+        @media(min-width: $md) {
+            border-radius: 25px;
+            font-size: 20px;
+        }
+
+        .tabs-nav__button {
+            border-radius: 10px;
+            color: var(--accent);
+            font-weight: 500;
+            height: 48px;
+            padding: 0 16px;
+            @media(min-width: $md) {
+                border-radius: 25px;
+                font-weight: 700;
+                height: 92px;
+            }
+
+            &.is-active {
+                background-color: var(--accent);
+                color: #fff;
+            }
+
+            &:not(.is-active) {
+                @include hover {
+                    background-color: var(--accent_2);
+                    color: var(--text);
+                }
+            }
+        }
+    }
+
+    &--cnt_2 {
+        .tabs-nav__button {
+            min-width: 50%;
+        }
+    }
+
+    &--cnt_3 {
+        .tabs-nav__button {
+            min-width: calc(100% / 3);
+        }
+    }
+
+    &--cnt_4 {
+        .tabs-nav__button {
+            min-width: calc(100% / 4);
+        }
+    }
+
+    &__button {
+        @include button-reset;
+        flex-grow: 1;
+        flex-shrink: 0;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        white-space: nowrap;
+        @include hover {
+            text-decoration: none;
+        }
+    }
+}
