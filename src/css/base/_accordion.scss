@@ -1,122 +1,80 @@
 .accordions {
-    border-radius: 7px;
-    border: 1px solid var(--blue_6);
+    --gap: 10px;
+    display: flex;
+    gap: var(--gap);
+    @media(min-width: $md) {
+        --gap: 30px;
+        flex-direction: row;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+        @media(min-width: $md) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+    }
 }
 
 .accordion {
-    border-bottom: 1px solid var(--blue_6);
-
-    &:first-child {
-        .accordion__toggler {
-            border-top-left-radius: 7px;
-            border-top-right-radius: 7px;
-        }
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 24px;
+    @media(min-width: $md) {
+        border-radius: 20px;
+        padding: 34px;
     }
 
-    &:last-child {
-        border-bottom: none;
-
-        .accordion__toggler {
-            border-bottom-left-radius: 7px;
-            border-bottom-right-radius: 7px;
-        }
+    &__top {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
     }
 
     &__toggler {
+        @include active-area;
         @include button-reset;
         align-items: center;
-        background-color: var(--light_blue_4);
+        background-color: var(--accent);
+        border-radius: 50%;
+        color: #fff;
         display: flex;
-        gap: 8px;
-        font-size: 16px;
-        font-weight: 500;
-        justify-content: space-between;
-        line-height: 1.25;
-        padding: 16px;
-        text-align: left;
-        width: 100%;
-        @media(min-width: $sm) {
-            padding-left: 32px;
-            padding-right: 32px;
-        }
-        @media(min-width: $hd) {
-            font-size: 18px;
-            line-height: 1.22222;
-            padding-left: 32px;
-            padding-right: 32px;
-        }
+        height: 32px;
+        justify-content: center;
+        min-width: 32px;
+        position: relative;
+        width: 32px;
+        z-index: 1;
 
         &.is-active {
-            border-bottom-left-radius: 0 !important;
-            border-bottom-right-radius: 0 !important;
-            border-bottom: 1px solid var(--blue_6);
-
             svg {
-                fill: var(--blue_1);
-                transform: rotate(180deg);
+                transform: rotate(45deg);
             }
         }
 
         svg {
-            fill: var(--blue_3);
-            height: 20px;
-            min-width: 20px;
-            width: 20px;
+            fill: currentColor;
+            height: 14px;
+            transition: transform 0.3s;
+            width: 14px;
         }
+    }
+
+    &__title {
+        font-family: var(--primary_font);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
     }
 
     &__body {
         display: none;
-
-        &--simple {
-            padding: 16px;
-            @media(min-width: $sm) {
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-
-            p {
-                line-height: 1,6875;
-                margin-bottom: 16px;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-
-        &--analysis {
-            padding: 16px;
-            @media(min-width: $sm) {
-                padding: 24px;
-            }
-        }
-
-        .accordion__toggler {
-            background-color: var(--white_1);
-        }
-
-        .accordion__toggler--blue {
-            background-color: var(--light_blue_1);
-        }
-    }
-
-    &__body-title {
-        color: var(--blue_1);
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.25;
-        padding: 16px;
-        @media(min-width: $sm) {
-            padding: 16px 24px;
-        }
-        @media(min-width: $hd) {
-            padding-left: 32px;
-            padding-right: 32px;
-        }
-
-        &:not(:last-child) {
-            border-bottom: 1px solid var(--blue_6);
+        padding-top: 12px;
+        @media(min-width: $md) {
+            padding-top: 16px;
         }
     }
 }

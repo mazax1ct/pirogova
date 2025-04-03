@@ -1,0 +1,22 @@
+.cards-grid {
+    --gap: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    @media(min-width: $sm) {
+        flex-direction: row;
+    }
+    @media(min-width: $md) {
+        --gap: 30px;
+    }
+
+    & > * {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+        @media(min-width: $md) {
+            width: calc(100% / 3 - var(--gap) / 3 * 2);
+        }
+    }
+}

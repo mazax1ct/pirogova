@@ -151,3 +151,19 @@ $(document).on('click', '.js-search-closer', function () {
 
   return false;
 });
+
+//аккордион
+$(document).on('click', '.js-accordion-toggler', function() {
+  let _this = $(this);
+  if(!_this.hasClass('is-active')){
+    _this.addClass('is-active');
+    _this.attr('title', 'Закрыть');
+    _this.closest('.accordion').find('.accordion__body').slideToggle();
+  }else{
+    _this.removeClass('is-active');
+    _this.attr('title', 'Открыть');
+    _this.closest('.accordion').find('.accordion__body').slideToggle();
+  }
+
+  return false;
+});

@@ -1,0 +1,83 @@
+.incut {
+    &__inner {
+        border-radius: 20px;
+        background-color: var(--incut_bg);
+        font-weight: 700;
+        padding: 60px 24px 24px;
+        text-align: center;
+        @media(min-width: $md) {
+            border-radius: 40px;
+            padding-top: 100px;
+            padding-bottom: 80px;
+        }
+
+        &:has(.button) {
+            @media(min-width: $md) {
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    &--type_1 {
+        --incut_bg: var(--accent_2);
+    }
+
+    &--type_2 {
+        --incut_bg: var(--accent);
+        color: #fff;
+
+        .button--secondary {
+            border-color: transparent;
+        }
+    }
+
+    &__icon {
+        align-items: center;
+        border-radius: 50%;
+        border: 5px solid var(--bg);
+        background-color: var(--incut_bg);
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -40px;
+        position: relative;
+        width: 80px;
+        z-index: 1;
+        @media(min-width: $md) {
+            border-width: 12px;
+            height: 110px;
+            margin-bottom: -55px;
+            width: 110px;
+        }
+
+        img {
+            display: block;
+            width: 48px;
+            @media(min-width: $md) {
+                width: 60px;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        @media(min-width: $md) {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            @media(min-width: $md) {
+                margin-bottom: 36px;
+            }
+        }
+    }
+}
