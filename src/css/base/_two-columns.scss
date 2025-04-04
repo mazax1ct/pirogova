@@ -1,0 +1,114 @@
+.two-columns {
+    --gap: 20px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    @media(min-width: $md) {
+        align-items: stretch;
+        --gap: 30px;
+        flex-direction: row;
+    }
+
+    &--reverse {
+        @media(min-width: $md) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    & > div {
+        width: 100%;
+        @media(min-width: $md) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+
+        &.mobile-hidden {
+            @media(max-width: $md - 0.02px) {
+                display: none;
+            }
+        }
+
+        &.form {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 24px;
+            @media(min-width: $md) {
+                border-radius: 30px;
+                padding: 50px;
+            }
+
+            .input-group {
+                max-width: 300px;
+                margin-bottom: 6px;
+                @media(min-width: $md) {
+                    margin-bottom: 8px;
+                }
+            }
+
+            .checkbox {
+                margin-top: 18px;
+                margin-bottom: 18px;
+                @media(min-width: $md) {
+                    margin-top: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .button {
+                @media(max-width: $md - 0.02px) {
+                    max-width: 300px;
+                    width: 100%;
+                }
+                @media(min-width: $md) {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+        }
+
+        &.equal {
+            img {
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        img {
+            border-radius: 20px;
+            display: block;
+            width: 100%;
+            @media(min-width: $md) {
+                border-radius: 30px;
+            }
+        }
+    }
+
+    &--bg {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 24px;
+        @media(min-width: $md) {
+            border-radius: 30px;
+            padding: 34px;
+        }
+
+        & > div {
+            img {
+                @media(min-width: $md) {
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+
+    .h1,
+    .h2,
+    h1,
+    h2 {
+        margin-bottom: 16px;
+        @media(min-width: $md) {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -59,13 +59,8 @@
     }
 
     &__title {
-        font-family: var(--primary_font);
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.2;
         margin-bottom: 18px;
         @media(min-width: $md) {
-            font-size: 20px;
             margin-bottom: 24px;
         }
     }

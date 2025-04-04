@@ -4,13 +4,6 @@
     gap: 10px;
     font-size: 14px;
 
-    a {
-        text-decoration: none;
-        @include hover {
-            text-decoration: underline;
-        }
-    }
-
     input {
         position: absolute;
         height: 1px;
