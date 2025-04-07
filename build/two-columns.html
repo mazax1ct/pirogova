@@ -201,7 +201,7 @@
                                 <use xlink:href="images/sprite.svg#search_icon" />
                             </svg>
     
-                            <input class="input" type="text" name="q" value="" placeholder="Поиск">
+                            <input class="input" type="text" name="q" value="" placeholder="Поиск" autocomplete="off">
                         </span>
                     </label>
     
@@ -210,7 +210,48 @@
             </div>
         </div>
     
+        <div class="header-fixed">
+            <div class="header-fixed__inner container">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
     
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Направления</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Диагностика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Пациентам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <button class="header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <a class="header__button" href="#" title="Личный кабинет">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#user_icon" />
+                    </svg>
+                </a>
+    
+                <button class="header-fixed__record-button button button--primary" type="button">Запись на прием</button>
+            </div>
+        </div>
     </header>
 
     <div class="page__content">
@@ -234,12 +275,38 @@
             <div class="page__section">
                 <div class="two-columns">
                     <div>
-                        <h2>Клиника высоких<br> медицинских технологий<br> им. Н.И.Пирогова СПбГУ</h2>
-                        <p class="big-text">Клиника высоких медицинских технологий им. Н.И. Пирогова (поликлиника, стационар) Санкт-Петербургского государственного университета — одно из старейших медицинских учреждений Санкт-Петербурга и Северо-Западного региона.
-                        </p>
+                        <div class="about-short">
+                            <h2>Клиника высоких<br> медицинских технологий<br> им. Н.И.Пирогова СПбГУ</h2>
+                
+                            <p class="big-text">
+                                Клиника высоких медицинских технологий им. Н.И. Пирогова (поликлиника, стационар) Санкт-Петербургского государственного университета — одно из старейших медицинских учреждений Санкт-Петербурга и Северо-Западного региона.
+                            </p>
+                
+                            <div class="info-graphic">
+                                <div>
+                                    <h3 class="accent-color">6 филиалов</h3>
+                                    <p>Стараемся быть ближе к нашим пациентам</p>
+                                </div>
+                
+                                <div>
+                                    <h3 class="accent-color">34 года работы</h3>
+                                    <p>Качественная медицина, проверенная временем</p>
+                                </div>
+                
+                                <div>
+                                    <h3 class="accent-color">27 030 операций</h3>
+                                    <p>Наш главный приоритет — здоровье и комфорт наших пациентов</p>
+                                </div>
+                
+                                <div>
+                                    <h3 class="accent-color">328 врачей</h3>
+                                    <p>Лучшие врачи, ежегодно проходящие повышение квалификации</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 
-                    <div>
+                    <div class="equal">
                         <img src="images/content/two_columns/img_2.jpg" srcset="images/content/two_columns/img_2@2x.jpg 2x" alt="">
                     </div>
                 </div>

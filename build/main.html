@@ -201,7 +201,7 @@
                                 <use xlink:href="images/sprite.svg#search_icon" />
                             </svg>
     
-                            <input class="input" type="text" name="q" value="" placeholder="Поиск">
+                            <input class="input" type="text" name="q" value="" placeholder="Поиск" autocomplete="off">
                         </span>
                     </label>
     
@@ -210,7 +210,48 @@
             </div>
         </div>
     
+        <div class="header-fixed">
+            <div class="header-fixed__inner container">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
     
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Направления</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Диагностика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Пациентам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <button class="header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <a class="header__button" href="#" title="Личный кабинет">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#user_icon" />
+                    </svg>
+                </a>
+    
+                <button class="header-fixed__record-button button button--primary" type="button">Запись на прием</button>
+            </div>
+        </div>
     </header>
 
     <main class="page__content">
@@ -225,7 +266,7 @@
                         </div>
                 
                         <div class="banner__buttons">
-                            <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                            <a class="button button--secondary_2 button--h_52" href="#">Подробнее</a>
                         </div>
                     </div>
                 
@@ -234,6 +275,473 @@
                     </div>
                 </div>
             </section>
+
+            <section class="page__section">
+                <div class="cards-grid">
+                    <div class="card card--big">
+                        <img src="images/content/cards/img_1.jpg" srcset="images/content/cards/img_1@2x.jpg 2x" alt="">
+
+                        <div class="card__inner">
+                            <h3>Запись на прием</h3>
+
+                            <p>Оставьте заявку, мы перезвоним через 5 минут и поможем выбрать удобное время для записи</p>
+
+                            <a class="card__more button" href="#">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="card card--big">
+                        <img src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="">
+
+                        <div class="card__inner">
+                            <h3>Экспертное мнение врача</h3>
+
+                            <p>Экспертное мнение врача-специалиста является информационной услугой. В течение 30 минут онлайн</p>
+
+                            <a class="card__more button" href="#">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="card card--big">
+                        <img src="images/content/cards/img_3.jpg" srcset="images/content/cards/img_3@2x.jpg 2x" alt="">
+
+                        <div class="card__inner">
+                            <h3>Диагностика</h3>
+
+                            <p>Высокоточное оборудование и современные методики исследования</p>
+
+                            <a class="card__more button" href="#">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="two-columns">
+                    <div>
+                        <div class="about-short">
+                            <h2>Клиника высоких<br> медицинских технологий<br> им. Н.И.Пирогова СПбГУ</h2>
+                
+                            <p class="big-text">
+                                Клиника высоких медицинских технологий им. Н.И. Пирогова (поликлиника, стационар) Санкт-Петербургского государственного университета — одно из старейших медицинских учреждений Санкт-Петербурга и Северо-Западного региона.
+                            </p>
+                
+                            <div class="info-graphic">
+                                <div>
+                                    <h3 class="accent-color">6 филиалов</h3>
+                                    <p>Стараемся быть ближе к нашим пациентам</p>
+                                </div>
+                
+                                <div>
+                                    <h3 class="accent-color">34 года работы</h3>
+                                    <p>Качественная медицина, проверенная временем</p>
+                                </div>
+                
+                                <div>
+                                    <h3 class="accent-color">27 030 операций</h3>
+                                    <p>Наш главный приоритет — здоровье и комфорт наших пациентов</p>
+                                </div>
+                
+                                <div>
+                                    <h3 class="accent-color">328 врачей</h3>
+                                    <p>Лучшие врачи, ежегодно проходящие повышение квалификации</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="equal">
+                        <img src="images/content/two_columns/img_2.jpg" srcset="images/content/two_columns/img_2@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="title-block">
+                    <h2>Полезные материалы</h2>
+
+                    <a href="#">Все материалы</a>
+                </div>
+
+                <div class="tabs">
+                    <div class="tabs-nav tabs-nav--type_1">
+                        <button class="js-tab tabs-nav__button is-active" type="button" data-tab="1">Статьи</button>
+                        <button class="js-tab tabs-nav__button" type="button" data-tab="2">Видео</button>
+                        <button class="js-tab tabs-nav__button" type="button" data-tab="3">Научные работы</button>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        <div class="js-cards-slider cards-slider" data-slider="slider_1">
+                            <div class="cards-slider__inner">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="article-card">
+                                                <div class="article-card__image">
+                                                    <img src="images/content/articles/img_1.jpg" srcset="images/content/articles/img_1@2x.jpg 2x" alt="">
+                                                </div>
+                        
+                                                <div class="article-card__info">
+                        
+                                                    <time class="article-card__date" datetime="2024-11-23">23 ноября 2024</time>
+                        
+                                                    <h3 class="article-card__title">Индекс массы тела: как его рассчитать и можно ли доверять результатам</h3>
+                        
+                                                    <a class="article-card__more button button--secondary" href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="swiper-slide">
+                                            <div class="article-card">
+                                                <div class="article-card__image">
+                                                    <img src="images/content/articles/img_2.jpg" srcset="images/content/articles/img_2@2x.jpg 2x" alt="">
+                                                </div>
+                        
+                                                <div class="article-card__info">
+                        
+                                                    <time class="article-card__date" datetime="2024-11-22">22 ноября 2024</time>
+                        
+                                                    <h3 class="article-card__title">Александр Тряпицын выступил на конгрессе в Москве</h3>
+                        
+                                                    <a class="article-card__more button button--secondary" href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="swiper-slide">
+                                            <div class="article-card">
+                                                <div class="article-card__image">
+                                                    <img src="images/content/articles/img_3.jpg" srcset="images/content/articles/img_3@2x.jpg 2x" alt="">
+                                                </div>
+                        
+                                                <div class="article-card__info">
+                        
+                                                    <time class="article-card__date" datetime="2024-11-21">21 ноября 2024</time>
+                        
+                                                    <h3 class="article-card__title">Индекс массы тела: как его рассчитать и можно ли доверять результатам</h3>
+                        
+                                                    <a class="article-card__more button button--secondary" href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="swiper-slide">
+                                            <div class="article-card">
+                                                <div class="article-card__image">
+                                                    <img src="images/content/articles/img_1.jpg" srcset="images/content/articles/img_1@2x.jpg 2x" alt="">
+                                                </div>
+                        
+                                                <div class="article-card__info">
+                        
+                                                    <time class="article-card__date" datetime="2024-11-20">20 ноября 2024</time>
+                        
+                                                    <h3 class="article-card__title">Флебологи Клиники СПбГУ — организаторы и участники Конференции «Тёмные ночи»</h3>
+                        
+                                                    <a class="article-card__more button button--secondary" href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="cards-slider__nav">
+                                    <button class="js-cards-slider-prev swiper-button-prev" type="button" title="Назад" data-slider="slider_1">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_left_icon" />
+                                        </svg>
+                                    </button>
+                        
+                                    <button class="js-cards-slider-next swiper-button-next" type="button" title="Вперёд" data-slider="slider_1">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        
+                            <div class="js-cards-slider-pagination swiper-pagination" data-slider="slider_1"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        видео
+                    </div>
+
+                    <div class="tab" data-tab="3">
+                        научные работы
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="title-block">
+                    <h2>Услуги и направления лечения</h2>
+
+                    <a href="#">Все направления</a>
+                </div>
+
+                <div class="ways-grid">
+                    <div class="ways-banner">
+                        <picture>
+                            <source srcset="images/content/ways/banner_desk.jpg, images/content/ways/banner_desk@2x.jpg 2x" media="(min-width: 1024px)">
+                            <img src="images/content/ways/banner.jpg" srcset="images/content/ways/banner@2x.jpg 2x" alt="">
+                        </picture>
+
+                    </div>
+
+                    <div class="way-card">
+                        <div class="way-card__icon"><img src="images/content/ways/icon_1.svg" alt=""></div>
+                        <h3>Анализы</h3>
+                        <p>Терапия, хирургия, гинекология, кардиология, неврология, эндокринология</p>
+                        <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                    </div>
+
+                    <div class="way-card">
+                        <div class="way-card__icon"><img src="images/content/ways/icon_2.svg" alt=""></div>
+                        <h3>Поликлиника</h3>
+                        <p>Педиатрия, УЗИ, неврология, вакцинация, физиотерапия</p>
+                        <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                    </div>
+
+                    <div class="way-card">
+                        <div class="way-card__icon"><img src="images/content/ways/icon_3.svg" alt=""></div>
+                        <h3>Стационар</h3>
+                        <p>Пародонтология, хирургия, ортодонтия, детская стоматология, эстетическая стоматология</p>
+                        <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                    </div>
+
+                    <div class="way-card">
+                        <div class="way-card__icon"><img src="images/content/ways/icon_4.svg" alt=""></div>
+                        <h3>Диагностика</h3>
+                        <p>Анализы, справки, УЗИ диагностика, эндоскопия, комплексные обследования</p>
+                        <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                    </div>
+
+                    <div class="way-card">
+                        <div class="way-card__icon"><img src="images/content/ways/icon_5.svg" alt=""></div>
+                        <h3>Реабилитация</h3>
+                        <p>Терапия, хирургия, гинекология, кардиология, неврология, эндокринология</p>
+                        <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                    </div>
+
+                    <div class="way-card">
+                        <div class="way-card__icon"><img src="images/content/ways/icon_6.svg" alt=""></div>
+                        <h3>Онлайн-услуги</h3>
+                        <p>Анализы, справки, УЗИ диагностика, эндоскопия, комплексные обследования</p>
+                        <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                    </div>
+
+                    <div class="way-card">
+                        <div class="way-card__icon"><img src="images/content/ways/icon_7.svg" alt=""></div>
+                        <h3>Профилактика, скрининги, чекапы</h3>
+                        <p>Анализы, справки, УЗИ диагностика, эндоскопия, комплексные обследования</p>
+                        <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="title-block">
+                    <h2>Наши врачи</h2>
+
+                    <a href="#">Все врачи</a>
+                </div>
+
+                <div class="about-doctors">
+                    <div class="about-doctors__info">
+                        <p>256 специалистов</p>
+
+                        <div></div>
+
+                        <p>174 врача</p>
+
+                        <div></div>
+
+                        <p>Более 80 кандидатов наук</p>
+
+                        <div></div>
+
+                        <p>Более 30 докторов</p>
+                    </div>
+
+                    <p class="big-text">Более 125 врачей, медицинских сестер и специалистов прошли повышение квалификации (обучение) в ведущих медицинских центрах мира</p>
+
+                    <div class="simple-banner">
+                        <img src="images/content/doctors/banner_desk.jpg" srcset="images/content/doctors/banner_desk@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <div class="page__section">
+                <div class="two-columns">
+                    <div class="form">
+                        <form action="">
+                            <h2>Запись на приём</h2>
+                
+                            <p>Оставьте свои контактные данные, и мы<br> свяжемся с вами в течение пяти минут</p>
+                
+                            <label class="input-group">
+                                <span class="input-group__container">
+                                    <input class="input" type="text" name="name" value="" placeholder="Ваше имя">
+                                </span>
+                            </label>
+                
+                            <label class="input-group">
+                                <span class="input-group__container">
+                                    <input class="js-phone-mask input" type="text" name="phone" value="" placeholder="+ 7 (999) 999 99 99">
+                                </span>
+                            </label>
+                
+                            <label class="checkbox">
+                                <input type="checkbox" name="terms">
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">Я разрешаю обработку своих <a href="#">персональных данных</a></span>
+                            </label>
+                
+                            <button class="button button--primary" type="submit">Записаться</button>
+                        </form>
+                    </div>
+                
+                    <div class="mobile-hidden equal">
+                        <img src="images/content/two_columns/img_3.jpg" srcset="images/content/two_columns/img_3@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__section">
+                <div class="title-block">
+                    <h2>Подразделения Клиники</h2>
+
+                    <a href="#">Все подразделения</a>
+                </div>
+
+                <div class="js-cards-slider cards-slider" data-slider="slider_2">
+                    <div class="cards-slider__inner">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="address-card">
+                                        <div class="address-card__image">
+                                            <img src="images/content/address/img_1.jpg" srcset="images/content/address/img_1@2x.jpg 2x" alt="">
+                                        </div>
+                
+                                        <div class="address-card__info">
+                                            <h3 class="address-card__title">Лечебно-диагностический комплекс на наб. р. Фонтанки, д. 154</h3>
+                
+                                            <p class="address-card__metro">
+                                                <b>Ближайшее метро:</b>
+                                                Балтийская, Технологический ин-т, Нарвская
+                                            </p>
+                
+                                            <div class="address-card__buttons">
+                                                <a class="address-card__more button button--secondary" href="#">Подробнее</a>
+                
+                                                <button class="address-card__action button button--primary" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="swiper-slide">
+                                    <div class="address-card">
+                                        <div class="address-card__image">
+                                            <img src="images/content/address/img_2.jpg" srcset="images/content/address/img_2@2x.jpg 2x" alt="">
+                                        </div>
+                
+                                        <div class="address-card__info">
+                                            <h3 class="address-card__title">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</h3>
+                
+                                            <p class="address-card__metro">
+                                                <b>Ближайшее метро:</b>
+                                                Василеостровская, Спортивная-2
+                                            </p>
+                
+                                            <div class="address-card__buttons">
+                                                <a class="address-card__more button button--secondary" href="#">Подробнее</a>
+                
+                                                <button class="address-card__action button button--primary" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="swiper-slide">
+                                    <div class="address-card">
+                                        <div class="address-card__image">
+                                            <img src="images/content/address/img_3.jpg" srcset="images/content/address/img_3@2x.jpg 2x" alt="">
+                                        </div>
+                
+                                        <div class="address-card__info">
+                                            <h3 class="address-card__title">Лечебно-диагностический комплекс на ул. Кораблестроителей, д. 20, к. 1</h3>
+                
+                                            <p class="address-card__metro">
+                                                <b>Ближайшее метро:</b>
+                                                Приморская
+                                            </p>
+                
+                                            <div class="address-card__buttons">
+                                                <a class="address-card__more button button--secondary" href="#">Подробнее</a>
+                
+                                                <button class="address-card__action button button--primary" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="swiper-slide">
+                                    <div class="address-card">
+                                        <div class="address-card__image">
+                                            <img src="images/content/address/img_1.jpg" srcset="images/content/address/img_1@2x.jpg 2x" alt="">
+                                        </div>
+                
+                                        <div class="address-card__info">
+                                            <h3 class="address-card__title">Лечебно-диагностический комплекс на наб. р. Фонтанки, д. 154</h3>
+                
+                                            <p class="address-card__metro">
+                                                <b>Ближайшее метро:</b>
+                                                Балтийская, Технологический ин-т, Нарвская
+                                            </p>
+                
+                                            <div class="address-card__buttons">
+                                                <a class="address-card__more button button--secondary" href="#">Подробнее</a>
+                
+                                                <button class="address-card__action button button--primary" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="cards-slider__nav">
+                            <button class="js-cards-slider-prev swiper-button-prev" type="button" title="Назад" data-slider="slider_2">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left_icon" />
+                                </svg>
+                            </button>
+                
+                            <button class="js-cards-slider-next swiper-button-next" type="button" title="Вперёд" data-slider="slider_2">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <div class="js-cards-slider-pagination swiper-pagination" data-slider="slider_2"></div>
+                </div>
+            </div>
+
+            <div class="page__section">
+                <div class="title-block">
+                    <h2>Отзывы о нашей клинике<br> на независимых площадках</h2>
+
+                    <a href="#">Читать все отзывы</a>
+                </div>
+
+                <p>блок с отзывами</p>
+            </div>
         </div>
     </main>
 

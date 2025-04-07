@@ -1,3 +1,11 @@
+.tab {
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}
+
 .tabs-nav {
     @include scrollbar;
     background-color: #fff;

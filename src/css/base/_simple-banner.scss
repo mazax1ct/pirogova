@@ -1,0 +1,14 @@
+.simple-banner {
+    img {
+        border-radius: 20px;
+        display: block;
+        height: 350px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        @media(min-width: $md) {
+            border-radius: 40px;
+            height: 530px;
+        }
+    }
+}

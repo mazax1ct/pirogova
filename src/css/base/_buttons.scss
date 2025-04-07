@@ -27,16 +27,16 @@
 
     &--primary {
         background-color: var(--accent);
-        border-color: var(--accent);
+        //border-color: var(--accent);
         color: #fff;
 
         &:not(.disabled),
         &:not(:disabled),
         &:not([data-disabled]) {
             @include hover {
-                background-color: var(--accent_2);
+                background-color: var(--button_hover);
                 //border-color: var(--accent_2);
-                color: var(--accent);
+                color: #fff;
             }
         }
 
@@ -45,7 +45,7 @@
         &[data-disabled] {
             background-color: var(--secondary_2);
             border-color: var(--secondary_2);
-            color: var(--secondary);
+            color: #fff;
         }
     }
 
@@ -58,8 +58,8 @@
         &:not(:disabled),
         &:not([data-disabled]) {
             @include hover {
-                background-color: var(--accent_2);
-                color: var(--accent);
+                border-color: var(--button_hover);
+                color: var(--button_hover);
             }
         }
 
@@ -68,7 +68,30 @@
         &[data-disabled] {
             background-color: #fff;
             border-color: var(--secondary_2);
-            color: var(--secondary);
+            color: var(--secondary_2);
+        }
+    }
+
+    &--secondary_2 {
+        background-color: #fff;
+        //border-color: var(--accent);
+        color: var(--accent);
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                //border-color: var(--button_hover);
+                color: var(--button_hover);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: #fff;
+            //border-color: var(--secondary_2);
+            color: var(--secondary_2);
         }
     }
 

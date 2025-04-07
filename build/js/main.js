@@ -1,5 +1,6 @@
 //отслеживание скролла для шапки
 var header = $('.header'),
+    header_fixed = $('.header-fixed'),
     //toTop = $('.js-to-top'),
     scrollPrev = 0;
 
@@ -14,23 +15,13 @@ var resize_scroll = function(e) {
 		header.removeClass('is-scrolled');
 	}
 
-  /*if ( scrolled > $('.header').height() && scrolled > scrollPrev ) {
-		header.addClass('is-out');
-	} else {
-		header.removeClass('is-out');
-	}*/
+  if (scrolled > $('.header').height()) {
+		header_fixed.addClass('is-scrolled');
+	}
 
-  /*if (scrolled > scrollPrev) {
-    $('.detail__info-inner').removeClass('is-scrolled');
-    $('.left-menu').removeClass('is-scrolled');
-    $('.catalog__filter-block-inner').removeClass('is-scrolled');
-    $('.order-make__results').removeClass('is-scrolled');
-	} else {
-    $('.detail__info-inner').addClass('is-scrolled');
-    $('.left-menu').addClass('is-scrolled');
-    $('.catalog__filter-block-inner').addClass('is-scrolled');
-    $('.order-make__results').addClass('is-scrolled');
-	}*/
+  if (scrolled <= $('.header').height()) {
+		header_fixed.removeClass('is-scrolled');
+	}
 
 	scrollPrev = scrolled;
 };
@@ -41,7 +32,6 @@ $(document).ready(function() {
 
   //выравнивание размеров кнопок в табах
   $('.tabs-nav').each(function() {
-
     let cnt = $(this).find('.tabs-nav__button').length;
 
     if(cnt > 0){
@@ -165,5 +155,15 @@ $(document).on('click', '.js-accordion-toggler', function() {
     _this.closest('.accordion').find('.accordion__body').slideToggle();
   }
 
+  return false;
+});
+
+//табы
+$(document).on('click', '.js-tab', function() {
+  $(this).closest('.tabs').find('.js-tab').removeClass('is-active');
+  $(this).addClass('is-active');
+
+  $(this).closest('.tabs').find('.tab').removeClass('is-active');
+  $(this).closest('.tabs').find('.tab[data-tab="'+$(this).attr('data-tab')+'"]').addClass('is-active');
   return false;
 });

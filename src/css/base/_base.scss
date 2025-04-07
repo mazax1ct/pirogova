@@ -106,7 +106,7 @@ a {
     color: var(--accent);
     transition: color 0.3s;
     @include hover {
-        color: var(--secondary_3);
+        color: var(--button_hover);
     }
 }
 

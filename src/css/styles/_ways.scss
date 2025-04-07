@@ -1,0 +1,116 @@
+.ways-grid {
+    --gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    @media(min-width: $sm) {
+        --gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media(min-width: $md) {
+        --gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.ways-banner {
+    @media(min-width: $md) {
+        grid-row: span 2;
+    }
+
+    picture {
+        display: block;
+        @media(min-width: $md) {
+            height: 100%;
+        }
+    }
+
+    img {
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+        @media(min-width: $md) {
+            border-radius: 25px;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.way-card {
+    align-items: flex-start;
+    border-radius: 20px;
+    background-color: var(--accent_2);
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;
+    overflow: hidden;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+    @media(min-width: $md) {
+        border-radius: 25px;
+        min-height: 270px;
+        padding: 34px;
+    }
+    @include hover {
+        .way-card__icon {
+            opacity: 0.5;
+        }
+    }
+
+    &__icon {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50%;
+        bottom: -20px;
+        justify-content: center;
+        height: 200px;
+        left: auto;
+        opacity: 0.25;
+        position: absolute;
+        right: -50px;
+        transition: opacity 0.3s;
+        top: auto;
+        width: 200px;
+        z-index: -1;
+
+        img {
+            display: block;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        @media(min-width: $md) {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        @include active-area;
+        margin-top: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &::after {
+            height: 100%;
+            @media(min-width: $sm) {
+                height: 100%;
+            }
+        }
+    }
+
+    .button--secondary {
+        background-color: transparent;
+    }
+}

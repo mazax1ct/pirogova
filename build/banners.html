@@ -201,7 +201,7 @@
                                 <use xlink:href="images/sprite.svg#search_icon" />
                             </svg>
     
-                            <input class="input" type="text" name="q" value="" placeholder="Поиск">
+                            <input class="input" type="text" name="q" value="" placeholder="Поиск" autocomplete="off">
                         </span>
                     </label>
     
@@ -210,7 +210,48 @@
             </div>
         </div>
     
+        <div class="header-fixed">
+            <div class="header-fixed__inner container">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
     
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Направления</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Диагностика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Пациентам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <button class="header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <a class="header__button" href="#" title="Личный кабинет">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#user_icon" />
+                    </svg>
+                </a>
+    
+                <button class="header-fixed__record-button button button--primary" type="button">Запись на прием</button>
+            </div>
+        </div>
     </header>
 
     <div class="page__content">
@@ -225,7 +266,7 @@
                         </div>
                 
                         <div class="banner__buttons">
-                            <a class="button button--secondary button--h_52" href="#">Подробнее</a>
+                            <a class="button button--secondary_2 button--h_52" href="#">Подробнее</a>
                         </div>
                     </div>
                 
@@ -241,7 +282,7 @@
                         <h1 class="banner__title">Центр ключевых<br> направлений лечения</h1>
                 
                         <div class="banner__buttons">
-                            <a class="button button--secondary button--h_52" href="#">Записаться на диагностику</a>
+                            <a class="button button--secondary_2 button--h_52" href="#">Записаться на диагностику</a>
                         </div>
                     </div>
                 
@@ -281,7 +322,7 @@
                         </div>
                 
                         <div class="banner__buttons">
-                            <a class="button button--secondary button--h_52" href="#">Записаться на диагностику</a>
+                            <a class="button button--secondary_2 button--h_52" href="#">Записаться на диагностику</a>
                         </div>
                     </div>
                 
@@ -301,8 +342,8 @@
                         </div>
                 
                         <div class="banner__buttons">
-                            <a class="button button--secondary button--h_52" href="#">Записаться на диагностику</a>
-                            <a class="button button--secondary button--h_52" href="#">Позвонить</a>
+                            <a class="button button--secondary_2 button--h_52" href="#">Записаться на диагностику</a>
+                            <a class="button button--secondary_2 button--h_52" href="#">Позвонить</a>
                         </div>
                     </div>
                 

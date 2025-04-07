@@ -1,0 +1,30 @@
+.about-short {
+    @media(min-width: $md) {
+        max-width: 500px;
+    }
+}
+
+.info-graphic {
+    --gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    @media(min-width: $md) {
+        --gap: 30px;
+    }
+    @media(max-width: $md - 0.02px) {
+        font-size: 14px;
+    }
+
+    &:not(:first-child) {
+        margin-top: var(--gap);
+    }
+
+    h3 {
+        margin-bottom: 6px;
+    }
+
+    & > div {
+        width: calc(100% / 2 - var(--gap) / 2);
+    }
+}

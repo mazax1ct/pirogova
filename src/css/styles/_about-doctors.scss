@@ -1,0 +1,58 @@
+.about-doctors {
+    &__info {
+        margin-bottom: 20px;
+        @media(min-width: $md) {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: var(--accent);
+            font-size: 18px;
+            font-weight: 700;
+            @media(max-width: $md - 0.02px) {
+                padding-left: 10px;
+                position: relative;
+                z-index: 1;
+            }
+            @media(min-width: $md) {
+                font-size: 24px;
+                line-height: 1.2;
+                margin-bottom: 0;
+            }
+
+            &::before {
+                @media(max-width: $md - 0.02px) {
+                    background-color: var(--accent);
+                    border-radius: 50%;
+                    content: '';
+                    height: 4px;
+                    left: 0;
+                    position: absolute;
+                    top: 0.65em;
+                    transform: translate(-50%, -50%);
+                    width: 4px;
+                    z-index: 1;
+                }
+            }
+        }
+
+        div {
+            @media(min-width: $md) {
+                border-radius: 50%;
+                background-color: var(--accent);
+                height: 10px;
+                width: 10px;
+            }
+        }
+    }
+
+    .big-text {
+        margin-bottom: 20px;
+        @media(min-width: $md) {
+            margin-bottom: 30px;
+        }
+    }
+}

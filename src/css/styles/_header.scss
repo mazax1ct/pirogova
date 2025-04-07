@@ -15,19 +15,10 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    /*&.is-out {
-        transform: translateY(-100%);
-    }*/
+
     &.is-scrolled {
         @media(max-width: $md - 0.02px) {
             box-shadow: 0 0 3px 0 rgba(#000, 0.1);
-        }
-    }
-
-    &.is-open {
-        & > .container {
-            position: relative;
-            z-index: 11;
         }
     }
 
@@ -242,7 +233,7 @@
         width: 24px;
         z-index: 1;
         @include hover {
-            color: var(--secondary_3);
+            color: var(--button_hover);
         }
 
         svg {
@@ -355,3 +346,51 @@
 }
 
 .search-block {}
+
+.header-fixed {
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(#000, 0.1);
+    display: none;
+    left: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    @media(min-width: $hd) {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+    &.is-scrolled {
+        @media(min-width: $md) {
+            display: block;
+        }
+    }
+
+    &__inner {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        @media(min-width: $hd) {
+            gap: 30px;
+        }
+    }
+
+    .header__logo {
+        width: 200px;
+    }
+
+    &__record-button {
+        font-size: 14px;
+        min-height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        white-space: nowrap;
+        @media(min-width: $hd) {
+            font-size: 16px;
+        }
+    }
+}

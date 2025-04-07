@@ -149,8 +149,9 @@
     .button--secondary {
         background-color: var(--accent_2);
         @include hover {
-            background-color: var(--accent);
-            color: #fff;
+            //background-color: var(--accent);
+            border-color: var(--button_hover);
+            color: var(--button_hover);
         }
     }
 }
