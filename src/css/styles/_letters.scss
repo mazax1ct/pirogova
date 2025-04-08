@@ -1,0 +1,72 @@
+.letters {
+    &--columns {
+        @media(min-width: $sm) {
+            columns: 2;
+            column-gap: 30px;
+        }
+        @media(min-width: $md) {
+            columns: 3;
+        }
+
+        .letter {
+            overflow: hidden;
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            break-inside: avoid-column;
+        }
+    }
+}
+
+.letter {
+    border-bottom: 1px solid var(--accent_2);
+    padding-bottom: 20px;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    @media(min-width: $sm) {
+        min-height: 64px;
+        padding-left: 65px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__letter {
+        font-family: var(--secondary_font);
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 10px;
+        @media(min-width: $sm) {
+            font-size: 36px;
+            line-height: 1.2;
+            margin: 0;
+            left: 0;
+            position: absolute;
+            top: -6px;
+            z-index: 1;
+        }
+    }
+
+    &__list {
+        @include list-reset;
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+                @media(min-width: $md) {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+
+        a {
+            color: var(--text);
+            text-decoration: none;
+            @include hover {
+                color: var(--accent);
+            }
+        }
+    }
+}

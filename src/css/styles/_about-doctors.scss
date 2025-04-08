@@ -48,11 +48,4 @@
             }
         }
     }
-
-    .big-text {
-        margin-bottom: 20px;
-        @media(min-width: $md) {
-            margin-bottom: 30px;
-        }
-    }
 }

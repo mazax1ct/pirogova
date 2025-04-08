@@ -21,4 +21,7 @@ $fhd: 1900px;
     --container_max_width: 1200px;
     --primary_font: 'Avenir Next Cyr', Arial, sans-serif;
     --secondary_font: 'Roca One', Arial, sans-serif;
+    @media(min-width: $md) {
+        --header_min_height: 267px;
+    }
 }

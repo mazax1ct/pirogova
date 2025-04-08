@@ -67,7 +67,7 @@
                 <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
             </div>
 
-            <button class="header__search-toggler header__button" type="button" title="Поиск">
+            <button class="js-mobile-search-toggler header__search-toggler header__button" type="button" title="Поиск">
                 <svg aria-hidden="true">
                     <use xlink:href="images/sprite.svg#search_icon" />
                 </svg>
@@ -83,10 +83,58 @@
         <div class="mobile-menu">
             <ul class="menu">
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Направления</a>
+                    <div class="menu__item-inner">
+                        <a class="menu__link" href="#">Направления</a>
+
+                        <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#triangle_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li><a class="is-active" href="#">Стационарная помощь</a></li>
+                            <li><a href="#">Стоматология</a></li>
+                            <li><a href="#">Кардиология и сердечно-сосудистая хирургия</a></li>
+                            <li><a href="#">Общехирургическое отделение</a></li>
+                            <li><a href="#">Онкология</a></li>
+                            <li><a href="#">Пластическая хирургия</a></li>
+                            <li><a href="#">Гинекология</a></li>
+                            <li><a href="#">Урология</a></li>
+                            <li><a href="#">Эндокринная хирургия и эндокринология</a></li>
+                            <li><a href="#">Травматология</a></li>
+                            <li><a href="#">Терапия</a></li>
+                            <li><a href="#">Ревматология</a></li>
+                            <li><a href="#">Пульмонология</a></li>
+                            <li><a href="#">Гастроэнтерология</a></li>
+                            <li><a href="#">Нефрология</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Диагностика</a>
+                    <div class="menu__item-inner">
+                        <a class="menu__link" href="#">Диагностика</a>
+
+                        <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#triangle_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li><a href="#">Детская эндоскопия</a></li>
+                            <li><a href="#">Клинико-диагностические исследования</a></li>
+                            <li><a href="#">Лучевая диагностика</a></li>
+                            <li><a href="#">Молекулярно-генетические исследования</a></li>
+                            <li><a href="#">Морфологические (патолого-анатомические) исследования</a></li>
+                            <li><a href="#">Ультразвуковая диагностика</a></li>
+                            <li><a href="#">Функциональная диагностика</a></li>
+                            <li><a href="#">Эндоскопия</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#">Услуги</a>
@@ -95,7 +143,24 @@
                     <a class="menu__link" href="#">Врачи</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Пациентам</a>
+                    <div class="menu__item-inner">
+                        <a class="menu__link" href="#">Пациентам</a>
+
+                        <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#triangle_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li><a href="#">Истории пациентов</a></li>
+                            <li><a href="#">Методы диагностики</a></li>
+                            <li><a href="#">Порядок подготовки к диагностическим исследованиям</a></li>
+                            <li><a href="#">Методы лечения</a></li>
+                            <li><a href="#">Справочник заболеваний</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#">Контакты</a>
@@ -163,20 +228,53 @@
             </div>
         </div>
 
-        <div class="search-block">
-            <form class="search-form search-form--small" action="">
-                <label class="input-group">
-                    <span class="input-group__container">
-                        <svg class="input-group__icon" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#search_icon" />
-                        </svg>
+        <div class="header__search">
+            <div class="header__search-inner">
+                <form class="search-form search-form--dropdown search-form--small" action="">
+                    <label class="input-group">
+                        <span class="input-group__container">
+                            <svg class="input-group__icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
 
-                        <input class="input" type="text" name="q" value="" placeholder="Поиск" autocomplete="off">
-                    </span>
-                </label>
+                            <input class="js-header-search-input input" type="text" name="q" value="" placeholder="Поиск" autocomplete="off">
+                        </span>
+                    </label>
 
-                <button class="search-form__submit button button--primary" type="submit">Найти</button>
-            </form>
+                    <button class="search-form__submit button button--primary" type="submit">Найти</button>
+
+                    <div class="search-form__dropdown">
+                        <ul class="search-form__dropdown-list">
+                            <li><a href="#">Кардиология</a></li>
+                            <li><a href="#">Карьера в КВМТ</a></li>
+                            <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                            <li><a href="#">Левелева Карина Викторовна</a></li>
+                            <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                            <li><a href="#">Кардиология</a></li>
+                            <li><a href="#">Карьера в КВМТ</a></li>
+                            <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                            <li><a href="#">Левелева Карина Викторовна</a></li>
+                            <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                            <li><a href="#">Кардиология</a></li>
+                            <li><a href="#">Карьера в КВМТ</a></li>
+                            <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                            <li><a href="#">Левелева Карина Викторовна</a></li>
+                            <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                            <li><a href="#">Кардиология</a></li>
+                            <li><a href="#">Карьера в КВМТ</a></li>
+                            <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                            <li><a href="#">Левелева Карина Викторовна</a></li>
+                            <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                        </ul>
+                    </div>
+                </form>
+
+                <button class="js-search-closer header__search-closer" type="button" title="Закрыть">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_icon" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -188,10 +286,57 @@
 
             <ul class="menu">
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Направления</a>
+                    <div class="menu__item-inner">
+                        <a class="menu__link" href="#">Направления</a>
+
+                        <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#triangle_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li><a class="is-active" href="#">Стационарная помощь</a></li>
+                            <li><a href="#">Стоматология</a></li>
+                            <li><a href="#">Кардиология и сердечно-сосудистая хирургия</a></li>
+                            <li><a href="#">Общехирургическое отделение</a></li>
+                            <li><a href="#">Онкология</a></li>
+                            <li><a href="#">Пластическая хирургия</a></li>
+                            <li><a href="#">Гинекология</a></li>
+                            <li><a href="#">Урология</a></li>
+                            <li><a href="#">Эндокринная хирургия и эндокринология</a></li>
+                            <li><a href="#">Травматология</a></li>
+                            <li><a href="#">Терапия</a></li>
+                            <li><a href="#">Ревматология</a></li>
+                            <li><a href="#">Пульмонология</a></li>
+                            <li><a href="#">Гастроэнтерология</a></li>
+                            <li><a href="#">Нефрология</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Диагностика</a>
+                    <div class="menu__item-inner">
+                        <a class="menu__link" href="#">Диагностика</a>
+
+                        <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#triangle_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li><a href="#">Детская эндоскопия</a></li>
+                            <li><a href="#">Клинико-диагностические исследования</a></li>
+                            <li><a href="#">Лучевая диагностика</a></li>
+                            <li><a href="#">Молекулярно-генетические исследования</a></li>
+                            <li><a href="#">Морфологические (патолого-анатомические) исследования</a></li>
+                            <li><a href="#">Ультразвуковая диагностика</a></li>
+                            <li><a href="#">Функциональная диагностика</a></li>
+                            <li><a href="#">Эндоскопия</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#">Услуги</a>
@@ -200,14 +345,31 @@
                     <a class="menu__link" href="#">Врачи</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Пациентам</a>
+                    <div class="menu__item-inner">
+                        <a class="menu__link" href="#">Пациентам</a>
+
+                        <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#triangle_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li><a href="#">Истории пациентов</a></li>
+                            <li><a href="#">Методы диагностики</a></li>
+                            <li><a href="#">Порядок подготовки к диагностическим исследованиям</a></li>
+                            <li><a href="#">Методы лечения</a></li>
+                            <li><a href="#">Справочник заболеваний</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#">Контакты</a>
                 </li>
             </ul>
 
-            <button class="header__button" type="button" title="Поиск">
+            <button class="js-search-toggler header__button" type="button" title="Поиск">
                 <svg aria-hidden="true">
                     <use xlink:href="images/sprite.svg#search_icon" />
                 </svg>
@@ -219,7 +381,7 @@
                 </svg>
             </a>
 
-            <button class="header-fixed__record-button button button--primary" type="button">Запись на прием</button>
+            <a class="header-fixed__record-button button button--primary" href="#">Запись на прием</a>
         </div>
     </div>
 </header>
