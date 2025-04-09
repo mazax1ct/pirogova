@@ -16,11 +16,23 @@
             break-inside: avoid-column;
         }
     }
+
+    &:not(.letter__list--columns) {
+        .letter {
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
 }
 
 .letter {
     border-bottom: 1px solid var(--accent_2);
     padding-bottom: 20px;
+
+    &.no-border {
+        border-bottom: none;
+    }
 
     &:not(:last-child) {
         margin-bottom: 20px;
@@ -51,6 +63,24 @@
 
     &__list {
         @include list-reset;
+
+        &--columns {
+            @media(min-width: $sm) {
+                columns: 2;
+                column-gap: 30px;
+            }
+            @media(min-width: $md) {
+                columns: 3;
+            }
+
+            li {
+                overflow: hidden;
+                -webkit-column-break-inside: avoid;
+                page-break-inside: avoid;
+                break-inside: avoid;
+                break-inside: avoid-column;
+            }
+        }
 
         li {
             &:not(:last-child) {

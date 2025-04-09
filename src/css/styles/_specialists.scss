@@ -1,0 +1,52 @@
+.spec-filter {
+    margin-bottom: 20px;
+    @media(min-width: $md) {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    @media(min-width: $hd) {
+        gap: 20px;
+    }
+
+    .tabs-nav {
+        @media(min-width: $md) {
+            margin-bottom: 0;
+            min-width: 235px;
+        }
+        @media(min-width: $hd) {
+            min-width: 265px;
+        }
+    }
+}
+
+.alphabeth {
+    display: flex;
+    @media(min-width: $hd) {
+        font-size: 20px;
+    }
+    @media(max-width: $md - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+        overflow-x: auto;
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+    }
+
+    &__button {
+        @include button-reset;
+        border-radius: 8px;
+        min-height: 50px;
+        padding: 0 15px;
+        transition: color 0.3s;
+        @include hover {
+            color: var(--accent);
+        }
+
+        &.is-active {
+            background-color: var(--accent_2);
+            color: var(--accent);
+            font-weight: 500;
+        }
+    }
+}

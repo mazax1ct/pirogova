@@ -21,8 +21,10 @@ var resize_scroll = function(e) {
 
   if (scrolled <= $('.header').height()) {
 		header_fixed.removeClass('is-scrolled');
-    closeMobileSearch();
-    closeSearch();
+    //closeMobileSearch();
+    if($('body').width() >= 1024){
+      closeSearch();
+    }
 	}
 
 	scrollPrev = scrolled;

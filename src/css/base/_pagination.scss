@@ -1,0 +1,91 @@
+.pagination {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    @media(min-width: $md) {
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 48px;
+        margin-top: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__more {
+        @media(max-width: $md - 0.02px) {
+            max-width: 345px;
+            width: 100%;
+        }
+        @media(min-width: $md) {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 190px;
+            z-index: 1;
+        }
+    }
+
+    &__pager {
+        @include list-reset;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        @media(min-width: $md) {
+            order: 3;
+        }
+
+        a {
+            color: var(--text);
+            text-decoration: none;
+        }
+    }
+
+    &__pager-page {
+        align-items: center;
+        border-radius: 18px;
+        display: flex;
+        height: 35px;
+        justify-content: center;
+        min-width: 35px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        &.is-active {
+            background-color: var(--accent_2);
+            color: var(--accent);
+            font-weight: 500;
+        }
+    }
+
+    &__pager-next,
+    &__pager-prev {
+        font-weight: 500;
+        @media(max-width: 375px - 0.02px) {
+            display: none;
+        }
+    }
+
+    &__pager-prev {
+        margin-right: 12px;
+        @media(min-width: $md) {
+            margin-right: 16px;
+        }
+    }
+
+    &__pager-next {
+        margin-left: 12px;
+        @media(min-width: $md) {
+            margin-left: 16px;
+        }
+    }
+
+    &__count {
+        color: var(--secondary);
+        @media(min-width: $md) {
+            order: 1;
+        }
+    }
+}

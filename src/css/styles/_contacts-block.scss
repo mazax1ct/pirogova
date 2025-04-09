@@ -1,0 +1,87 @@
+.contacts-block {
+    --gap: 10px;
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+    @media(min-width: $sm) {
+        flex-direction: row;
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__block {
+        background-color: #fff;
+        border-radius: 15px;
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        padding: 24px;
+        @media(min-width: $md) {
+            border-radius: 20px;
+            font-size: 20px;
+            gap: 20px;
+            padding: 34px;
+        }
+
+        a {
+            font-weight: 700;
+        }
+    }
+
+    &__icon {
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--accent_2);
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        min-width: 30px;
+        width: 30px;
+        @media(min-width: $md) {
+            height: 40px;
+            min-width: 40px;
+            width: 40px;
+        }
+
+        svg {
+            fill: var(--accent);
+            height: 15px;
+            width: 15px;
+            @media(min-width: $md) {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    &__image,
+    &__text-block {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+    }
+
+    &__image {
+        img {
+            border-radius: 20px;
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            @media(min-width: $sm) {
+                border-radius: 25px;
+            }
+        }
+    }
+}

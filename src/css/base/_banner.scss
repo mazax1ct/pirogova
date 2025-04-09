@@ -84,7 +84,7 @@
             }
 
             img {
-                clip-path: url("../images/mask/mask_1.svg#clip-path");
+                clip-path: url("#clip-path");
                 left: 15px;
                 @media(max-width: $md - 0.02px) {
                     max-width: initial;
@@ -96,7 +96,7 @@
                     transform: translateX(-50%);
                 }
                 @media(min-width: $sm) {
-                    clip-path: url("../images/mask/mask_2.svg#clip-path");
+                    clip-path: url("#clip-path-2");
                 }
                 @media(min-width: $sm) and (max-width: $md - 0.02px) {
                     width: 684px;

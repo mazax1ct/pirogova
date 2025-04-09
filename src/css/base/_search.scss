@@ -3,10 +3,6 @@
     gap: 10px;
 
     &--small {
-        .input-group {
-            flex-grow: 1;
-        }
-
         .input {
             height: 44px;
         }
@@ -17,9 +13,42 @@
         }
     }
 
+    &--giant {
+        .input {
+            @media(min-width: $md) {
+                height: 70px;
+            }
+        }
+
+        .input-group__container {
+            .input-group__icon {
+                @media(min-width: $md) {
+                    left: 24px;
+                }
+
+                & + .input {
+                    @media(min-width: $md) {
+                        padding-left: 60px;
+                    }
+                }
+            }
+        }
+
+        .button {
+            @media(min-width: $md) {
+                min-height: 70px;
+                min-width: 190px;
+            }
+        }
+    }
+
     &--dropdown {
         position: relative;
         z-index: 1;
+    }
+
+    .input-group {
+        flex-grow: 1;
     }
 
     &__dropdown {
@@ -60,6 +89,4 @@
             }
         }
     }
-
-    &__closer {}
 }

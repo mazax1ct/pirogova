@@ -107,3 +107,129 @@
         }
     }
 }
+
+.card_2 {
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+    @media(min-width: $md) {
+        border-radius: 25px;
+        min-height: 344px;
+        padding: 34px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        @media(min-width: $md) {
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+    }
+
+    p {
+        margin-bottom: 18px;
+        @media(min-width: $md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .button {
+        @include active-area;
+        margin-top: auto;
+
+        &::after {
+            height: 100%;
+            @media(min-width: $sm) {
+                height: 100%;
+            }
+        }
+    }
+
+    .button--secondary {
+        background-color: #fff;
+    }
+}
+
+.card_3 {
+    align-items: flex-start;
+    background-color: var(--accent_2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+    @media(min-width: $md) {
+        border-radius: 25px;
+        min-height: 356px;
+        padding: 34px;
+    }
+
+    &__icon {
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--accent);
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 40px;
+        @media(min-width: $md) {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            width: 20px;
+        }
+
+        svg {
+            fill: var(--accent_2);
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    h3 {
+        color: var(--accent);
+        font-size: 20px;
+        margin-bottom: 12px;
+        @media(min-width: $md) {
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+    }
+
+    p {
+        margin-bottom: 18px;
+        @media(min-width: $md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .button {
+        @include active-area;
+        margin-top: auto;
+
+        &::after {
+            height: 100%;
+            @media(min-width: $sm) {
+                height: 100%;
+            }
+        }
+    }
+
+    .button--secondary {
+        background-color: var(--accent_2);
+    }
+}

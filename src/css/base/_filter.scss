@@ -1,0 +1,29 @@
+.filter-opener {
+    @include button-reset;
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    @include hover {
+        .filter-opener__icon {
+            background-color: var(--button_hover);
+        }
+    }
+
+    &__icon {
+        align-items: center;
+        background-color: var(--accent);
+        border-radius: 10px;
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        min-width: 48px;
+        transition: background-color 0.3s;
+        width: 48px;
+
+        svg {
+            fill: #fff;
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

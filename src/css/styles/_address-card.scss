@@ -82,6 +82,10 @@
                 width: calc(100% / 2 - 12px / 2);
             }
         }
+
+        .button--secondary {
+            background-color: #fff;
+        }
     }
 
     &__more {
