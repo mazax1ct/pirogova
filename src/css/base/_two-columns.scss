@@ -106,6 +106,26 @@
         }
     }
 
+    &--slider {
+        & > div {
+            &:first-child {
+                @media(min-width: 1300px) {
+                    padding-right: 55px;
+                }
+                @media(min-width: $lg) {
+                    padding-right: 95px;
+                }
+            }
+        }
+
+        .image-slider__nav {
+            @media(min-width: $lg) {
+                left: -85px;
+                right: -85px;
+            }
+        }
+    }
+
     .h1,
     .h2,
     h1,

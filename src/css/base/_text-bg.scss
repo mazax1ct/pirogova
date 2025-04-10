@@ -1,0 +1,36 @@
+.text-bg {
+    border-radius: 20px;
+    padding: 24px;
+    @media(min-width: $md) {
+        border-radius: 25px;
+        padding: 34px;
+    }
+
+    &--type_1 {
+        background-color: #fff;
+
+        .input,
+        .textarea {
+            &:not(:disabled) {
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__links {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        @media(min-width: $sm) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        a {
+            color: var(--text);
+            text-decoration: none;
+        }
+    }
+}

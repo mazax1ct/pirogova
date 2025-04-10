@@ -32,6 +32,8 @@
         display: flex;
         justify-content: space-between;
         gap: 20px;
+        position: relative;
+        z-index: 1;
     }
 
     &__toggler {
@@ -45,9 +47,14 @@
         height: 32px;
         justify-content: center;
         min-width: 32px;
-        position: relative;
         width: 32px;
-        z-index: 1;
+
+        &::after {
+            height: 100%;
+            @media(min-width: $sm) {
+                height: 100%;
+            }
+        }
 
         &.is-active {
             svg {
@@ -64,8 +71,11 @@
     }
 
     &__title {
-        font-size: 20px;
+        font-size: 18px;
         margin: 0;
+        @media(min-width: $md) {
+            font-size: 20px;
+        }
     }
 
     &__body {

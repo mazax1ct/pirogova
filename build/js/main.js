@@ -104,6 +104,27 @@ $(document).ready(function() {
       },
     });
   });
+
+  //слайдер картинок
+  $('.js-image-slider').each(function(index, el) {
+    var slider = el.children[0].children[0];
+
+    new Swiper(slider, {
+      loop: true,
+      spaceBetween: 20,
+
+      navigation: {
+        nextEl: '.js-image-slider-next[data-slider="'+el.dataset.slider+'"]',
+        prevEl: '.js-image-slider-prev[data-slider="'+el.dataset.slider+'"]',
+      },
+
+      pagination: {
+        el: '.js-image-slider-pagination[data-slider="'+el.dataset.slider+'"]',
+        type: 'bullets',
+        clickable: true
+      },
+    });
+  });
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе

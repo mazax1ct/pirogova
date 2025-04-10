@@ -1,0 +1,70 @@
+.reviews-filter {
+    margin-bottom: 20px;
+    @media(min-width: $md) {
+        margin-bottom: 30px;
+    }
+}
+
+.review {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 24px;
+    @media(min-width: $md) {
+        border-radius: 25px;
+        padding: 34px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+        @media(min-width: $md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__date {
+        color: var(--accent);
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__author {
+        font-weight: 700;
+    }
+
+    &__details {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        span {
+            color: var(--accent);
+            font-weight: 700;
+        }
+    }
+}
+
+.reviews-form {
+    &__row {
+        --gap: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+        margin-bottom: var(--gap);
+        @media(min-width: $sm) {
+            --gap: 10px;
+            flex-direction: row;
+            margin-bottom: var(--gap);
+        }
+
+        & > div {
+            @media(min-width: $sm) {
+                width: calc(100% / 3 - var(--gap) / 3 * 2);
+            }
+        }
+    }
+
+    & > .input-group,
+    .checkbox {
+        margin-bottom: 20px;
+    }
+}

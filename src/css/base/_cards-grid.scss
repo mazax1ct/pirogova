@@ -11,6 +11,13 @@
         --gap: 30px;
     }
 
+    &:not(:last-child) {
+        margin-bottom: 20px;
+        @media(min-width: $md) {
+            margin-bottom: 30px;
+        }
+    }
+
     & > * {
         @media(min-width: $sm) {
             width: calc(100% / 2 - var(--gap) / 2);

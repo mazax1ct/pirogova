@@ -49,8 +49,10 @@
         }
 
         svg {
+            align-self: flex-start;
             fill: currentColor;
             height: 18px;
+            margin-top: 2px;
             min-width: 18px;
             width: 18px;
         }
