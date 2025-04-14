@@ -145,6 +145,21 @@ ul {
 ol,
 ul {
     padding: 0;
+
+    &.columned_2 {
+        @media(min-width: $sm) {
+            columns: 2;
+            column-gap: 30px;
+        }
+
+        li {
+            overflow: hidden;
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            break-inside: avoid-column;
+        }
+    }
 }
 
 ol {
@@ -152,6 +167,7 @@ ol {
 }
 
 ul {
+    &.columned_2,
     &:not([class]) {
         list-style: none;
 
@@ -171,8 +187,7 @@ ul {
                 height: 6px;
                 left: 0;
                 position: absolute;
-                top: 0.65em;
-                transform: translate(-50%, -50%);
+                top: 0.6em;
                 width: 6px;
                 z-index: 1;
             }

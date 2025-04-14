@@ -106,7 +106,7 @@ $(document).ready(function() {
   });
 
   //слайдер картинок
-  $('.js-image-slider').each(function(index, el) {
+  $('.js-simple-slider').each(function(index, el) {
     var slider = el.children[0].children[0];
 
     new Swiper(slider, {
@@ -114,12 +114,12 @@ $(document).ready(function() {
       spaceBetween: 20,
 
       navigation: {
-        nextEl: '.js-image-slider-next[data-slider="'+el.dataset.slider+'"]',
-        prevEl: '.js-image-slider-prev[data-slider="'+el.dataset.slider+'"]',
+        nextEl: '.js-simple-slider-next[data-slider="'+el.dataset.slider+'"]',
+        prevEl: '.js-simple-slider-prev[data-slider="'+el.dataset.slider+'"]',
       },
 
       pagination: {
-        el: '.js-image-slider-pagination[data-slider="'+el.dataset.slider+'"]',
+        el: '.js-simple-slider-pagination[data-slider="'+el.dataset.slider+'"]',
         type: 'bullets',
         clickable: true
       },
