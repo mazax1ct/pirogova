@@ -9,6 +9,7 @@
 .tabs-nav {
     @include scrollbar;
     background-color: #fff;
+    box-shadow: var(--shadow);
     display: flex;
     margin-bottom: 20px;
     overflow-x: auto;

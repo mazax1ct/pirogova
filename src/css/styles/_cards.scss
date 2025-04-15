@@ -112,6 +112,7 @@
     align-items: flex-start;
     background-color: #fff;
     border-radius: 20px;
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -138,6 +139,10 @@
         margin-bottom: 18px;
         @media(min-width: $md) {
             margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 

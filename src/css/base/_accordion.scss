@@ -21,6 +21,7 @@
 .accordion {
     background-color: #fff;
     border-radius: 15px;
+    box-shadow: var(--shadow);
     padding: 24px;
     @media(min-width: $md) {
         border-radius: 20px;
