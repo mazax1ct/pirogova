@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Gosmed.ru" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Demi.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-RocaOne-Rg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="container">
+            <div class="header__top">
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
+    
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+    
+                    <div class="header__top-links">
+                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__middle">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <button class="js-mobile-search-toggler header__search-toggler header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-mobile-menu-toggler header__burger header__button" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="mobile-menu">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Направления</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a class="is-active" href="#">Стационарная помощь</a></li>
+                                <li><a href="#">Стоматология</a></li>
+                                <li><a href="#">Кардиология и сердечно-сосудистая хирургия</a></li>
+                                <li><a href="#">Общехирургическое отделение</a></li>
+                                <li><a href="#">Онкология</a></li>
+                                <li><a href="#">Пластическая хирургия</a></li>
+                                <li><a href="#">Гинекология</a></li>
+                                <li><a href="#">Урология</a></li>
+                                <li><a href="#">Эндокринная хирургия и эндокринология</a></li>
+                                <li><a href="#">Травматология</a></li>
+                                <li><a href="#">Терапия</a></li>
+                                <li><a href="#">Ревматология</a></li>
+                                <li><a href="#">Пульмонология</a></li>
+                                <li><a href="#">Гастроэнтерология</a></li>
+                                <li><a href="#">Нефрология</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Диагностика</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Детская эндоскопия</a></li>
+                                <li><a href="#">Клинико-диагностические исследования</a></li>
+                                <li><a href="#">Лучевая диагностика</a></li>
+                                <li><a href="#">Молекулярно-генетические исследования</a></li>
+                                <li><a href="#">Морфологические (патолого-анатомические) исследования</a></li>
+                                <li><a href="#">Ультразвуковая диагностика</a></li>
+                                <li><a href="#">Функциональная диагностика</a></li>
+                                <li><a href="#">Эндоскопия</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Пациентам</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Истории пациентов</a></li>
+                                <li><a href="#">Методы диагностики</a></li>
+                                <li><a href="#">Порядок подготовки к диагностическим исследованиям</a></li>
+                                <li><a href="#">Методы лечения</a></li>
+                                <li><a href="#">Справочник заболеваний</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+    
+                    <div class="header__top-links">
+                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__search">
+                <div class="header__search-inner">
+                    <form class="search-form search-form--dropdown search-form--small" action="">
+                        <label class="input-group">
+                            <span class="input-group__container">
+                                <svg class="input-group__icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+    
+                                <input class="js-header-search-input input" type="text" name="q" value="" placeholder="Поиск" autocomplete="off">
+                            </span>
+                        </label>
+    
+                        <button class="search-form__submit button button--primary" type="submit">Найти</button>
+    
+                        <div class="search-form__dropdown">
+                            <ul class="search-form__dropdown-list">
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                            </ul>
+                        </div>
+                    </form>
+    
+                    <button class="js-search-closer header__search-closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="header-fixed">
+            <div class="header-fixed__inner container">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
+    
+                <ul class="menu">
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Направления</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a class="is-active" href="#">Стационарная помощь</a></li>
+                                <li><a href="#">Стоматология</a></li>
+                                <li><a href="#">Кардиология и сердечно-сосудистая хирургия</a></li>
+                                <li><a href="#">Общехирургическое отделение</a></li>
+                                <li><a href="#">Онкология</a></li>
+                                <li><a href="#">Пластическая хирургия</a></li>
+                                <li><a href="#">Гинекология</a></li>
+                                <li><a href="#">Урология</a></li>
+                                <li><a href="#">Эндокринная хирургия и эндокринология</a></li>
+                                <li><a href="#">Травматология</a></li>
+                                <li><a href="#">Терапия</a></li>
+                                <li><a href="#">Ревматология</a></li>
+                                <li><a href="#">Пульмонология</a></li>
+                                <li><a href="#">Гастроэнтерология</a></li>
+                                <li><a href="#">Нефрология</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Диагностика</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Детская эндоскопия</a></li>
+                                <li><a href="#">Клинико-диагностические исследования</a></li>
+                                <li><a href="#">Лучевая диагностика</a></li>
+                                <li><a href="#">Молекулярно-генетические исследования</a></li>
+                                <li><a href="#">Морфологические (патолого-анатомические) исследования</a></li>
+                                <li><a href="#">Ультразвуковая диагностика</a></li>
+                                <li><a href="#">Функциональная диагностика</a></li>
+                                <li><a href="#">Эндоскопия</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Пациентам</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Истории пациентов</a></li>
+                                <li><a href="#">Методы диагностики</a></li>
+                                <li><a href="#">Порядок подготовки к диагностическим исследованиям</a></li>
+                                <li><a href="#">Методы лечения</a></li>
+                                <li><a href="#">Справочник заболеваний</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <button class="js-search-toggler header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <a class="header__button" href="#" title="Личный кабинет">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#user_icon" />
+                    </svg>
+                </a>
+    
+                <a class="header-fixed__record-button button button--primary" href="#">Запись на прием</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">О клинике</a>
+                </li>
+                <li class="breadcrumbs__item">Карьера в КВМТ</li>
+            </ul>
+
+            <section class="page__section">
+                <div class="banner banner--light">
+                    <div class="banner__text-block">
+                        <h1 class="banner__title">Карьера в КВМТ</h1>
+                
+                        <div class="banner__text">
+                            <p>Клиника высоких медицинских технологий имени Н. И. Пирогова Санкт-Петербургского государственного университета - ведущее лечебное, научное и учебное учреждение страны.</p>
+                            <p>На базе Клиники функционируют два высокотехнологичных стационара, современный диагностический блок и амбулаторно-поликлинический комплекс.</p>
+                        </div>
+                    </div>
+                
+                    <div class="banner__image banner__image--type_1">
+                        <img src="images/content/banners/banner_12.jpg" srcset="images/content/banners/banner_12@2x.jpg 2x" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="clip-path">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M254.25 23.1154C167.066 -23.3403 61.6041 4.28157 18.6947 84.8105C-24.2147 165.339 11.6771 268.281 98.8613 314.736C105.77 318.417 112.793 321.633 119.89 324.395L389.919 468.278C410.241 430.14 422.852 388.373 427.032 345.362C431.212 302.35 426.879 258.936 414.281 217.599C401.683 176.262 381.066 137.811 353.608 104.441C326.272 71.2203 292.688 43.6835 254.759 23.3875C254.59 23.2966 254.42 23.2059 254.25 23.1154Z" />
+                                </clipPath>
+                                <clipPath id="clip-path-2">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M426.133 38.2798C279.699 -39.7469 102.566 6.64662 30.4953 141.903C-41.5752 277.159 18.7085 450.058 165.143 528.085C176.746 534.268 188.542 539.669 200.463 544.307L654.002 785.973C688.134 721.917 709.315 651.765 716.336 579.523C723.356 507.281 716.079 434.363 694.919 364.933C673.76 295.504 639.132 230.921 593.014 174.874C547.098 119.073 490.687 72.8206 426.977 38.731C426.696 38.5803 426.414 38.4298 426.133 38.2798Z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="two-columns two-columns--reverse">
+                    <div>
+                        <h2>Основным направлением деятельности клиники является плановая хирургия</h2>
+                        <p>Eжегодно мы проводим более 25.000 операций для жителей всех регионов России.</p>
+                        <p><b>Статус университетской клиники накладывает особые обязательства: просветительская и научно-образовательная деятельность являются для нас такими же важными задачами, как и лечебная работа.</b></p>
+                    </div>
+                
+                    <div>
+                        <img src="images/content/two_columns/img_25.jpg" srcset="images/content/two_columns/img_25@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="two-columns two-columns--imaged" style="background-image: url('images/content/doctors/banner_desk@2x.jpg')">
+                    <div>
+                        <p><span class="h2">Ядро команды составляют более 300 врачей</span> практически всех медицинских специальностей, в том числе профессора, кандидаты и доктора наук.</p>
+                        <p>Каждого, кто работает в Клинике, отличает следование нашим ключевым ценностям — традиции и компетентность.</p>
+                        <p>Врачи, медицинские сестры, руководители, младший медицинский и вспомогательный персонал постоянно развиваются, чтобы быть уверенными в своей компетентности - в профессиональных вопросах, в этических ориентирах, в навыках работы в команде и
+                            общения с пациентами.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="two-columns two-columns--bg two-columns--reverse">
+                    <div>
+                        <h2>Карьера в КВМТ</h2>
+                        <p><b>Вместе со стремлением к новым технологиям и знаниям, мы уважаем преемственность и понимаем, что лучшие клиники мира добились успеха именно потому, что их коллективы в полной мере осознавали ценность традиций и следовали им.</b></p>
+                        <p>Мы чтим богатую историю нашей Клиники, культивируем наставничество во всех службах и делаем всё возможное, чтобы новые сотрудники как можно скорее адаптировались при переходе на работу в Клинику и могли добиваться максимальных результатов.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/content/two_columns/img_26.jpg" srcset="images/content/two_columns/img_26@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="two-columns">
+                    <div class="bg">
+                        <form action="">
+                            <h2>Хотите работать в Клинике СПбГУ?</h2>
+                
+                            <p>Свяжитесь с нами, и мы предоставим<br> необходимую информацию.</p>
+                
+                            <label class="input-group">
+                                <span class="input-group__container">
+                                    <input class="input" type="text" name="name" value="" placeholder="Ваше имя">
+                                </span>
+                            </label>
+                
+                            <label class="input-group">
+                                <span class="input-group__container">
+                                    <input class="js-phone-mask input" type="text" name="phone" value="" placeholder="+ 7 (999) 999 99 99">
+                                </span>
+                            </label>
+                
+                            <label class="input-group">
+                                <span class="input-group__container">
+                                    <input class="js-email-mask input" type="text" name="email" value="" placeholder="Email">
+                                </span>
+                            </label>
+                
+                            <label class="input-group">
+                                <span class="input-group__container">
+                                    <input class="input" type="text" name="place" value="" placeholder="Желаемая должность">
+                                </span>
+                            </label>
+                
+                            <div class="file">
+                                <div class="file__title">Файл с резюме:</div>
+                
+                                <div class="file__wrapper">
+                                    <label class="file__label">
+                                        <input type="file" name="resume">
+                                        <span class="file__label-text">Прикрепить файл</span>
+                                    </label>
+                
+                                    <button class="js-file-clear file__delete" type="button" title="Удалить">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#delete_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <label class="checkbox">
+                                <input type="checkbox" name="terms">
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">Я разрешаю обработку своих <a href="#">персональных данных</a></span>
+                            </label>
+                
+                            <button class="button button--primary" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                
+                    <div class="mobile-hidden equal">
+                        <img src="images/content/two_columns/img_27.jpg" srcset="images/content/two_columns/img_27@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Сотрудники Клиники будут рады поддержать вас в достижении карьерных и профессиональных целей и предоставить все возможности для развития.</h2>
+            </section>
+
+            <section class="page__section">
+                <h2>Открытые вакансии</h2>
+                <div class="tabs">
+                    <div class="tabs-nav tabs-nav--type_3">
+                        <button class="js-tab tabs-nav__button is-active" type="button" data-tab="1">Врачебный персонал</button>
+                        <button class="js-tab tabs-nav__button" type="button" data-tab="2">Средний медицинский<br> персонал</button>
+                        <button class="js-tab tabs-nav__button" type="button" data-tab="3">Младший и немедицинский<br> персонал</button>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        <div class="accordions">
+                            <div class="accordions__column">
+                                <div class="accordion">
+                                    <div class="accordion__top">
+                                        <h3 class="accordion__title">Врач стоматолог-терапевт</h3>
+
+                                        <button class="js-accordion-toggler accordion__toggler" type="button" title="Открыть">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="accordion__body">
+                                        <h4>Условия:</h4>
+                                        <ul>
+                                            <li>Работа в клинике с новым и современным оборудованием</li>
+                                            <li>График работы 5/2</li>
+                                            <li>Оформление по ТК РФ</li>
+                                            <li>З/п индивидуально</li>
+                                        </ul>
+
+                                        <h4>Обязанности:</h4>
+
+                                        <ul>
+                                            <li>Работа с коффердамом и микроскопом в 4 руки</li>
+                                            <li>Терапевтическое лечение в полном объёме</li>
+                                            <li>Ведение фотопротокола лечения</li>
+                                            <li>Заполнение медицинских карт пациентов</li>
+                                            <li>Составление планов лечения в рамках комплексных консультаций со смежными специалистами</li>
+                                            <li>Умение презентовать план лечения пациенту (первичные и вторичные пациенты)</li>
+                                        </ul>
+
+                                        <h4>Требования:</h4>
+
+                                        <ul>
+                                            <li>Высшее медицинское образование</li>
+                                            <li>Наличие действующего сертификата по специальности "Стоматология терапевтическая"</li>
+                                            <li>Опыт работы не менее 3 лет</li>
+                                            <li>Владение современными методиками лечения</li>
+                                            <li>Уверенный пользователь ПК</li>
+                                            <li>Исполнительность, дисциплина, аккуратность, вежливость, умение работать в команде.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div class="accordion__top">
+                                        <h3 class="accordion__title">Врач-оториноларинголог</h3>
+
+                                        <button class="js-accordion-toggler accordion__toggler" type="button" title="Открыть">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="accordion__body">
+                                        <h4>Условия:</h4>
+                                        <ul>
+                                            <li>Работа в клинике с новым и современным оборудованием</li>
+                                            <li>График работы 5/2</li>
+                                            <li>Оформление по ТК РФ</li>
+                                            <li>З/п индивидуально</li>
+                                        </ul>
+
+                                        <h4>Обязанности:</h4>
+
+                                        <ul>
+                                            <li>Работа с коффердамом и микроскопом в 4 руки</li>
+                                            <li>Терапевтическое лечение в полном объёме</li>
+                                            <li>Ведение фотопротокола лечения</li>
+                                            <li>Заполнение медицинских карт пациентов</li>
+                                            <li>Составление планов лечения в рамках комплексных консультаций со смежными специалистами</li>
+                                            <li>Умение презентовать план лечения пациенту (первичные и вторичные пациенты)</li>
+                                        </ul>
+
+                                        <h4>Требования:</h4>
+
+                                        <ul>
+                                            <li>Высшее медицинское образование</li>
+                                            <li>Наличие действующего сертификата по специальности "Стоматология терапевтическая"</li>
+                                            <li>Опыт работы не менее 3 лет</li>
+                                            <li>Владение современными методиками лечения</li>
+                                            <li>Уверенный пользователь ПК</li>
+                                            <li>Исполнительность, дисциплина, аккуратность, вежливость, умение работать в команде.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordions__column">
+                                <div class="accordion">
+                                    <div class="accordion__top">
+                                        <h3 class="accordion__title">Врач-оториноларинголог</h3>
+
+                                        <button class="js-accordion-toggler accordion__toggler" type="button" title="Открыть">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="accordion__body">
+                                        <h4>Условия:</h4>
+                                        <ul>
+                                            <li>Работа в клинике с новым и современным оборудованием</li>
+                                            <li>График работы 5/2</li>
+                                            <li>Оформление по ТК РФ</li>
+                                            <li>З/п индивидуально</li>
+                                        </ul>
+
+                                        <h4>Обязанности:</h4>
+
+                                        <ul>
+                                            <li>Работа с коффердамом и микроскопом в 4 руки</li>
+                                            <li>Терапевтическое лечение в полном объёме</li>
+                                            <li>Ведение фотопротокола лечения</li>
+                                            <li>Заполнение медицинских карт пациентов</li>
+                                            <li>Составление планов лечения в рамках комплексных консультаций со смежными специалистами</li>
+                                            <li>Умение презентовать план лечения пациенту (первичные и вторичные пациенты)</li>
+                                        </ul>
+
+                                        <h4>Требования:</h4>
+
+                                        <ul>
+                                            <li>Высшее медицинское образование</li>
+                                            <li>Наличие действующего сертификата по специальности "Стоматология терапевтическая"</li>
+                                            <li>Опыт работы не менее 3 лет</li>
+                                            <li>Владение современными методиками лечения</li>
+                                            <li>Уверенный пользователь ПК</li>
+                                            <li>Исполнительность, дисциплина, аккуратность, вежливость, умение работать в команде.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" data-tab="2">
+                        <p>Средний медицинский персонал</p>
+                    </div>
+                    <div class="tab" data-tab="3">
+                        <p>Младший и немедицинский персонал</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="js-simple-slider simple-slider" data-slider="slider_1">
+                    <div class="simple-slider__inner">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/content/simple_slider/img_3.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/content/simple_slider/img_3.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/content/simple_slider/img_3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="simple-slider__nav">
+                            <button class="js-simple-slider-prev swiper-button-prev" type="button" title="Назад" data-slider="slider_1">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left_icon" />
+                                </svg>
+                            </button>
+
+                            <button class="js-simple-slider-next swiper-button-next" type="button" title="Вперёд" data-slider="slider_1">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="js-simple-slider-pagination swiper-pagination" data-slider="slider_1"></div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                    </div>
+    
+                    <div class="footer__socials">
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Наш Телеграм">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы на YouTube">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы в Одноклассниках">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#ok_icon" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer__top-center">
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">УСЛУГИ</li>
+                        <li><a href="#">Взрослое отделение</a></li>
+                        <li><a href="#">Детское отделение</a></li>
+                        <li><a href="#">Стоматология</a></li>
+                        <li><a href="#">Диагностика</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">КЛИНИКА</li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Попечительский совет</a></li>
+                        <li><a href="#">Отделения</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">ПАЦИЕНТАМ</li>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </div>
+                </div>
+    
+                <div class="footer__top-right">
+                    <div class="footer__images">
+                        <a class="ocenka" href="#" target="_blank" rel="noreferrer nofollow" title="Независимая оценка качества оказания услуг медицинскими организациями">
+                            <img src="images/content/footer/ocenka_kachestva.png" alt="Независимая оценка качества оказания услуг медицинскими организациями">
+                        </a>
+    
+                        <a class="gosuslugi" href="#" target="_blank" rel="noreferrer nofollow" title="Госуслуги">
+                            <img src="images/content/footer/gosuslugi.png" alt="Госуслуги">
+                        </a>
+                    </div>
+    
+                    <div class="footer__copyright">
+                        © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer__bottom-menu">
+                    <li><a href="#">Лицензии</a></li>
+                    <li><a href="#">Надзорные органы</a></li>
+                    <li><a href="#">Противодействие коррупции</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Публикации</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+    
+                <div class="footer__copyright">
+                    © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

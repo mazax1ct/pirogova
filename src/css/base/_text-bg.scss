@@ -6,6 +6,13 @@
         padding: 34px;
     }
 
+    h2 {
+        margin-bottom: 16px;
+        @media(min-width: $md) {
+            margin-bottom: 20px;
+        }
+    }
+
     &--type_1 {
         background-color: #fff;
         box-shadow: var(--shadow);
@@ -16,6 +23,11 @@
                 background-color: #fff;
             }
         }
+    }
+
+    &--type_2 {
+        background-color: var(--accent_2);
+        box-shadow: var(--shadow);
     }
 
     &__links {
@@ -32,6 +44,37 @@
         a {
             color: var(--text);
             text-decoration: none;
+        }
+    }
+}
+
+* + .markets {
+    margin-top: 20px;
+    @media(min-width: $md) {
+        margin-top: 30px;
+    }
+}
+
+.markets {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    @media(min-width: $md) {
+        gap: 30px;
+    }
+
+    a {
+        border-radius: 5px;
+        overflow: hidden;
+        width: 140px;
+        @media(min-width: $md) {
+            border-radius: 10px;
+            width: 252px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
         }
     }
 }

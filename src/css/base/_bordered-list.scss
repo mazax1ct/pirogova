@@ -1,0 +1,9 @@
+.bordered-list {
+    &__item {
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--accent_2);
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Gosmed.ru" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Demi.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-RocaOne-Rg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="container">
+            <div class="header__top">
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
+    
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+    
+                    <div class="header__top-links">
+                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__middle">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <button class="js-mobile-search-toggler header__search-toggler header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-mobile-menu-toggler header__burger header__button" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="mobile-menu">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Направления</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a class="is-active" href="#">Стационарная помощь</a></li>
+                                <li><a href="#">Стоматология</a></li>
+                                <li><a href="#">Кардиология и сердечно-сосудистая хирургия</a></li>
+                                <li><a href="#">Общехирургическое отделение</a></li>
+                                <li><a href="#">Онкология</a></li>
+                                <li><a href="#">Пластическая хирургия</a></li>
+                                <li><a href="#">Гинекология</a></li>
+                                <li><a href="#">Урология</a></li>
+                                <li><a href="#">Эндокринная хирургия и эндокринология</a></li>
+                                <li><a href="#">Травматология</a></li>
+                                <li><a href="#">Терапия</a></li>
+                                <li><a href="#">Ревматология</a></li>
+                                <li><a href="#">Пульмонология</a></li>
+                                <li><a href="#">Гастроэнтерология</a></li>
+                                <li><a href="#">Нефрология</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Диагностика</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Детская эндоскопия</a></li>
+                                <li><a href="#">Клинико-диагностические исследования</a></li>
+                                <li><a href="#">Лучевая диагностика</a></li>
+                                <li><a href="#">Молекулярно-генетические исследования</a></li>
+                                <li><a href="#">Морфологические (патолого-анатомические) исследования</a></li>
+                                <li><a href="#">Ультразвуковая диагностика</a></li>
+                                <li><a href="#">Функциональная диагностика</a></li>
+                                <li><a href="#">Эндоскопия</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Пациентам</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Истории пациентов</a></li>
+                                <li><a href="#">Методы диагностики</a></li>
+                                <li><a href="#">Порядок подготовки к диагностическим исследованиям</a></li>
+                                <li><a href="#">Методы лечения</a></li>
+                                <li><a href="#">Справочник заболеваний</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+    
+                    <div class="header__top-links">
+                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__search">
+                <div class="header__search-inner">
+                    <form class="search-form search-form--dropdown search-form--small" action="">
+                        <label class="input-group">
+                            <span class="input-group__container">
+                                <svg class="input-group__icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+    
+                                <input class="js-header-search-input input" type="text" name="q" value="" placeholder="Поиск" autocomplete="off">
+                            </span>
+                        </label>
+    
+                        <button class="search-form__submit button button--primary" type="submit">Найти</button>
+    
+                        <div class="search-form__dropdown">
+                            <ul class="search-form__dropdown-list">
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                            </ul>
+                        </div>
+                    </form>
+    
+                    <button class="js-search-closer header__search-closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="header-fixed">
+            <div class="header-fixed__inner container">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
+    
+                <ul class="menu">
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Направления</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a class="is-active" href="#">Стационарная помощь</a></li>
+                                <li><a href="#">Стоматология</a></li>
+                                <li><a href="#">Кардиология и сердечно-сосудистая хирургия</a></li>
+                                <li><a href="#">Общехирургическое отделение</a></li>
+                                <li><a href="#">Онкология</a></li>
+                                <li><a href="#">Пластическая хирургия</a></li>
+                                <li><a href="#">Гинекология</a></li>
+                                <li><a href="#">Урология</a></li>
+                                <li><a href="#">Эндокринная хирургия и эндокринология</a></li>
+                                <li><a href="#">Травматология</a></li>
+                                <li><a href="#">Терапия</a></li>
+                                <li><a href="#">Ревматология</a></li>
+                                <li><a href="#">Пульмонология</a></li>
+                                <li><a href="#">Гастроэнтерология</a></li>
+                                <li><a href="#">Нефрология</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Диагностика</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Детская эндоскопия</a></li>
+                                <li><a href="#">Клинико-диагностические исследования</a></li>
+                                <li><a href="#">Лучевая диагностика</a></li>
+                                <li><a href="#">Молекулярно-генетические исследования</a></li>
+                                <li><a href="#">Морфологические (патолого-анатомические) исследования</a></li>
+                                <li><a href="#">Ультразвуковая диагностика</a></li>
+                                <li><a href="#">Функциональная диагностика</a></li>
+                                <li><a href="#">Эндоскопия</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Пациентам</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Истории пациентов</a></li>
+                                <li><a href="#">Методы диагностики</a></li>
+                                <li><a href="#">Порядок подготовки к диагностическим исследованиям</a></li>
+                                <li><a href="#">Методы лечения</a></li>
+                                <li><a href="#">Справочник заболеваний</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <button class="js-search-toggler header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <a class="header__button" href="#" title="Личный кабинет">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#user_icon" />
+                    </svg>
+                </a>
+    
+                <a class="header-fixed__record-button button button--primary" href="#">Запись на прием</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Образование</a>
+                </li>
+                <li class="breadcrumbs__item">Клиническая ординатура по урологии</li>
+            </ul>
+
+            <section class="page__section">
+                <div class="banner banner--light">
+                    <div class="banner__text-block">
+                        <h1 class="banner__title">Клиническая ординатура по урологии</h1>
+                
+                        <div class="banner__text">
+                            <p><b class="accent-color">Урологическое отделение</b> университетской клиники является ведущей базой <b class="accent-color">кафедры урологии Медицинского института Санкт-Петербургского государственного университета</b>.</p>
+                        </div>
+                
+                        <div class="banner__buttons">
+                            <a class="button button--primary button--h_52" href="#">Кафедра урологии</a>
+                        </div>
+                    </div>
+                
+                    <div class="banner__image banner__image--type_1">
+                        <img src="images/content/banners/banner_11.jpg" srcset="images/content/banners/banner_11@2x.jpg 2x" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="clip-path">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M254.25 23.1154C167.066 -23.3403 61.6041 4.28157 18.6947 84.8105C-24.2147 165.339 11.6771 268.281 98.8613 314.736C105.77 318.417 112.793 321.633 119.89 324.395L389.919 468.278C410.241 430.14 422.852 388.373 427.032 345.362C431.212 302.35 426.879 258.936 414.281 217.599C401.683 176.262 381.066 137.811 353.608 104.441C326.272 71.2203 292.688 43.6835 254.759 23.3875C254.59 23.2966 254.42 23.2059 254.25 23.1154Z" />
+                                </clipPath>
+                                <clipPath id="clip-path-2">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M426.133 38.2798C279.699 -39.7469 102.566 6.64662 30.4953 141.903C-41.5752 277.159 18.7085 450.058 165.143 528.085C176.746 534.268 188.542 539.669 200.463 544.307L654.002 785.973C688.134 721.917 709.315 651.765 716.336 579.523C723.356 507.281 716.079 434.363 694.919 364.933C673.76 295.504 639.132 230.921 593.014 174.874C547.098 119.073 490.687 72.8206 426.977 38.731C426.696 38.5803 426.414 38.4298 426.133 38.2798Z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="responsive-video">
+                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-206930100&id=456239088&hd=3&autoplay=1" width="1280" height="720" allow="encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0"
+                      allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="two-columns two-columns--bg two-columns--reverse">
+                    <div>
+                        <h2>Ординатура в отделении</h2>
+                        <p>Кандидаты, успешно прошедшие вступительные испытания и зачисленные в ординатуру по специальности «Урология» могут выбрать в качестве базы для прохождения обучения университетскую клинику.</p>
+                    </div>
+                
+                    <div>
+                        <img src="images/content/two_columns/img_20.jpg" srcset="images/content/two_columns/img_20@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>На базе нашей клиники обучение проходит  по трём основным направлениям:</h2>
+
+                <div class="cards-grid">
+                    <div class="card_2">
+                        <h3>Урогинекология</h3>
+
+                        <p>реконструктивно-пластическая хирургия тазового дна у женщин при пролапсе тазовых органов, стрессовом недержании мочи, мочеполовых свищах, вопросы нейроурологии и уродинамики</p>
+
+                        <a class="button button--secondary" href="#">Подробнее</a>
+                    </div>
+
+                    <div class="card_2">
+                        <h3>Эндоурология и реконструктивная урология</h3>
+
+                        <p>оперативное лечение мочекаменной болезни, аденомы предстательной железы, реконструктивные операции на мочевыводящих путей</p>
+
+                        <a class="button button--secondary" href="#">Подробнее</a>
+                    </div>
+
+                    <div class="card_2">
+                        <h3>Онкоурология</h3>
+
+                        <p>радикальные и органосохраняющие операции при раке почки, раке мочевого пузыря, предстательной железы</p>
+
+                        <a class="button button--secondary" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="two-columns two-columns--bg">
+                    <div>
+                        <h2>Схема обучения в ординатуре по урологии</h2>
+                        <p><b>Длительность обучения ординатора по каждому направлению составляет 6 месяцев</b>. При этом ординатор закрепляется за ведущим специалистом соответствующего направления.</p>
+                        <p><b>Первые 5 месяцев</b> ординатор уделяет огромное внимание теоретическому изучению материала: чтение рекомендаций, монографий, статей по профилю. Практическая часть обучения заключается в курации пациентов, ассистенции на операциях и
+                            освоения основных урологических манипуляций.</p>
+                        <p><b>По истечению 5 месяцев</b> ординатор сдаёт зачёт, включающий теоретические вопросы и мануальные навыки: интракопоральное шитье, пункция под ультразвуковым и рентген-контролем, владение иглой для проведения сетчатых эндопротезов в тазу.
+                            В случае, если зачёт сдан на 80% и более, ординатор уролог получает допуск к освоению практических навыков под наблюдением своего наставника.</p>
+                    </div>
+                
+                    <div>
+                        <img src="images/content/two_columns/img_21.jpg" srcset="images/content/two_columns/img_21@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+                
+                <div class="two-columns two-columns--bg two-columns--reverse">
+                    <div>
+                        <h2>Участие в амбулаторных приемах</h2>
+                        <p>Обучающийся принимает активное участие в амбулаторных приемах своего куратора и других врачей отделения. Для освоения вопросов ургентной урологии ординаторы регулярно посещают дежурства по скорой медицинской помощи.</p>
+                    </div>
+                
+                    <div>
+                        <img src="images/content/two_columns/img_22.jpg" srcset="images/content/two_columns/img_22@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="incut incut--type_1">
+                    <div class="incut__icon">
+                        <img src="images/content/incut/icon_1.png" alt="">
+                    </div>
+
+                    <div class="incut__inner">
+                        <div class="incut__text">
+                            <p>Для максимальной отработки практических навыков ординаторы некоторых направлений урологии раз в две недели тренируются на специальных тренажёрах под руководством кураторов направления.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="js-simple-slider simple-slider" data-slider="slider_1">
+                    <div class="simple-slider__inner">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/content/simple_slider/img_4.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/content/simple_slider/img_4.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/content/simple_slider/img_4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="simple-slider__nav">
+                            <button class="js-simple-slider-prev swiper-button-prev" type="button" title="Назад" data-slider="slider_1">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left_icon" />
+                                </svg>
+                            </button>
+
+                            <button class="js-simple-slider-next swiper-button-next" type="button" title="Вперёд" data-slider="slider_1">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="js-simple-slider-pagination swiper-pagination" data-slider="slider_1"></div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="two-columns two-columns--bg">
+                    <div>
+                        <h2>Доклады и лекции</h2>
+                        <p>Еженедельно один из ординаторов урологов под руководством куратора готовит тематический доклад и выступает перед коллективом урологической службы по средам после клинического разбора. </p>
+                        <p>Регулярно прослушиваются лекции, читаемые профессором Андреем Игоревичем Гореловым. Ежемесячно проводятся журнальные клубы и студенческое научное общество.</p>
+                    </div>
+                
+                    <div>
+                        <img src="images/content/two_columns/img_23.jpg" srcset="images/content/two_columns/img_23@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+                
+                <div class="two-columns two-columns--bg two-columns--reverse">
+                    <div>
+                        <h2>Научная деятельность</h2>
+                        <p>Отделение ведёт научную деятельность с активным привлечением клинических ординаторов по специальности «Урология», которые выступают с докладами на конференциях и участвуют в написании научных статей. Наиболее активные ординаторы, которые
+                            за два года обучения подключаются к научной работе Клиники, по окончанию учёбы получают как минимум две публикации в высокорейтинговых журналах в соавторстве с ведущими профильными учёными и практиками.</p>
+                    </div>
+                
+                    <div>
+                        <img src="images/content/two_columns/img_24.jpg" srcset="images/content/two_columns/img_24@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Основные публикации</h2>
+
+                <div class="tabs">
+                    <div class="tabs-nav tabs-nav--type_1">
+                        <button class="js-tab tabs-nav__button is-active" type="button" data-tab="1">2025 год</button>
+                        <button class="js-tab tabs-nav__button" type="button" data-tab="2">2024 год</button>
+                        <button class="js-tab tabs-nav__button" type="button" data-tab="3">2023 год</button>
+                        <button class="js-tab tabs-nav__button" type="button" data-tab="4">2022 год</button>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        <div class="text-bg text-bg--type_1">
+                            <div class="bordered-list">
+                                <div class="bordered-list__item">
+                                    <p>Шахалиев Р.А., Шульгин А.С., Кубин Н.Д., Кузьмина И.Н., Сучков Д.А., Шкарупа Д.Д. Современное состояние проблемы применения трансвагинальных сетчатых имплантов в хирургическом лечении стрессового недержания мочи
+                                        и пролапса тазовых органов. Гинекология. 2022. Т. 24. № 3. С. 174-180.</p>
+                                </div>
+
+                                <div class="bordered-list__item">
+                                    <p>Кубин Н.Д., Шкарупа Д.Д., Басос А.С., Шульгин А.С., Лабетов И.А., Шахалиев Р.А., Сучков Д.А. Беспротезная сакрокольпопексия комбинированным доступом с применением васкуляризированного вагинального лоскута при
+                                        постгистерэктомическом пролапсе. Клинический случай. Видеостатья*. Гинекология. 2022. Т. 24. № 3. С. 229-232.</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>Сучков Д.А., Шахалиев Р.А., Шкарупа Д.Д., Шкарупа А.Г., Кубин Н.Д., Гаджиев Н.К., Шульгин А.С. Пузырно-влагалищные свищи: современные концепции диагностики и лечения. Экспериментальная и клиническая урология.
+                                        2022. Т. 15. № 2. С. 148-161.</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>Шкарупа Д.Д., Шахалиев Р.А., Шульгин А.С., Филипенко Т.С., Кубин Н.Д., Сучков Д.А., Шкарупа О.А. Разработка нового поколения синтетических имплантов для хирургической коррекции пролапса тазовых органов и
+                                        стрессового недержания мочи. Вестник урологии.</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>Lim E. J. et al. Influence of Webinar-Based Learning on Practice of Percutaneous Nephrolithotomy: Outcomes of a Global Survey //Journal of Endourology. – 2022. – Т. 36. – №. 2. – С. 279-28 DOI:
+                                        10.1089/end.2021.0445 (https://doi.org/10.1089/end.2021.0445)</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>Gadzhiev N. et al. Role and Utility of Mixed Reality Technology in Laparoscopic Partial Nephrectomy: Outcomes of a Prospective RCT Using an Indigenously Developed Software //Advances in Urology. – 2022. – Т.
+                                        2022. DOI: 10.1155/2022/8992051 (https://doi.org/10.1155/2022/8992051)</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>Текущий статус метафилактики мочекаменной болезни в Российской Федерации. В.А. Малхасян, М.А. Газимиев, А.Г. Мартов, Н.К. Гаджиев, С.О. Сухих, Д.Ю.
+                                        Пушкарь. DOI: https://dx.doi.org/10.18565/urology.2022.5.46-52 (https://dx.doi/)</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>Обструкция мочеточника и локальные стенты верхних мочевыводящих путей. Н.К. Гаджиев, Д.С. Горелов, В.М. Обидняк, И.Е. Маликиев, З.К. Гаджиева, А. Б. Манцаев, С.Б. Петров, А.Г. Мартов.
+                                        DOI: https://dx.doi.org/10.18565/urology.2022.6.128-133</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>Проблема клинической диагностики и лечения инкрустирующего цистит. Н.К. Гаджиев, И.Е. Маликиев, В.М. Обидняк, Д.С. Горелов, Д.Д. Шкарупа, З.К. Гаджиева, А.Г. Мартов, С.Б. Петров</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>DOI: 10.26442/20795696.2022.3.201423 Шахалиев Р.А., Шульгин А.С., Кубин Н.Д., Кузьмина И.Н., Сучков Д.А., Шкарупа Д.Д. Современное состояние проблемы применения трансвагинальных сетчатых имплантов в
+                                        хирургическом лечении стрессового недержания мочи и пролапса тазовых органов. Гинекология. 2022. Т. 24. № 3. С. 174-180. Кубин Н.Д., Шкарупа Д.Д., Басос А.С., Шульгин А.С., Лабетов И.А., Шахалиев Р.А., Сучков
+                                        Д.А.</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>DOI: 10.26442/20795696.2022.3.201707 Беспротезная сакрокольпопексия комбинированным доступом с применением васкуляризированного вагинального лоскута при постгистерэктомическом пролапсе. Клинический случай.
+                                        Видеостатья*. Гинекология. 2022. Т. 24. № 3. С. 229-232. Сучков Д.А., Шахалиев Р.А., Шкарупа Д.Д., Шкарупа А.Г., Кубин Н.Д., Гаджиев Н.К., Шульгин А.С.</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>DOI: 10.29188/2222-8543-2022-15-2-148-161 Пузырно-влагалищные свищи: современные концепции диагностики и лечения. Экспериментальная и клиническая урология. 2022. Т. 15. № 2. С. 148-161. Шкарупа Д.Д., Шахалиев
+                                        Р.А., Шульгин А.С., Филипенко Т.С., Кубин Н.Д., Сучков Д.А., Шкарупа О.А.</p>
+                                </div>
+                                <div class="bordered-list__item">
+                                    <p>DOI: 10.21886/2308-6424-2022-10-4-109-119 Разработка нового поколения синтетических имплантов для хирургической коррекции пролапса тазовых органов и стрессового недержания мочи. Вестник урологии. 2022 Т. 10. №:
+                                        4 С: 109-119</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" data-tab="2">
+                        <p>2024 год</p>
+                    </div>
+                    <div class="tab" data-tab="3">
+                        <p>2023 год</p>
+                    </div>
+                    <div class="tab" data-tab="4">
+                        <p>2022 год</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="incut incut--type_1">
+                    <div class="incut__icon">
+                        <img src="images/content/incut/icon_1.png" alt="">
+                    </div>
+
+                    <div class="incut__inner">
+                        <div class="incut__text">
+                            <p>И помните - ближайшие два года обучения в клинической ординатуре пройдут очень быстро и никогда не повторятся. Усилия и труды, вложенные в профессию сейчас, многократно воздадутся потом.</p>
+                            <p>Мы желаем удачи в получении увлекательнейшей медицинской специальности – УРОЛОГИИ!</p>
+                            <p><a class="button button--primary button--h_52" href="#">Приемная комиссия СПбГУ. Информация о поступлении на программы ординатуры</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                    </div>
+    
+                    <div class="footer__socials">
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Наш Телеграм">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы на YouTube">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы в Одноклассниках">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#ok_icon" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer__top-center">
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">УСЛУГИ</li>
+                        <li><a href="#">Взрослое отделение</a></li>
+                        <li><a href="#">Детское отделение</a></li>
+                        <li><a href="#">Стоматология</a></li>
+                        <li><a href="#">Диагностика</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">КЛИНИКА</li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Попечительский совет</a></li>
+                        <li><a href="#">Отделения</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">ПАЦИЕНТАМ</li>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </div>
+                </div>
+    
+                <div class="footer__top-right">
+                    <div class="footer__images">
+                        <a class="ocenka" href="#" target="_blank" rel="noreferrer nofollow" title="Независимая оценка качества оказания услуг медицинскими организациями">
+                            <img src="images/content/footer/ocenka_kachestva.png" alt="Независимая оценка качества оказания услуг медицинскими организациями">
+                        </a>
+    
+                        <a class="gosuslugi" href="#" target="_blank" rel="noreferrer nofollow" title="Госуслуги">
+                            <img src="images/content/footer/gosuslugi.png" alt="Госуслуги">
+                        </a>
+                    </div>
+    
+                    <div class="footer__copyright">
+                        © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer__bottom-menu">
+                    <li><a href="#">Лицензии</a></li>
+                    <li><a href="#">Надзорные органы</a></li>
+                    <li><a href="#">Противодействие коррупции</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Публикации</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+    
+                <div class="footer__copyright">
+                    © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -258,3 +258,18 @@ $(document).on('click', '.js-tab', function() {
   $(this).closest('.tabs').find('.tab[data-tab="'+$(this).attr('data-tab')+'"]').addClass('is-active');
   return false;
 });
+
+//input[type=file]
+$('.file input[type=file]').on('change', function(){
+	let file = this.files[0];
+  $(this).closest('.file').addClass('is-filled');
+	$(this).closest('.file').find('.file__label-text').html(file.name);
+});
+
+//сбросс содержимого input[type=file]
+$(document).on('click', '.js-file-clear', function () {
+  $(this).closest('.file').find('input[type=file]').val('');
+  $(this).closest('.file').removeClass('is-filled');
+  $(this).closest('.file').find('.file__label-text').html('Прикрепить файл');
+  return false;
+});
