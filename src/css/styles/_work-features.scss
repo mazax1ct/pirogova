@@ -1,0 +1,45 @@
+.work-card {
+    align-items: flex-start;
+    border-radius: 20px;
+    background-color: var(--accent_2);
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;
+    overflow: hidden;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+    @media(min-width: $md) {
+        border-radius: 25px;
+        min-height: 270px;
+        padding: 34px;
+    }
+
+    &__icon {
+        align-items: center;
+        bottom: -20px;
+        justify-content: center;
+        height: 200px;
+        left: auto;
+        opacity: 0.5;
+        position: absolute;
+        right: -50px;
+        transition: opacity 0.3s;
+        top: auto;
+        width: 200px;
+        z-index: -1;
+
+        img {
+            display: block;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        @media(min-width: $md) {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+}

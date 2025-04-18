@@ -29,8 +29,8 @@
         .tabs-nav__button {
             border-radius: 10px;
             color: var(--text);
-            height: 50px;
-            padding: 0 16px;
+            min-height: 50px;
+            padding: 4px 16px;
             @media(min-width: $md) {
                 border-radius: 12px;
                 height: 60px;
@@ -62,8 +62,8 @@
         .tabs-nav__button {
             border-radius: 10px;
             font-weight: 500;
-            height: 48px;
-            padding: 0 16px;
+            min-height: 48px;
+            padding: 4px 16px;
             @media(min-width: $md) {
                 border-radius: 15px;
                 font-weight: 700;
@@ -97,12 +97,12 @@
             border-radius: 10px;
             color: var(--accent);
             font-weight: 500;
-            height: 48px;
-            padding: 0 16px;
+            min-height: 48px;
+            padding: 4px 16px;
             @media(min-width: $md) {
                 border-radius: 25px;
                 font-weight: 700;
-                height: 92px;
+                min-height: 92px;
             }
 
             &.is-active {

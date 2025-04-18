@@ -21,6 +21,14 @@
                 border-radius: 30px;
             }
         }
+
+        .responsive-video {
+            border-radius: 20px;
+            overflow: hidden;
+            @media(min-width: $md) {
+                border-radius: 30px;
+            }
+        }
     }
 
     .swiper-button-next,

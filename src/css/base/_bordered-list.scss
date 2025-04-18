@@ -1,5 +1,7 @@
 .bordered-list {
     &__item {
+        word-wrap: break-word;
+
         &:not(:last-child) {
             border-bottom: 1px solid var(--accent_2);
             margin-bottom: 20px;
