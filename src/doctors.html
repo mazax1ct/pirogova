@@ -32,12 +32,29 @@
             <section class="page__section">
                 <h1 class="text-center">Врачи с многолетним опытом</h1>
 
-                <div class="tabs-nav tabs-nav--type_2">
-                    <button class="tabs-nav__button is-active" type="button">Врачи 240</button>
-                    <button class="tabs-nav__button" type="button">Специализации 89</button>
-                </div>
-
                 <div class="doctors">
+                    <!--перенести в стили компонента-->
+                    <style>
+                        @media (min-width: 1024px) {
+                            :root {
+                                --header_min_height: 200px;
+                            }
+
+                            .header__search {
+                                display: none !important;
+                            }
+
+                            .js-search-toggler.header__button {
+                                display: none
+                            }
+                        }
+                    </style>
+
+                    <div class="tabs-nav tabs-nav--type_2">
+                        <button class="tabs-nav__button is-active" type="button">Врачи 240</button>
+                        <button class="tabs-nav__button" type="button">Специализации 89</button>
+                    </div>
+
                     <div class="doctors__filter-block">
                         <button class="filter-opener" type="button" title="Фильтр">
                             <span class="filter-opener__icon">
@@ -47,7 +64,7 @@
                             </span>
                         </button>
 
-                        <form class="search-form search-form--giant" action="">
+                        <form class="search-form search-form--small" action="">
                             <label class="input-group">
                                 <span class="input-group__container">
                                     <svg class="input-group__icon" aria-hidden="true">
@@ -61,6 +78,176 @@
                             <button class="search-form__submit button button--primary" type="submit">Найти</button>
                         </form>
                     </div>
+
+                    <form class="filter">
+                        <div class="filter__top">
+                            <p class="filter__title">Фильтр</p>
+                            <button class="filter__closer" type="button" title="Закрыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_icon" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="filter__grid">
+                            <div class="combobox">
+                                <button class="js-combobox-toggler combobox__title" type="button">
+                                    <span>Клиника</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#triangle_down" />
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown">
+                                    <div class="combobox__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на наб. р. Фонтанки, д. 154</a></span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="2" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</a></span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="3" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</a></span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="4" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</a></span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="5" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</a></span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="6" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</a></span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="7" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</a></span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="8" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</a></span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="9" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</a></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="combobox">
+                                <button class="js-combobox-toggler combobox__title" type="button">
+                                    <span>Специальность</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#triangle_down" />
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown">
+                                    <div class="combobox__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="spec">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Аллерголог-иммунолог</a></span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="2" name="spec">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Акушер-гинеколог</a></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="3" name="spec">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Анестезиолог-реаниматолог</a></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="4" name="spec">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Андролог-эндокринолог</a></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="combobox">
+                                <button class="js-combobox-toggler combobox__title" type="button">
+                                    <span>По цене</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#triangle_down" />
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown">
+                                    <div class="combobox__list">
+                                        <label class="radio">
+                                            <input type="radio" value="1" name="price">
+                                            <span class="radio__icon"></span>
+                                            <span class="radio__text">По возрастанию</span>
+                                        </label>
+
+                                        <label class="radio">
+                                            <input type="radio" value="2" name="price">
+                                            <span class="radio__icon"></span>
+                                            <span class="radio__text">По убыванию</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="combobox">
+                                <button class="js-combobox-toggler combobox__title" type="button">
+                                    <span>По дате приёма</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#triangle_down" />
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown combobox__dropdown--calendar">
+                                    <input class="js-date-mask" type="text" name="date" placeholder="дд.мм.гггг" style="display: none">
+
+                                    <div class="datepicker-controls">
+                                        <button class="js-dp-clear button button--secondary" type="button">Сбросить</button>
+
+                                        <button class="button button--primary" type="button">Применить</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs-nav tabs-nav--type_1">
+                                <button class="tabs-nav__button is-active" type="button">Мужчины</button>
+                                <button class="tabs-nav__button" type="button">Женщины</button>
+                                <button class="tabs-nav__button" type="button">Дети</button>
+                            </div>
+                        </div>
+
+                        <div class="filter__buttons">
+                            <button class="button button--primary" type="button">Показать результаты</button>
+                            <button class="button button--secondary" type="reset">Сбросить результаты</button>
+                        </div>
+                    </form>
 
                     <div class="cards-grid">
                         <div class="doctor-card">
@@ -520,45 +707,7 @@
                         </div>
                     </div>
 
-                    <div class="pagination">
-                        <a class="pagination__more button button--secondary" href="#">Показать ещё</a>
-
-                        <ul class="pagination__pager">
-                            <li>
-                                <a class="pagination__pager-prev" href="#">Назад</a>
-                            </li>
-
-                            <li>
-                                <a class="pagination__pager-page" href="#">1</a>
-                            </li>
-
-                            <li>
-                                <a class="pagination__pager-page is-active" href="#">2</a>
-                            </li>
-
-                            <li>
-                                <a class="pagination__pager-page" href="#">3</a>
-                            </li>
-
-                            <li>
-                                <a class="pagination__pager-page" href="#">4</a>
-                            </li>
-
-                            <li>
-                                <span class="pagination__pager-page">...</span>
-                            </li>
-
-                            <li>
-                                <a class="pagination__pager-page" href="#">100</a>
-                            </li>
-
-                            <li>
-                                <a class="pagination__pager-next" href="#">Вперед</a>
-                            </li>
-                        </ul>
-
-                        <div class="pagination__count">Всего 240 специалистов</div>
-                    </div>
+                    //= template/pagination/pagination.html
                 </div>
             </section>
         </div>

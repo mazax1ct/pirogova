@@ -1,4 +1,12 @@
 .doctors {
+    & > .tabs-nav {
+        @media(min-width: $sm) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    }
+
     &__filter-block {
         display: flex;
         gap: 10px;
@@ -16,5 +24,11 @@
 
     .search-form {
         flex-grow: 1;
+    }
+
+    .search-form__submit {
+        @media(max-width: $sm - 0.02px) {
+            display: none;
+        }
     }
 }

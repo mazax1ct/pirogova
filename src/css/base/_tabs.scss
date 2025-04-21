@@ -11,30 +11,30 @@
     background-color: #fff;
     box-shadow: var(--shadow);
     display: flex;
+    font-size: 14px;
     margin-bottom: 20px;
     overflow-x: auto;
     @media(min-width: $md) {
+        font-size: 16px;
         margin-bottom: 30px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 
     &--type_1 {
         border-radius: 10px;
-        font-size: 14px;
         padding: 5px;
         @media(min-width: $md) {
-            border-radius: 17px;
-            font-size: 16px;
+            border-radius: 16px;
         }
 
         .tabs-nav__button {
             border-radius: 10px;
             color: var(--text);
-            min-height: 50px;
+            min-height: 52px;
             padding: 4px 16px;
-            @media(min-width: $md) {
-                border-radius: 12px;
-                height: 60px;
-            }
 
             &.is-active {
                 background-color: var(--accent_2);
@@ -53,22 +53,12 @@
     &--type_2 {
         border-radius: 10px;
         background-color: #fff;
-        font-size: 16px;
-        @media(min-width: $md) {
-            border-radius: 15px;
-            font-size: 20px;
-        }
 
         .tabs-nav__button {
             border-radius: 10px;
             font-weight: 500;
-            min-height: 48px;
+            min-height: 52px;
             padding: 4px 16px;
-            @media(min-width: $md) {
-                border-radius: 15px;
-                font-weight: 700;
-                height: 70px;
-            }
 
             &.is-active {
                 background-color: var(--accent);
@@ -87,23 +77,13 @@
     &--type_3 {
         border-radius: 10px;
         background-color: #fff;
-        font-size: 16px;
-        @media(min-width: $md) {
-            border-radius: 25px;
-            font-size: 20px;
-        }
 
         .tabs-nav__button {
             border-radius: 10px;
             color: var(--accent);
             font-weight: 500;
-            min-height: 48px;
+            min-height: 52px;
             padding: 4px 16px;
-            @media(min-width: $md) {
-                border-radius: 25px;
-                font-weight: 700;
-                min-height: 92px;
-            }
 
             &.is-active {
                 background-color: var(--accent);

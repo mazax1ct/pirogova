@@ -67,7 +67,10 @@
 
     &__more {
         @include active-area;
+        background-color: #fff;
         margin-top: auto;
+        padding-left: 40px;
+        padding-right: 40px;
 
         &::after {
             height: 100%;

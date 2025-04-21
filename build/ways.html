@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css_plugins/air-datepicker.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -453,7 +454,11 @@
                         <div class="card__inner">
                             <h3>Стоматология</h3>
 
-                            <a class="card__more button" href="#">Перейти</a>
+                            <a class="card__more button" href="#" title="Перейти">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right_icon"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
@@ -1131,6 +1136,8 @@
     <script src="js/fancybox-defaults.js"></script>
     
     <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/air-datepicker.js"></script>
     
     <script src="js/main.js"></script>
 </body>

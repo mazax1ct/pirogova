@@ -58,16 +58,23 @@
     &__more {
         border: 1px solid #fff;
         color: #fff;
+        min-width: 150px;
         @include hover {
             background-color: #fff;
             border-color: #fff;
             color: var(--accent);
         }
+
+        svg {
+            fill: currentColor;
+            height: 32px;
+            width: 32px;
+        }
     }
 
     h3 {
         font-size: 20px;
-        flex-grow: 1;
+        //flex-grow: 1;
         margin-bottom: 14px;
         @media(min-width: $md) {
             font-size: 24px;

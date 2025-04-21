@@ -86,4 +86,18 @@
             }
         }
     }
+
+    &--2_3 {
+        .contacts-block__text-block {
+            @media(min-width: $md) {
+                width: calc(100% / 3 * 2 - var(--gap) / 2);
+            }
+        }
+
+        .contacts-block__image {
+            @media(min-width: $md) {
+                width: calc(100% / 3 - var(--gap) / 2);
+            }
+        }
+    }
 }
