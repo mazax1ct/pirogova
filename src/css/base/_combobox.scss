@@ -1,18 +1,26 @@
 .combobox {
-    position: relative;
-    z-index: 1;
+    @media(min-width: $md) {
+        position: relative;
+        z-index: 1;
+    }
 
     &.is-open {
-        z-index: 2;
+        @media(min-width: $md) {
+            z-index: 2;
+        }
 
         .combobox__title {
             & > svg {
-                transform: rotate(180deg);
+                @media(min-width: $md) {
+                    transform: rotate(180deg);
+                }
             }
         }
 
         .combobox__dropdown {
-            display: block;
+            @media(min-width: $md) {
+                display: block;
+            }
         }
     }
 
@@ -22,7 +30,7 @@
         color: var(--text);
         display: flex;
         gap: 6px;
-        padding: 24px 0;
+        padding: 12px 0;
         text-align: left;
         white-space: nowrap;
         width: 100%;
@@ -32,8 +40,7 @@
             box-shadow: var(--shadow);
             height: 70px;
             justify-content: space-between;
-            padding-left: 24px;
-            padding-right: 24px;
+            padding: 24px;
         }
 
         svg {
@@ -46,13 +53,23 @@
     }
 
     &__dropdown {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: var(--shadow);
         display: none;
-        @media(min-width: $md) {
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: var(--shadow);
+        @media(max-width: $md - 0.02px) {
+            flex-direction: column;
+            height: 100dvh;
             left: 0;
-            padding: 20px 10px 20px 20px;
+            padding: 40px var(--container_padding) 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+        }
+        @media(min-width: $md) {
+            left: 0;
+            padding: 20px 10px 0 20px;
             position: absolute;
             top: calc(100% + 20px);
             width: 280px;
@@ -67,11 +84,38 @@
         }
     }
 
+    &__closer {
+        @include button-reset;
+        align-items: center;
+        display: flex;
+        gap: 6px;
+        font-family: var(--secondary_font);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 24px;
+        width: 100%;
+        @media(min-width: $md) {
+            display: none;
+        }
+
+        svg {
+            fill: var(--accent);
+            height: 24px;
+            margin-top: 2px;
+            width: 24px;
+        }
+    }
+
     &__list {
+        overflow-y: auto;
+        padding-bottom: 16px;
+        @media(max-width: $md - 0.02px) {
+            padding-bottom: 24px;
+        }
         @media(min-width: $md) {
             @include scrollbar;
             max-height: 240px;
-            overflow-y: auto;
             padding-right: 20px;
         }
 
@@ -86,15 +130,23 @@
         }
     }
 
-    .datepicker-controls {
+    &__controls {
         border-top: 1px solid var(--accent_2);
         display: flex;
         gap: 10px;
         justify-content: center;
-        padding-top: 24px;
-        padding-bottom: 16px;
+        margin-top: auto;
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+        padding: 16px;
+        @media(min-width: $md) {
+            margin-left: calc(0.01px - 20px);
+            margin-right: calc(0.01px - 10px);
+        }
 
         .button {
+            padding-left: 8px;
+            padding-right: 8px;
             width: 135px;
         }
     }

@@ -123,6 +123,14 @@
         }
     }
 
+    &--half_width {
+        @media(min-width: $sm) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    }
+
     &__button {
         @include button-reset;
         flex-grow: 1;
