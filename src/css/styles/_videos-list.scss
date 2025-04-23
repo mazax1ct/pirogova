@@ -1,0 +1,39 @@
+.videos-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media(min-width: $md) {
+        gap: 50px 30px;
+    }
+
+    .video {
+        width: 100%;
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - 30px / 2);
+        }
+    }
+}
+
+.video {
+    .responsive-video {
+        margin-bottom: 16px;
+        @media(min-width: $md) {
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            border-radius: 20px;
+            @media(min-width: $md) {
+                border-radius: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        @media(min-width: $md) {
+            font-size: 20px;
+        }
+    }
+}

@@ -222,7 +222,7 @@ ul {
                 height: 6px;
                 left: 0;
                 position: absolute;
-                top: 0.6em;
+                top: 0.5em;
                 width: 6px;
                 z-index: 1;
             }
@@ -288,6 +288,19 @@ ul {
 
 .accent-color {
     color: var(--accent);
+}
+
+.bordered-text {
+    border-left: 1px solid var(--accent);
+    margin-bottom: 16px;
+    padding-left: 12px;
+    @media(min-width: $md) {
+        padding-left: 24px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .big-text {

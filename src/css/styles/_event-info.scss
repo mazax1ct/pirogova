@@ -1,0 +1,85 @@
+.event-info {
+    --gap: 10px;
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+    @media(min-width: $sm) {
+        flex-direction: row;
+        --gap: 20px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__block {
+        background-color: var(--accent_2);
+        background-repeat: no-repeat;
+        background-position: 95% calc(100% + 50px);
+        border-radius: 20px;
+        min-height: 150px;
+        padding: 24px;
+        @media(min-width: $md) {
+            padding: 34px;
+        }
+
+        &:nth-child(1) {
+            background-image: url("../images/icons/event/icon_1.svg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../images/icons/event/icon_2.svg");
+        }
+
+        &:nth-child(3) {
+            background-image: url("../images/icons/event/icon_3.svg");
+        }
+
+        .h2,
+        h2 {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+
+        .big-text {
+            &:not(:last-child) {
+                @media(min-width: $md) {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+
+    &__left,
+    &__right {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+    }
+
+    &__right {
+        background-color: var(--accent_2);
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-image: url("../images/icons/event/icon_4.png");
+        background-size: 160px 160px;
+        border-radius: 20px;
+        min-height: 150px;
+        padding: 24px;
+        @media(min-width: $md) {
+            background-size: 240px 240px;
+            border-radius: 30px;
+            padding: 34px;
+        }
+
+        .h2,
+        h2 {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

@@ -8,6 +8,9 @@
             background-color: var(--button_hover);
         }
     }
+    @media(min-width: $md) {
+        display: none;
+    }
 
     &__icon {
         align-items: center;
@@ -43,7 +46,12 @@
     }
     @media(min-width: $md) {
         display: block !important;
-        margin-bottom: 30px;
+    }
+
+    &:not(:last-child) {
+        @media(min-width: $md) {
+            margin-bottom: 30px;
+        }
     }
 
     &.is-open {
@@ -251,6 +259,28 @@
             height: 24px;
             transition: fill 0.3s;
             width: 24px;
+        }
+    }
+
+    &__standalone-checkbox {
+        @media(min-width: $md) {
+            align-items: center;
+            background-color: #fff;
+            border-radius: 15px;
+            display: flex;
+            padding: 0 24px;
+        }
+
+        .checkbox {
+            gap: 14px;
+            font-size: 16px;
+
+            .checkbox__icon {
+                border-color: var(--accent_2);
+                border-radius: 5px;
+                height: 36px;
+                width: 36px;
+            }
         }
     }
 }

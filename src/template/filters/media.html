@@ -1,0 +1,310 @@
+<div class="reviews-filter">
+    <button class="js-filter-opener filter-opener" type="button" title="Фильтр">
+        <span class="filter-opener__icon">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#filter_icon" />
+            </svg>
+        </span>
+        Фильтр
+    </button>
+
+    <form class="filter">
+        <div class="filter__top">
+            <p class="filter__title">Фильтр</p>
+
+            <button class="js-filter-closer filter__closer" type="button" title="Закрыть">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#close_icon" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="filter__grid">
+            <div class="combobox">
+                <button class="js-combobox-toggler combobox__title" type="button">
+                    <span>Направление</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#triangle_down" />
+                    </svg>
+                </button>
+
+                <div class="combobox__dropdown">
+                    <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_left_icon" />
+                        </svg>
+
+                        <span>Направление</span>
+                    </button>
+
+                    <div class="combobox__list">
+                        <label class="checkbox">
+                            <input type="checkbox" value="1" name="way">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Стационарная помощь</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" value="2" name="way">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Амбулаторно-поликлиническая помощь</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" value="3" name="way">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Диагностика</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" value="4" name="way">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Профилактика</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" value="5" name="way">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Стоматология</span>
+                        </label>
+                    </div>
+
+                    <div class="combobox__controls">
+                        <button class="button button--secondary" type="button">Сбросить</button>
+
+                        <button class="button button--primary" type="button">Применить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="combobox">
+                <button class="js-combobox-toggler combobox__title" type="button">
+                    <span>Тип контента</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#triangle_down" />
+                    </svg>
+                </button>
+
+                <div class="combobox__dropdown">
+                    <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_left_icon" />
+                        </svg>
+
+                        <span>Тип контента</span>
+                    </button>
+
+                    <div class="combobox__list">
+                        <label class="checkbox">
+                            <input type="checkbox" value="1" name="type">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Новость</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" value="2" name="type">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Статья</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" value="3" name="type">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Что-то ещё</span>
+                        </label>
+                    </div>
+
+                    <div class="combobox__controls">
+                        <button class="button button--secondary" type="button">Сбросить</button>
+
+                        <button class="button button--primary" type="button">Применить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="combobox">
+                <button class="js-combobox-toggler combobox__title" type="button">
+                    <span>Врач</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#triangle_down" />
+                    </svg>
+                </button>
+
+                <div class="combobox__dropdown">
+                    <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_left_icon" />
+                        </svg>
+
+                        <span>Врач</span>
+                    </button>
+
+                    <div class="combobox__list">
+                        <label class="checkbox">
+                            <input type="checkbox" value="1" name="doctor">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Шкапура Анрей Григорьевич</span>
+                        </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" value="2" name="doctor">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Шеремет А. А</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="3" name="doctor">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Рыбальченко Виталий Александрович</span>
+                        </label>
+                    </div>
+
+                    <div class="combobox__controls">
+                        <button class="button button--secondary" type="button">Сбросить</button>
+
+                        <button class="button button--primary" type="button">Применить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__results-list">
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Лечебно-диагностический комплекс на наб. р. Фонтанки, д. 154</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Институт онкологии</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Врач первой категории</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Институт онкологии</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Врач первой категории</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="combobox">
+                <button class="js-combobox-toggler combobox__title" type="button">
+                    <span>Сортировка по дате</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#triangle_down" />
+                    </svg>
+                </button>
+
+                <div class="combobox__dropdown">
+                    <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_left_icon" />
+                        </svg>
+
+                        <span>Сортировка по дате</span>
+                    </button>
+
+                    <div class="combobox__list">
+                        <label class="radio">
+                            <input type="radio" value="1" name="date">
+                            <span class="radio__icon"></span>
+                            <span class="radio__text">Сначала старые публикации</span>
+                        </label>
+
+                        <label class="radio">
+                            <input type="radio" value="2" name="date">
+                            <span class="radio__icon"></span>
+                            <span class="radio__text">Сначала новые публикации</span>
+                        </label>
+                    </div>
+
+                    <div class="combobox__controls">
+                        <button class="button button--secondary" type="button">Сбросить</button>
+
+                        <button class="button button--primary" type="button">Применить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__standalone-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox" value="1" name="video">
+                    <span class="checkbox__icon"></span>
+                    <span class="checkbox__text">Видео</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="filter__results">
+            <button class="filter__reset" type="reset" title="Сбросить фильтр">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#close_icon" />
+                </svg>
+            </button>
+
+            <div class="js-filter-results filter__results-list">
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Лечебно-диагностический комплекс на наб. р. Фонтанки, д. 154</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Институт онкологии</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Врач первой категории</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Институт онкологии</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+
+                <button class="filter__result" type="button" title="Сбросить">
+                    <span>Врач первой категории</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#close_2_icon" />
+                    </svg>
+                </button>
+            </div>
+
+            <button class="js-filter-results-toggler filter__collapse" type="button" title="Развернуть">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#chevron_down" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="filter__buttons">
+            <button class="button button--primary" type="button">Показать результаты</button>
+            <button class="button button--secondary" type="reset">Сбросить результаты</button>
+        </div>
+    </form>
+</div>

@@ -61,8 +61,8 @@ $(document).on('click', '.js-combobox-closer', function () {
   return false;
 });
 
-//выбор даты
-$(".js-date-mask").each(function(index, element) {
+//выбор диапазона дат с минимальной датой
+$(".js-date-range-min-date").each(function(index, element) {
   let dp = new AirDatepicker(element, {
     prevHtml: '<svg title="Назад"><use xlink:href="images/sprite.svg#chevron_left" /></svg>',
     nextHtml: '<svg title="Вперёд"><use xlink:href="images/sprite.svg#chevron_right" /></svg>',
@@ -70,7 +70,23 @@ $(".js-date-mask").each(function(index, element) {
     range: true,
     multipleDatesSeparator: ' - ',
     minDate: new Date()
-    //visible: true
+  });
+
+  $(document).on('click', '.js-dp-clear', function () {
+    dp.clear();
+    $('.air-datepicker-cell').removeClass('-in-range-');
+    return false;
+  });
+});
+
+//выбор диапазона дат
+$(".js-date-range").each(function(index, element) {
+  let dp = new AirDatepicker(element, {
+    prevHtml: '<svg title="Назад"><use xlink:href="images/sprite.svg#chevron_left" /></svg>',
+    nextHtml: '<svg title="Вперёд"><use xlink:href="images/sprite.svg#chevron_right" /></svg>',
+    inline: true,
+    range: true,
+    multipleDatesSeparator: ' - '
   });
 
   $(document).on('click', '.js-dp-clear', function () {

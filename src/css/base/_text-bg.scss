@@ -6,6 +6,13 @@
         padding: 34px;
     }
 
+    &:not(:last-child) {
+        margin-bottom: 20px;
+        @media(min-width: $md) {
+            margin-bottom: 30px;
+        }
+    }
+
     h2 {
         margin-bottom: 16px;
         @media(min-width: $md) {
@@ -44,6 +51,22 @@
         a {
             color: var(--text);
             text-decoration: none;
+        }
+    }
+
+    .text-bg {
+        border-radius: 15px;
+        padding: 14px;
+        @media(min-width: $md) {
+            border-radius: 15px;
+            padding: 24px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+            @media(min-width: $md) {
+                margin-bottom: 16px;
+            }
         }
     }
 }
