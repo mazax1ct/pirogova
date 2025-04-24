@@ -1,0 +1,44 @@
+.history {
+    position: relative;
+    padding-left: 10px;
+    z-index: 1;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+        @media(min-width: $md) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            background-color: var(--accent);
+            border-radius: 50%;
+            content: '';
+            height: 6px;
+            left: -10px;
+            position: absolute;
+            top: 0.5em;
+            width: 6px;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--accent_2);
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+
+            &::after {
+                border-left: 1px solid var(--accent);
+                content: '';
+                height: calc(100% + 20px + 1px);
+                left: -8px;
+                position: absolute;
+                top: 0.5em;
+                z-index: 1;
+            }
+        }
+    }
+}

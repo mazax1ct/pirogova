@@ -43,6 +43,13 @@
             font-size: 20px;
             line-height: 1.4;
         }
+
+        a {
+            color: #fff;
+            @include hover {
+                color: #fff;
+            }
+        }
     }
 
     &__buttons {
