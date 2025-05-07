@@ -36,10 +36,9 @@
     padding: 16px;
     transition: background-color 0.3s, border-color 0.3s;
     width: 100%;
-    @media(min-width: $md) {
+    /*@media(min-width: $md) {
         border-radius: 15px;
-    }
-
+    }*/
     &::-webkit-input-placeholder {
         color: var(--secondary_2);
         opacity: 1;
