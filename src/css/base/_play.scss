@@ -1,0 +1,17 @@
+.play {
+    background-color: rgba(#000,0.5);
+    border-radius: 50%;
+    height: 60px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    z-index: 1;
+
+    svg {
+        fill: #fff;
+        height: 60px;
+        width: 60px;
+    }
+}

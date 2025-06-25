@@ -1,0 +1,116 @@
+.contact {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    @media(min-width: $sm) {
+        --gap: 20px;
+        display: flex;
+        gap: var(--gap);
+    }
+    @media(min-width: $hd) {
+        --gap: 30px;
+        border-radius: 25px;
+        padding: 34px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+        @media(min-width: $hd) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__image {
+        max-width: 336px;
+        @media(max-width: $md - 0.02px) {
+            margin-bottom: 20px;
+        }
+        @media(min-width: $md) {
+            min-width: 336px;
+            width: 336px;
+        }
+
+        img {
+            border-radius: 20px;
+            display: block;
+            width: 100%;
+            @media(min-width: $hd) {
+                border-radius: 25px;
+            }
+        }
+    }
+
+    &__info {
+        @media(min-width: $sm) {
+            width: calc(100% - 336px - var(--gap) / 2);
+        }
+        @media(min-width: $md) {
+            display: flex;
+            gap: var(--gap);
+        }
+
+        h3 {
+            margin-bottom: 14px;
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 14px;
+            }
+
+            a {
+                display: inline-block;
+
+                &:not(:first-child) {
+                    margin-top: 6px;
+                }
+
+                &:not([class]) {
+                    color: var(--text);
+                    @include hover {
+                        color: var(--button_hover);
+                    }
+                }
+            }
+        }
+
+        b {
+            font-weight: 500;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__info-block {
+        @media(min-width: $md) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            @media(max-width: $md - 0.02px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &:first-child {
+            @media(min-width: $md) {
+                width: calc(52.3% - var(--gap) / 2);
+            }
+        }
+
+        &:nth-child(2) {
+            @media(min-width: $md) {
+                width: calc(47.7% - var(--gap) / 2);
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 12px;
+        margin-top: 16px;
+    }
+}

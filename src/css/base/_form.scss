@@ -1,1 +1,35 @@
-.form {}
+.form {
+    &__row {
+        --gap: 6px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: var(--gap);
+        margin-bottom: 20px;
+        @media(min-width: $sm) {
+            --gap: 10px;
+            flex-direction: row;
+        }
+
+        &--cnt_2 {
+            & > div {
+                @media(min-width: $sm) {
+                    width: calc(100% / 2 - var(--gap) / 2);
+                }
+            }
+        }
+
+        &--cnt_3 {
+            & > div {
+                @media(min-width: $sm) {
+                    width: calc(100% / 3 - var(--gap) / 3 * 2);
+                }
+            }
+        }
+    }
+
+    & > .input-group,
+    .checkbox {
+        margin-bottom: 20px;
+    }
+}

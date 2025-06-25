@@ -58,6 +58,22 @@ $(document).ready(function() {
   //запуск функции навешивания класса на шапку
   resize_scroll();
 
+  //кастомный селект
+  $('.js-select').each(function() {
+    var $p = $(this).closest('.select-wrapper');
+    $(this).select2({
+      dropdownPosition: 'below',
+      dropdownParent: $p,
+      minimumResultsForSearch : Infinity,
+    });
+	}).on('select2:open', function (e) {
+    var $p = $(this).closest('.select-wrapper');
+    $p.addClass('open');
+	}).on('select2:close', function (e) {
+    var $p = $(this).closest('.select-wrapper');
+    $p.removeClass('open');
+	});
+
   //выравнивание размеров кнопок в табах
   $('.js-tabs-nav-equal').each(function() {
     let cnt = $(this).find('.tabs-nav__button').length;

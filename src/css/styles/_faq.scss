@@ -12,3 +12,15 @@
         }
     }
 }
+
+.faq-form {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .search-form {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}

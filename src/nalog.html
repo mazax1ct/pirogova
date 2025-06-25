@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">Налоговый вычет</li>
+            </ul>
+
+            <section class="page__section">
+                <div class="text-bg text-bg--type_1">
+                    <h1>Налоговый вычет</h1>
+                    <p>Социальный налоговый вычет на лечение может получить физлицо, оплатившее медицинские услуги, в том числе дорогостоящие, оказанные ему самому, его супругу (супруге), родителям, детям (в том числе усыновленным) в возрасте до 18
+                        лет (до 24 лет, если дети (в том числе усыновленные) являются обучающимися по очной форме обучения в организациях, осуществляющих образовательную деятельность), подопечным в возрасте до 18 лет (далее - члены семьи).</p>
+                </div>
+
+                <div class="text-bg text-bg--type_1">
+                    <h2>Как оформить и получить налоговый вычет</h2>
+                    <p><b>Для получения Справки об оплате медицинских услуг для ФНС необходимо направить заявление удобным для вас способом:</b></p>
+
+                    <ul>
+                        <li>автоматически - заявка с сайта (форма ниже)</li>
+                        <li>личным обращением по адресу: Санкт-Петербург, наб. р. Фонтанки, д. 154, Регистратура</li>
+                        <li>на электронную почту: на адрес  info@gosmed.ru с пометкой "Справка для ФНС"</li>
+                    </ul>
+
+                    <p><b>Пакет документов для получения справки об оплате медицинских услуг для предоставления в налоговые органы:</b></p>
+
+                    <ul>
+                        <li>копия паспорта</li>
+                        <li>копия ИНН (в случае отсутствия копии документа, номер ИНН необходимо указать в заявлении)</li>
+                        <li>копии чеков (требуется только в случае частичного возмещения, если необходимо получить справку на сумму, имеющихся чеков, во всех остальных случаях справка готовится на общую сумму обслуживания за год)</li>
+                        <li>заявление (заполняется по образцу)</li>
+                    </ul>
+
+                    <p><b>Заявление на налоговый вычет для пациентов</b></p>
+
+                    <a class="button button--secondary" href="#" target="_blank">Скачать в pdf</a>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="tabs">
+                    <div class="js-tabs-nav-equal tabs-nav tabs-nav--type_1 tabs-nav--cnt_2">
+                        <button class="js-tab tabs-nav__button is-active" type="button" data-tab="1">Пациент является плательщиком</button>
+                        <button class="js-tab tabs-nav__button" type="button" data-tab="2">Пациент не является плательщиком (оплачивало услуги другое лицо)</button>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        <div class="text-bg text-bg--type_1">
+                            <h2>Заявка на справку для получения налогового вычета</h2>
+                            <p>Если вы хотите оформить налоговый вычет за медицинские услуги, заполните форму ниже для получения справки</p>
+
+                            <form class="form" action="">
+                                <div class="form__row form__row--cnt_3">
+                                    <div>
+                                        <label class="input-group">
+                                            <span class="input-group__container">
+                                                <input class="input" type="text" name="name" value="" placeholder="ФИО пациента">
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="input-group">
+                                            <span class="input-group__container">
+                                                <input class="input" type="text" name="birth" value="" placeholder="Дата рождения пациента">
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="input-group">
+                                            <span class="input-group__container">
+                                                <input class="input" type="text" name="inn" value="" placeholder="ИНН пациента">
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="input-group">
+                                            <span class="input-group__container">
+                                                <input class="js-phone-mask input" type="text" name="phone" value="" placeholder="+ 7 (999) 999 99 99">
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="input-group">
+                                            <span class="input-group__container">
+                                                <input class="js-email-mask input" type="text" name="email" value="" placeholder="Email" inputmode="email">
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="input-group">
+                                            <span class="input-group__container">
+                                                <input class="input" type="text" name="year" value="" placeholder="За какой год нужны данные">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <label class="checkbox">
+                                    <input type="checkbox" name="terms" checked="">
+                                    <span class="checkbox__icon"></span>
+                                    <span class="checkbox__text">Я разрешаю обработку своих&nbsp;<a href="#">персональных данных</a></span>
+                                </label>
+
+                                <button class="button button--primary" type="submit">Отправить Заявку</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        видео
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="incut incut--type_1">
+                    <div class="incut__icon">
+                        <img src="images/content/incut/icon_3.png" alt="">
+                    </div>
+
+                    <div class="incut__inner">
+                        <div class="incut__text">
+                            <p>Срок оформления Справки составляет до 30 календарных дней.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

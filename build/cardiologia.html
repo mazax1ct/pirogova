@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
     <link rel="stylesheet" href="css_plugins/air-datepicker.css" />
+    <link rel="stylesheet" href="css_plugins/select2.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -47,15 +48,27 @@
                     </a>
     
                     <div class="header__top-links">
-                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#phone_icon" />
-                            </svg>
-                        </a>
-    
                         <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
                             <svg aria-hidden="true">
                                 <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Наш Телеграм">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы на RuTube">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#rt_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы в Одноклассниках">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#ok_icon" />
                             </svg>
                         </a>
     
@@ -268,7 +281,7 @@
                                     <use xlink:href="images/sprite.svg#search_icon" />
                                 </svg>
     
-                                <input class="js-header-search-input input" type="text" name="q" value="" placeholder="Поиск" autocomplete="off">
+                                <input class="js-header-search-input input" type="text" name="q" value="" placeholder="Услуга, направление, симптом, врач" autocomplete="off">
                             </span>
                         </label>
     
@@ -1321,9 +1334,9 @@
                             </svg>
                         </a>
     
-                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы на YouTube">
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы на RuTube">
                             <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#yt_icon" />
+                                <use xlink:href="images/sprite.svg#rt_icon" />
                             </svg>
                         </a>
     
@@ -1391,6 +1404,11 @@
                 <div class="footer__copyright">
                     © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
                 </div>
+    
+                <div class="footer__note">
+                    <p>Все материалы сайта (включая дизайн) защищены. Копирование и использование без письменного согласия запрещены. Ссылка на источник обязательна. Сведения носят справочно-образовательный характер. Не используйте их для самодиагностики
+                        или самолечения. Диагностику и лечение определяет только ваш врач! Клиника не несет ответственности за последствия самолечения. Информация размещена согласно Приказу Минздрава России N 956н.</p>
+                </div>
             </div>
         </div>
     </footer>
@@ -1412,6 +1430,10 @@
     <script src="js/air-datepicker.js"></script>
     
     <script src="js/filter.js"></script>
+    
+    <script src="js/select2.full.min.js"></script>
+    
+    <script src="js/select2-addon.js"></script>
     
     <script src="js/main.js"></script>
 </body>
