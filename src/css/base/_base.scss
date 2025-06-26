@@ -318,3 +318,33 @@ ul {
         }
     }
 }
+
+.phone-link {
+    align-items: center;
+    color: var(--text);
+    display: flex;
+    gap: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
+    @include hover {
+        color: var(--button_hover);
+    }
+
+    &__icon {
+        align-items: center;
+        background-color: var(--accent_2);
+        border-radius: 50%;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        min-width: 40px;
+        width: 40px;
+
+        svg {
+            fill: var(--accent);
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

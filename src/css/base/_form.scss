@@ -11,6 +11,10 @@
             flex-direction: row;
         }
 
+        & + .form__subtitle {
+            margin-top: 30px;
+        }
+
         &--cnt_2 {
             & > div {
                 @media(min-width: $sm) {
@@ -31,5 +35,11 @@
     & > .input-group,
     .checkbox {
         margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-family: var(--secondary_font);
+        font-size: 20px;
+        margin-bottom: 12px;
     }
 }

@@ -1,0 +1,46 @@
+.site-map {
+    &__list {
+        & > li {
+            &:not(:last-child) {
+                border-bottom: 1px solid var(--accent_2);
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    &__columns {
+        @media(min-width: $sm) {
+            columns: 2;
+        }
+        @media(min-width: $md) {
+            columns: 3;
+        }
+    }
+
+    ul {
+        @include list-reset;
+    }
+
+    li {
+        & > a {
+            display: block;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+    }
+
+    h2 {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    a {
+        color: var(--text);
+        text-decoration: none;
+        @include hover {
+            color: var(--button_hover);
+        }
+    }
+}

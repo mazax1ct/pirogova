@@ -436,222 +436,489 @@
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
-                <li class="breadcrumbs__item">Контакты</li>
+                <li class="breadcrumbs__item">Руководство</li>
             </ul>
 
             <section class="page__section">
-                <div class="map-filter">
-                    <div class="select-wrapper">
-                        <select class="js-select">
-                            <option>Выбрать город</option>
-                            <option value="1">Санкт-Петербург</option>
-                            <option value="2">Петергоф</option>
-                        </select>
+                <h1>Руководство Клиники высоких медицинских<br> технологий им. Н. И. Пирогова</h1>
+
+                <div class="contacts-block">
+                    <div class="contacts-block__text-block">
+                        <div class="contacts-block__block contacts-block__block--not_flex">
+                            <h3 class="big">Запись на приём / исследование:</h3>
+
+                            <p>
+                                <a class="phone-link" href="tel:+78126762525">
+                                    <span class="phone-link__icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#phone_icon" />
+                                        </svg>
+                                    </span>
+                                    <span>+7 (812) 676-25-25</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                ПН-ПТ с 8:00 до 21:00<br>
+                                СБ-ВС с 8:00 до 20:00
+                            </p>
+                        </div>
+
+                        <div class="contacts-block__block contacts-block__block--not_flex">
+                            <h3 class="big">Написать главному врачу</h3>
+
+                            <a class="button button--primary" href="#">Обращение к главному врачу</a>
+                        </div>
                     </div>
 
-                    <div class="select-wrapper">
-                        <select class="js-select">
-                            <option>Выбрать район</option>
-                            <option value="">Петродворцовый р-н</option>
-                        </select>
+                    <div class="contacts-block__image">
+                        <img src="images/content/contacts/banner.jpg" srcset="images/content/contacts/banner@2x.jpg 2x" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="doctors management-search">
+                    <div class="tabs-nav tabs-nav--type_2">
+                        <button class="tabs-nav__button is-active" type="button">Руководство</button>
+                        <button class="tabs-nav__button" type="button">Структура управления</button>
                     </div>
 
-                    <div class="map-filter__contacts">
-                        <div>
-                            <a class="phone-link" href="tel:+78126762525">
-                                <span class="phone-link__icon">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#phone_icon" />
+                    <div class="doctors__filter-block">
+                        <button class="js-filter-opener filter-opener" type="button" title="Фильтр">
+                            <span class="filter-opener__icon">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#filter_icon"></use>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <form class="search-form search-form--small" action="">
+                            <label class="input-group">
+                                <span class="input-group__container">
+                                    <svg class="input-group__icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#search_icon"></use>
                                     </svg>
+
+                                    <input class="input" type="text" name="q" value="" placeholder="Поиск по имени или фамилии " autocomplete="off">
                                 </span>
-                                +7 (812) 676-25-25
-                            </a>
-                            <p class="map-filter__contacts-title">Телефон для справок</p>
-                        </div>
-                        <button class="button button--secondary" type="button">Задать вопрос</button>
+                            </label>
+
+                            <button class="search-form__submit button button--primary" type="submit">Найти</button>
+                        </form>
                     </div>
+
+                    <form class="filter">
+                        <div class="filter__top">
+                            <p class="filter__title">Фильтр</p>
+
+                            <button class="js-filter-closer filter__closer" type="button" title="Закрыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="filter__grid">
+                            <div class="combobox">
+                                <button class="js-combobox-toggler combobox__title" type="button">
+                                    <span>Клиника</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#triangle_down"></use>
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown">
+                                    <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_left_icon"></use>
+                                        </svg>
+
+                                        <span>Клиника</span>
+                                    </button>
+
+                                    <div class="combobox__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на наб. р. Фонтанки, д. 154</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="2" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="3" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="4" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="5" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="6" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="7" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="8" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="9" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="10" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="11" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="12" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="13" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="14" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="15" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="16" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="17" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="18" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="19" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="20" name="clinic">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лечебно-диагностический комплекс на Кадетской линии В. О., д. 13-15</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="combobox__controls">
+                                        <button class="button button--secondary" type="button">Сбросить</button>
+
+                                        <button class="button button--primary" type="button">Применить</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="combobox">
+                                <button class="js-combobox-toggler combobox__title" type="button">
+                                    <span>Должность</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#triangle_down"></use>
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown">
+                                    <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_left_icon"></use>
+                                        </svg>
+
+                                        <span>Должность</span>
+                                    </button>
+
+                                    <div class="combobox__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="spec">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Должность 1</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="2" name="spec">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Должность 2</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="3" name="spec">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Должность 3</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="4" name="spec">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Должность 4</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="combobox__controls">
+                                        <button class="button button--secondary" type="button">Сбросить</button>
+
+                                        <button class="button button--primary" type="button">Применить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter__buttons">
+                            <button class="button button--primary" type="button">Показать результаты</button>
+                            <button class="button button--secondary" type="reset">Сбросить результаты</button>
+                        </div>
+                    </form>
                 </div>
 
-                <div class="contacts-map">
-                    <img src="images/content/contacts/map.jpg" alt="">
+                <h2>График приёма граждан руководителем медицинской организации и иными уполномоченными лицами</h2>
+
+                <div class="cards-grid">
+                    <div class="doctor-card">
+                        <div class="doctor-card__image">
+                            <img src="images/content/doctors/no_image.jpg" srcset="images/content/doctors/no_image@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="doctor-card__info">
+                            <h3 class="doctor-card__title">Шульгин Андрей Сергеевич </h3>
+
+                            <p class="doctor-card__about">
+                                И.о. главного врача Клиники высоких медицинских технологий им. Н. И. Пирогова СПбГУ Пирогова СПбГУ
+                            </p>
+
+                            <p class="doctor-card__min-price">Запись: по предварительной записи у секретаря</p>
+
+                            <p><b>Телефон секретаря:</b> +7 (812) 676-25-07</p>
+                            <p><b>Адрес:</b> Наб. реки Фонтанки, д. 154</p>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-card__image">
+                            <img src="images/content/doctors/no_image.jpg" srcset="images/content/doctors/no_image@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="doctor-card__info">
+                            <h3 class="doctor-card__title">Вовренчук Наталья Николаевна</h3>
+
+                            <p class="doctor-card__about">
+                                Секретарь
+                            </p>
+
+                            <p><b>Телефон:</b> +7 (812) 676-25-07</p>
+
+                            <p><b>Факс:</b> +7 (812) 676-25-07</p>
+
+                            <p><b>Почта:</b> info@gosmed.ru</p>
+
+                            <p><b>Адрес:</b> Наб. реки Фонтанки, д. 154</p>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-card__image">
+                            <img src="images/content/doctors/no_image.jpg" srcset="images/content/doctors/no_image@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="doctor-card__info">
+                            <h3 class="doctor-card__title">Павлова Маргарита Владимировна</h3>
+
+                            <p class="doctor-card__about">
+                                1-ый заместитель главного врача
+                            </p>
+
+                            <p><b>Почта:</b> info@gosmed.ru</p>
+
+                            <p><b>Адрес:</b> Наб. реки Фонтанки, д. 154</p>
+
+                            <p><b>Расписание:</b> вторник с 14:00 до 15:00</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="page__section">
-                <h2>Санкт-Петербург</h2>
+                <h2>Административные отделы</h2>
 
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на наб.&nbsp;р.&nbsp;Фонтанки, д.&nbsp;154</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Балтийская, Технологический ин-т, Нарвская</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
+                <div class="cards-grid">
+                    <div class="doctor-card">
+                        <div class="doctor-card__image">
+                            <img src="images/content/doctors/no_image.jpg" srcset="images/content/doctors/no_image@2x.jpg 2x" alt="">
                         </div>
 
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                        <div class="doctor-card__info">
+                            <h3 class="doctor-card__title">Великанова Наталья Николаевна</h3>
 
-                            <p><b>Стоматологическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                            <p class="doctor-card__about">
+                                Главная медицинская сестра 
+                            </p>
 
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
+                            <p><b>Телефон:</b> +7 (812) 676-25-07</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на Кадетской&nbsp;линии&nbsp;В.&nbsp;О., д.&nbsp;13-15</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Василеостровская, Спортивная-2</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
+                    <div class="doctor-card">
+                        <div class="doctor-card__image">
+                            <img src="images/content/doctors/no_image.jpg" srcset="images/content/doctors/no_image@2x.jpg 2x" alt="">
                         </div>
 
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                        <div class="doctor-card__info">
+                            <h3 class="doctor-card__title">Соловьева Ирина Сергеевна</h3>
 
-                            <p><b>Отделение нефрологии и гемодиализа</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                            <p class="doctor-card__about">
+                                Главный бухгалтер 
+                            </p>
 
-                            <p><b>Травматологическое отделение № 2</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Терапевтическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
+                            <p><b>Телефон:</b> +7 (812) 676-25-07</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на наб.&nbsp;р.&nbsp;Фонтанки, д.&nbsp;154</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Балтийская, Технологический ин-т, Нарвская</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
+                    <div class="doctor-card">
+                        <div class="doctor-card__image">
+                            <img src="images/content/doctors/no_image.jpg" srcset="images/content/doctors/no_image@2x.jpg 2x" alt="">
                         </div>
 
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                        <div class="doctor-card__info">
+                            <h3 class="doctor-card__title">Морозова Инна Геннадьевна</h3>
 
-                            <p><b>Стоматологическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                            <p class="doctor-card__about">
+                                Начальник планово-экономического отдела
+                            </p>
 
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на Кадетской&nbsp;линии&nbsp;В.&nbsp;О., д.&nbsp;13-15</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Василеостровская, Спортивная-2</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
-                        </div>
-
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Отделение нефрологии и гемодиализа</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Травматологическое отделение № 2</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Терапевтическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
+                            <p><b>Телефон:</b> +7 (812) 676-25-07</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="page__section">
-                <h2>Петергоф</h2>
+                <h2>Лечебно-диагностический комплекс на Фонтанке  (Стационар 1). Клинические отделения</h2>
 
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на Кадетской&nbsp;линии&nbsp;В.&nbsp;О., д.&nbsp;13-15</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Василеостровская, Спортивная-2</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
+                <div class="contacts-block">
+                    <div class="contacts-block__block">
+                        <div class="contacts-block__icon">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon"></use>
+                            </svg>
                         </div>
 
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                        <div>
+                            <p>Адрес: 190020, г. Санкт-Петербург, наб. р. Фонтанки, д.154.</p>
+                        </div>
+                    </div>
 
-                            <p><b>Отделение нефрологии и гемодиализа</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                    <div class="contacts-block__block">
+                        <div class="contacts-block__icon">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#site_icon"></use>
+                            </svg>
+                        </div>
 
-                            <p><b>Травматологическое отделение № 2</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                        <div>
+                            <p>Запись на приём: +7 (812) 676-25-25</p>
+                        </div>
+                    </div>
+                </div>
 
-                            <p><b>Терапевтическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
+                <div class="cards-grid">
+                    <div class="doctor-card">
+                        <div class="doctor-card__image">
+                            <img src="images/content/doctors/no_image.jpg" srcset="images/content/doctors/no_image@2x.jpg 2x" alt="">
+                        </div>
 
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
+                        <div class="doctor-card__info">
+                            <h3 class="doctor-card__title">Дашян Гарик Альбертович</h3>
+
+                            <p class="doctor-card__about">
+                                Заведующий онкологическим отделением №1 (хирургических методов лечения опухолей молочной железы, кожи и мягких тканей)
+                            </p>
+
+                            <p><b>Телефон:</b> +7 (812) 676-25-07</p>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-card__image">
+                            <img src="images/content/doctors/no_image.jpg" srcset="images/content/doctors/no_image@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="doctor-card__info">
+                            <h3 class="doctor-card__title">Шостка Кирилл Георгиевич</h3>
+
+                            <p class="doctor-card__about">
+                                Заведующий онкологическим отделением № 2  (торако-абдоминальной онкологии и противоопухолевой лекарственной терапии с койками общей хирургии)
+                            </p>
+
+                            <p><b>Телефон:</b> +7 (812) 676-25-07</p>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-card__image">
+                            <img src="images/content/doctors/no_image.jpg" srcset="images/content/doctors/no_image@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="doctor-card__info">
+                            <h3 class="doctor-card__title">Черников Роман Анатольевич</h3>
+
+                            <p class="doctor-card__about">
+                                Заведующий хирургическим (эндокринологическим) отделением
+                            </p>
+
+                            <p><b>Телефон:</b> +7 (812) 676-25-07</p>
                         </div>
                     </div>
                 </div>

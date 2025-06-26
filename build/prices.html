@@ -436,223 +436,421 @@
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
-                <li class="breadcrumbs__item">Контакты</li>
+                <li class="breadcrumbs__item">Цены</li>
             </ul>
 
             <section class="page__section">
-                <div class="map-filter">
-                    <div class="select-wrapper">
-                        <select class="js-select">
-                            <option>Выбрать город</option>
-                            <option value="1">Санкт-Петербург</option>
-                            <option value="2">Петергоф</option>
-                        </select>
+                <h1>Прейскурант на услуги Клиники высоких медицинских технологий им. Н. И. Пирогова СПбГУ</h1>
+
+                <div class="prices">
+                    <div class="tabs-nav tabs-nav--type_2">
+                        <a class="tabs-nav__button is-active" href="#">Медицинские услуги</a>
+                        <a class="tabs-nav__button" href="#">Немедицинские услуги</a>
                     </div>
 
-                    <div class="select-wrapper">
-                        <select class="js-select">
-                            <option>Выбрать район</option>
-                            <option value="">Петродворцовый р-н</option>
-                        </select>
-                    </div>
+                    <form class="search-form search-form--small" action="">
+                        <label class="input-group">
+                            <span class="input-group__container">
+                                <svg class="input-group__icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon"></use>
+                                </svg>
 
-                    <div class="map-filter__contacts">
-                        <div>
-                            <a class="phone-link" href="tel:+78126762525">
-                                <span class="phone-link__icon">
+                                <input class="input" type="text" name="q" value="" placeholder="Поиск по услугам" autocomplete="off">
+                            </span>
+                        </label>
+
+                        <button class="search-form__submit button button--primary" type="submit">Найти</button>
+                    </form>
+
+                    <h3 class="prices__subtitle">Медицинские услуги</h3>
+
+                    <div class="accordions-list">
+                        <div class="accordion">
+                            <div class="accordion__top">
+                                <h3 class="accordion__title">Диагностические услуги</h3>
+
+                                <button class="js-accordion-toggler accordion__toggler" type="button" title="Открыть">
                                     <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#phone_icon" />
+                                        <use xlink:href="images/sprite.svg#plus_icon"></use>
                                     </svg>
-                                </span>
-                                +7 (812) 676-25-25
-                            </a>
-                            <p class="map-filter__contacts-title">Телефон для справок</p>
-                        </div>
-                        <button class="button button--secondary" type="button">Задать вопрос</button>
-                    </div>
-                </div>
+                                </button>
+                            </div>
 
-                <div class="contacts-map">
-                    <img src="images/content/contacts/map.jpg" alt="">
+                            <div class="accordion__body">
+                                <div class="prices-block">
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Прием (осмотр, консультация) врача-сосудистого хирурга (первичный, повторный)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">6 000 ₽</span>
+                                            <span class="service-info__new-price">4 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Прием (осмотр, консультация) врача-кардиолога (первичный, повторный)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">6 000 ₽</span>
+                                            <span class="service-info__new-price">4 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-сосудистого хирурга (первичная, повторная)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">10 000 ₽</span>
+                                            <span class="service-info__new-price">8 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-сосудистого хирурга (первичная, повторная)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">8 000 ₽</span>
+                                            <span class="service-info__new-price">6 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-сосудистого хирурга (первичная, повторная)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">8 000 ₽</span>
+                                            <span class="service-info__new-price">6 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-аритмолога, включая контроль настроек искусственного водителя сердечного ритма</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">10 000 ₽</span>
+                                            <span class="service-info__new-price">8 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="accordion__top">
+                                <h3 class="accordion__title">Травматология</h3>
+
+                                <button class="js-accordion-toggler accordion__toggler" type="button" title="Открыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="accordion__body">
+                                <div class="prices-block">
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Прием (осмотр, консультация) врача-сосудистого хирурга (первичный, повторный)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">6 000 ₽</span>
+                                            <span class="service-info__new-price">4 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Прием (осмотр, консультация) врача-кардиолога (первичный, повторный)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">6 000 ₽</span>
+                                            <span class="service-info__new-price">4 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-сосудистого хирурга (первичная, повторная)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">10 000 ₽</span>
+                                            <span class="service-info__new-price">8 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-сосудистого хирурга (первичная, повторная)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">8 000 ₽</span>
+                                            <span class="service-info__new-price">6 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-сосудистого хирурга (первичная, повторная)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">8 000 ₽</span>
+                                            <span class="service-info__new-price">6 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-аритмолога, включая контроль настроек искусственного водителя сердечного ритма</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">10 000 ₽</span>
+                                            <span class="service-info__new-price">8 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="accordion__top">
+                                <h3 class="accordion__title">Физиотерапевтические услуги</h3>
+
+                                <button class="js-accordion-toggler accordion__toggler" type="button" title="Открыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="accordion__body">
+                                <div class="prices-block">
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Прием (осмотр, консультация) врача-сосудистого хирурга (первичный, повторный)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">6 000 ₽</span>
+                                            <span class="service-info__new-price">4 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Прием (осмотр, консультация) врача-кардиолога (первичный, повторный)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">6 000 ₽</span>
+                                            <span class="service-info__new-price">4 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-сосудистого хирурга (первичная, повторная)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">10 000 ₽</span>
+                                            <span class="service-info__new-price">8 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-сосудистого хирурга (первичная, повторная)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">8 000 ₽</span>
+                                            <span class="service-info__new-price">6 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-сосудистого хирурга (первичная, повторная)</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">8 000 ₽</span>
+                                            <span class="service-info__new-price">6 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="service-info">
+                                        <div class="service-info__inner">
+                                            <p class="service-info__duration">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#clock_icon"></use>
+                                                </svg>
+                                                Консультация врача 60 мин
+                                            </p>
+
+                                            <h3 class="service-info__title"><a href="#">Дистанционная консультация врача-аритмолога, включая контроль настроек искусственного водителя сердечного ритма</a></h3>
+                                        </div>
+
+                                        <p class="service-info__price-block">
+                                            <span class="service-info__old-price">10 000 ₽</span>
+                                            <span class="service-info__new-price">8 000&nbsp;₽</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="page__section">
-                <h2>Санкт-Петербург</h2>
+                <h2>Прейскурант на все услуги</h2>
 
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
+                <div class="two-columns">
+                    <div>
+                        <p>Прейскурант и перечень платных <b>медицинских</b> услуг от&nbsp;1&nbsp;июня&nbsp;2025&nbsp;г.</p>
+                        <a class="button button--primary" href="#" target="_blank">Скачать в формате pdf</a>
                     </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на наб.&nbsp;р.&nbsp;Фонтанки, д.&nbsp;154</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Балтийская, Технологический ин-т, Нарвская</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
-                        </div>
-
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Стоматологическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на Кадетской&nbsp;линии&nbsp;В.&nbsp;О., д.&nbsp;13-15</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Василеостровская, Спортивная-2</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
-                        </div>
-
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Отделение нефрологии и гемодиализа</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Травматологическое отделение № 2</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Терапевтическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на наб.&nbsp;р.&nbsp;Фонтанки, д.&nbsp;154</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Балтийская, Технологический ин-т, Нарвская</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
-                        </div>
-
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Стоматологическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на Кадетской&nbsp;линии&nbsp;В.&nbsp;О., д.&nbsp;13-15</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Василеостровская, Спортивная-2</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
-                        </div>
-
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Отделение нефрологии и гемодиализа</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Травматологическое отделение № 2</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Терапевтическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="page__section">
-                <h2>Петергоф</h2>
-
-                <div class="contact">
-                    <div class="contact__image">
-                        <img src="images/content/contacts/img.jpg" srcset="images/content/contacts/img@2x.jpg 2x" alt="">
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-block">
-                            <h3>Лечебно-диагностический комплекс на Кадетской&nbsp;линии&nbsp;В.&nbsp;О., д.&nbsp;13-15</h3>
-
-                            <p><b>Ближайшее метро:</b><br> Василеостровская, Спортивная-2</p>
-
-                            <p><b>Консультативно - диагностические отделения:</b></p>
-
-                            <p>ПН-СБ 08:00 - 20:00,<br> ВС - выходной</p>
-
-                            <div class="contact__buttons">
-                                <a class="button button--secondary" href="#">Подробнее</a>
-
-                                <a class="button button--primary" href="#">Записаться</a>
-                            </div>
-                        </div>
-
-                        <div class="contact__info-block">
-                            <p><b>Единая информационно-справочная служба (регистратура)</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Отделение нефрологии и гемодиализа</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Травматологическое отделение № 2</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><b>Терапевтическое отделение</b><br> <a href="tel:+78126762556">+7 (812) 676-25-56</a></p>
-
-                            <p><a href="mailto:6762525@gosmed.ru"><b>6762525@gosmed.ru</b></a></p>
-                        </div>
+                    <div>
+                        <p>Прейскурант и перечень платных <b>немедицинских</b> услуг от&nbsp;1&nbsp;июня&nbsp;2025&nbsp;г.</p>
+                        <a class="button button--primary" href="#" target="_blank">Скачать в формате pdf</a>
                     </div>
                 </div>
             </section>

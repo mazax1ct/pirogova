@@ -114,3 +114,70 @@
         margin-top: 16px;
     }
 }
+
+.contacts-map {
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    height: 400px;
+    overflow: hidden;
+    @media(min-width: $hd) {
+        border-radius: 40px;
+        height: 500px;
+    }
+
+    img {
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}
+
+.map-filter {
+    display: flex;
+    gap: 10px;
+    @media(max-width: $md - 0.02px) {
+        flex-direction: column;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .select-wrapper {
+        min-width: 215px;
+        white-space: nowrap;
+    }
+
+    &__contacts {
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        @media(min-width: $md) {
+            margin-left: auto;
+        }
+
+        .phone-link {
+            font-size: 20px;
+            font-weight: 700;
+            gap: 10px;
+
+            .phone-link__icon {
+                height: 24px;
+                min-width: 24px;
+                width: 24px;
+
+                svg {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+
+    &__contacts-title {
+        padding-left: 34px;
+    }
+}

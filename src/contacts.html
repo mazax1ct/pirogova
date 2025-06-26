@@ -30,7 +30,41 @@
             </ul>
 
             <section class="page__section">
-                <P>карта</P>
+                <div class="map-filter">
+                    <div class="select-wrapper">
+                        <select class="js-select">
+                            <option>Выбрать город</option>
+                            <option value="1">Санкт-Петербург</option>
+                            <option value="2">Петергоф</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <select class="js-select">
+                            <option>Выбрать район</option>
+                            <option value="">Петродворцовый р-н</option>
+                        </select>
+                    </div>
+
+                    <div class="map-filter__contacts">
+                        <div>
+                            <a class="phone-link" href="tel:+78126762525">
+                                <span class="phone-link__icon">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#phone_icon" />
+                                    </svg>
+                                </span>
+                                +7 (812) 676-25-25
+                            </a>
+                            <p class="map-filter__contacts-title">Телефон для справок</p>
+                        </div>
+                        <button class="button button--secondary" type="button">Задать вопрос</button>
+                    </div>
+                </div>
+
+                <div class="contacts-map">
+                    <img src="images/content/contacts/map.jpg" alt="">
+                </div>
             </section>
 
             <section class="page__section">

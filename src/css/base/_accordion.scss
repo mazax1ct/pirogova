@@ -85,5 +85,20 @@
         @media(min-width: $md) {
             padding-top: 16px;
         }
+
+        .prices-block {
+            background: none;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 0;
+        }
+    }
+}
+
+.accordions-list {
+    .accordion {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 }

@@ -7,6 +7,13 @@
         flex-direction: row;
     }
 
+    &:not(:last-child) {
+        margin-bottom: 20px;
+        @media(min-width: $hd) {
+            margin-bottom: 40px;
+        }
+    }
+
     &__text-block {
         display: flex;
         flex-direction: column;
@@ -28,8 +35,14 @@
             padding: 34px;
         }
 
+        &--not_flex {
+            display: block;
+        }
+
         a {
-            font-weight: 700;
+            &:not([class]) {
+                font-weight: 700;
+            }
         }
     }
 
@@ -64,6 +77,12 @@
         display: flex;
         flex-wrap: wrap;
         gap: 12px 20px;
+    }
+
+    & > .contacts-block__block {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
     }
 
     &__image,

@@ -157,4 +157,16 @@
             color: var(--button_hover);
         }
     }
+
+    p {
+        &:not([class]) {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    b {
+        font-weight: 500;
+    }
 }
