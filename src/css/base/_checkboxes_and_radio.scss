@@ -20,6 +20,14 @@
             cursor: pointer;
         }
 
+        &:not(:checked).error ~ .checkbox__icon {
+            border-color: var(--warning);
+        }
+
+        &:not(:checked).error ~ .checkbox__text {
+            color: var(--warning);
+        }
+
         &:disabled ~ .checkbox__icon {
             border-color: var(--secondary);
             user-select: none;
