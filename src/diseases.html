@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">Заболевания</li>
+            </ul>
+
+            <section class="page__section">
+                <h1 class="text-center">Заболевания</h1>
+
+                <div class="spec-filter">
+                    <div class="alphabeth">
+                        <button class="alphabeth__button is-active" type="button">Все</button>
+                        <button class="alphabeth__button" type="button">А</button>
+                        <button class="alphabeth__button" type="button">Б</button>
+                        <button class="alphabeth__button" type="button">В</button>
+                        <button class="alphabeth__button" type="button">Г</button>
+                        <button class="alphabeth__button" type="button">Д</button>
+                        <button class="alphabeth__button" type="button">З</button>
+                        <button class="alphabeth__button" type="button">И</button>
+                        <button class="alphabeth__button" type="button">К</button>
+                        <button class="alphabeth__button" type="button">М</button>
+                        <button class="alphabeth__button" type="button">Н</button>
+                        <button class="alphabeth__button" type="button">О</button>
+                        <button class="alphabeth__button" type="button">П</button>
+                        <button class="alphabeth__button" type="button">Р</button>
+                        <button class="alphabeth__button" type="button">С</button>
+                        <button class="alphabeth__button" type="button">У</button>
+                        <button class="alphabeth__button" type="button">Ф</button>
+                        <button class="alphabeth__button" type="button">Х</button>
+                        <button class="alphabeth__button" type="button">Ц</button>
+                        <button class="alphabeth__button" type="button">Э</button>
+                    </div>
+
+                    <button class="js-filter-opener filter-opener" type="button" title="Фильтр">
+                        <span class="filter-opener__icon">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#filter_icon"></use>
+                            </svg>
+                        </span>
+                        Фильтр
+                    </button>
+                </div>
+
+                <form class="filter">
+                    <div class="filter__top">
+                        <p class="filter__title">Фильтр</p>
+
+                        <button class="js-filter-closer filter__closer" type="button" title="Закрыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#close_icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="filter__grid">
+                        <div class="combobox">
+                            <button class="js-combobox-toggler combobox__title" type="button">
+                                <span>Направление</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down"></use>
+                                </svg>
+                            </button>
+
+                            <div class="combobox__dropdown">
+                                <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_left_icon"></use>
+                                    </svg>
+
+                                    <span>Направление</span>
+                                </button>
+
+                                <div class="combobox__list">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="1" name="way">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Направление 1</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="2" name="way">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Направление 2</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="3" name="way">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Направление 3</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="4" name="way">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Направление 4</span>
+                                    </label>
+                                </div>
+
+                                <div class="combobox__controls">
+                                    <button class="button button--secondary" type="button">Сбросить</button>
+
+                                    <button class="button button--primary" type="button">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="combobox">
+                            <button class="js-combobox-toggler combobox__title" type="button">
+                                <span>Врач</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down"></use>
+                                </svg>
+                            </button>
+
+                            <div class="combobox__dropdown">
+                                <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_left_icon"></use>
+                                    </svg>
+
+                                    <span>Врач</span>
+                                </button>
+
+                                <div class="combobox__list">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="1" name="spec">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Врач 1</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="2" name="spec">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Врач 2</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="3" name="spec">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Врач 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="4" name="spec">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Врач 4</span>
+                                    </label>
+                                </div>
+
+                                <div class="combobox__controls">
+                                    <button class="button button--secondary" type="button">Сбросить</button>
+
+                                    <button class="button button--primary" type="button">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter__results-list">
+                            <button class="filter__result" type="button" title="Сбросить">
+                                <span>Направление 1</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_2_icon"></use>
+                                </svg>
+                            </button>
+
+                            <button class="filter__result" type="button" title="Сбросить">
+                                <span>Врач 2</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_2_icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="filter__results">
+                        <button class="filter__reset" type="reset" title="Сбросить фильтр">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#close_icon"></use>
+                            </svg>
+                        </button>
+
+                        <div class="js-filter-results filter__results-list is-collapsed">
+                            <button class="filter__result" type="button" title="Сбросить">
+                                <span>Направление 1</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_2_icon"></use>
+                                </svg>
+                            </button>
+
+                            <button class="filter__result" type="button" title="Сбросить">
+                                <span>Врач 2</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_2_icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <button class="js-filter-results-toggler filter__collapse" type="button" title="Развернуть" style="display: flex;">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="filter__buttons">
+                        <button class="button button--primary" type="button">Показать результаты</button>
+                        <button class="button button--secondary" type="reset">Сбросить результаты</button>
+                    </div>
+                </form>
+
+                <div class="letters">
+                    <div class="letter">
+                        <div class="letter__letter">А</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Аденома предстательной железы</a></li>
+                            <li><a href="#">Аденомиоз</a></li>
+                            <li><a href="#">Анемия</a></li>
+                            <li><a href="#">Аномальные маточные кровотечения (АМК)</a></li>
+                            <li><a href="#">Апоплексия яичника</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Б</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Беременность и заболевания крови</a></li>
+                            <li><a href="#">Бесплодие женское и мужское</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">В</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Варикоцеле</a></li>
+                            <li><a href="#">Вирус папилломы человека (ВПЧ)</a></li>
+                            <li><a href="#">Внематочная (эктопическая) беременность</a></li>
+                            <li><a href="#">Водянка оболочек яичка</a></li>
+                            <li><a href="#">Воспалительные заболевания женских половых органов</a></li>
+                            <li><a href="#">Воспалительные заболевания органов малого таза (ВЗОМТ)</a></li>
+                            <li><a href="#">Вульвовагинит</a></li>
+                            <li><a href="#">Выкидыш (самопроизвольный аборт)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Г</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Гидронефроз</a></li>
+                            <li><a href="#">Гидроцеле</a></li>
+                            <li><a href="#">Гиперплазия эндометрия матки</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Д</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Дисплазия шейки матки</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">З</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Заболевания бартолиновой железы</a></li>
+                            <li><a href="#">Заболевания шейки матки</a></li>
+                            <li><a href="#">Замершая беременность</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">И</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Истмико-цервикальная недостаточность (ИЦН)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">К</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Кисты яичника</a></li>
+                            <li><a href="#">Климактерический синдром</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">М</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Маточные кровотечения</a></li>
+                            <li><a href="#">Миома матки</a></li>
+                            <li><a href="#">Мочекаменная болезнь</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Н</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Недержание мочи</a></li>
+                            <li><a href="#">Нефроптоз</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">О</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Ожирение</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">П</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Пиелонефрит</a></li>
+                            <li><a href="#">Почечная колика</a></li>
+                            <li><a href="#">Пролапс органов малого таза</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Р</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Расстройства мочеиспускания</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">С</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Синдром хронической тазовой боли</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">У</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Уретрит</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Ф</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Фимоз</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Х</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Хронический холецистит</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Ц</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Цистит</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Э</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Эрозия шейки матки</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+
+    <script src="js/alphabeth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Gosmed.ru" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-AvenirNextCyr-Demi.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-RocaOne-Rg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css_plugins/air-datepicker.css" />
+    <link rel="stylesheet" href="css_plugins/select2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="container">
+            <div class="header__top">
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
+    
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+    
+                    <div class="header__top-links">
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Наш Телеграм">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы на RuTube">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#rt_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы в Одноклассниках">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#ok_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__middle">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <button class="js-mobile-search-toggler header__search-toggler header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-mobile-menu-toggler header__burger header__button" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="mobile-menu">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Направления</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a class="is-active" href="#">Стационарная помощь</a></li>
+                                <li><a href="#">Стоматология</a></li>
+                                <li><a href="#">Кардиология и сердечно-сосудистая хирургия</a></li>
+                                <li><a href="#">Общехирургическое отделение</a></li>
+                                <li><a href="#">Онкология</a></li>
+                                <li><a href="#">Пластическая хирургия</a></li>
+                                <li><a href="#">Гинекология</a></li>
+                                <li><a href="#">Урология</a></li>
+                                <li><a href="#">Эндокринная хирургия и эндокринология</a></li>
+                                <li><a href="#">Травматология</a></li>
+                                <li><a href="#">Терапия</a></li>
+                                <li><a href="#">Ревматология</a></li>
+                                <li><a href="#">Пульмонология</a></li>
+                                <li><a href="#">Гастроэнтерология</a></li>
+                                <li><a href="#">Нефрология</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Диагностика</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Детская эндоскопия</a></li>
+                                <li><a href="#">Клинико-диагностические исследования</a></li>
+                                <li><a href="#">Лучевая диагностика</a></li>
+                                <li><a href="#">Молекулярно-генетические исследования</a></li>
+                                <li><a href="#">Морфологические (патолого-анатомические) исследования</a></li>
+                                <li><a href="#">Ультразвуковая диагностика</a></li>
+                                <li><a href="#">Функциональная диагностика</a></li>
+                                <li><a href="#">Эндоскопия</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Пациентам</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Истории пациентов</a></li>
+                                <li><a href="#">Методы диагностики</a></li>
+                                <li><a href="#">Порядок подготовки к диагностическим исследованиям</a></li>
+                                <li><a href="#">Методы лечения</a></li>
+                                <li><a href="#">Справочник заболеваний</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <div class="header__buttons">
+                    <a class="button button--primary button--h_52" href="#">Запись на прием</a>
+    
+                    <a class="button button--secondary button--h_52" href="#">Личный кабинет</a>
+                </div>
+    
+                <ul class="header__service-menu">
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">О клинике</a></li>
+                </ul>
+    
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+78126762525">+ 7 (812) 676-25-25</a>
+    
+                        <a href="tel:+78002503032">+ 7 (800) 250-30-32</a>
+                    </div>
+    
+                    <div class="header__work-time">
+                        <p>пн-пт с 8:00 до 21:00</p>
+                        <p>сб-вс с 8:00 до 20:00</p>
+                    </div>
+                </div>
+    
+                <div class="header__top-right">
+                    <a class="ally" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_icon" />
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+    
+                    <div class="header__top-links">
+                        <a class="header__button" href="tel:+78002503032" target="_blank" title="Позвонить нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="header__button" href="mailto:test@test.ru" target="_blank" title="Написать нам">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#email_icon" />
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="header__lang">
+                        <a class="is-active">RU</a>
+    
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__search">
+                <div class="header__search-inner">
+                    <form class="search-form search-form--dropdown search-form--small" action="">
+                        <label class="input-group">
+                            <span class="input-group__container">
+                                <svg class="input-group__icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+    
+                                <input class="js-header-search-input input" type="text" name="q" value="" placeholder="Услуга, направление, симптом, врач" autocomplete="off">
+                            </span>
+                        </label>
+    
+                        <button class="search-form__submit button button--primary" type="submit">Найти</button>
+    
+                        <div class="search-form__dropdown">
+                            <ul class="search-form__dropdown-list">
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                                <li><a href="#">Кардиология</a></li>
+                                <li><a href="#">Карьера в КВМТ</a></li>
+                                <li><a href="#">Карнаухов Иван Владимирович</a></li>
+                                <li><a href="#">Левелева Карина Викторовна</a></li>
+                                <li><a href="#">Кардиохирурги клиники на Втором Всероссийском коронарном конгрессе</a></li>
+                            </ul>
+                        </div>
+                    </form>
+    
+                    <button class="js-search-closer header__search-closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="header-fixed">
+            <div class="header-fixed__inner container">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                </a>
+    
+                <ul class="menu">
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Направления</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a class="is-active" href="#">Стационарная помощь</a></li>
+                                <li><a href="#">Стоматология</a></li>
+                                <li><a href="#">Кардиология и сердечно-сосудистая хирургия</a></li>
+                                <li><a href="#">Общехирургическое отделение</a></li>
+                                <li><a href="#">Онкология</a></li>
+                                <li><a href="#">Пластическая хирургия</a></li>
+                                <li><a href="#">Гинекология</a></li>
+                                <li><a href="#">Урология</a></li>
+                                <li><a href="#">Эндокринная хирургия и эндокринология</a></li>
+                                <li><a href="#">Травматология</a></li>
+                                <li><a href="#">Терапия</a></li>
+                                <li><a href="#">Ревматология</a></li>
+                                <li><a href="#">Пульмонология</a></li>
+                                <li><a href="#">Гастроэнтерология</a></li>
+                                <li><a href="#">Нефрология</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Диагностика</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Детская эндоскопия</a></li>
+                                <li><a href="#">Клинико-диагностические исследования</a></li>
+                                <li><a href="#">Лучевая диагностика</a></li>
+                                <li><a href="#">Молекулярно-генетические исследования</a></li>
+                                <li><a href="#">Морфологические (патолого-анатомические) исследования</a></li>
+                                <li><a href="#">Ультразвуковая диагностика</a></li>
+                                <li><a href="#">Функциональная диагностика</a></li>
+                                <li><a href="#">Эндоскопия</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-inner">
+                            <a class="menu__link" href="#">Пациентам</a>
+    
+                            <button class="js-menu-toggler menu__toggler" type="button" title="Открыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li><a href="#">Истории пациентов</a></li>
+                                <li><a href="#">Методы диагностики</a></li>
+                                <li><a href="#">Порядок подготовки к диагностическим исследованиям</a></li>
+                                <li><a href="#">Методы лечения</a></li>
+                                <li><a href="#">Справочник заболеваний</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+    
+                <button class="js-search-toggler header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <a class="header__button" href="#" title="Личный кабинет">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#user_icon" />
+                    </svg>
+                </a>
+    
+                <a class="header-fixed__record-button button button--primary" href="#">Запись на прием</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">Заболевания</li>
+            </ul>
+
+            <section class="page__section">
+                <h1 class="text-center">Заболевания</h1>
+
+                <div class="spec-filter">
+                    <div class="alphabeth">
+                        <button class="alphabeth__button is-active" type="button">Все</button>
+                        <button class="alphabeth__button" type="button">А</button>
+                        <button class="alphabeth__button" type="button">Б</button>
+                        <button class="alphabeth__button" type="button">В</button>
+                        <button class="alphabeth__button" type="button">Г</button>
+                        <button class="alphabeth__button" type="button">Д</button>
+                        <button class="alphabeth__button" type="button">З</button>
+                        <button class="alphabeth__button" type="button">И</button>
+                        <button class="alphabeth__button" type="button">К</button>
+                        <button class="alphabeth__button" type="button">М</button>
+                        <button class="alphabeth__button" type="button">Н</button>
+                        <button class="alphabeth__button" type="button">О</button>
+                        <button class="alphabeth__button" type="button">П</button>
+                        <button class="alphabeth__button" type="button">Р</button>
+                        <button class="alphabeth__button" type="button">С</button>
+                        <button class="alphabeth__button" type="button">У</button>
+                        <button class="alphabeth__button" type="button">Ф</button>
+                        <button class="alphabeth__button" type="button">Х</button>
+                        <button class="alphabeth__button" type="button">Ц</button>
+                        <button class="alphabeth__button" type="button">Э</button>
+                    </div>
+
+                    <button class="js-filter-opener filter-opener" type="button" title="Фильтр">
+                        <span class="filter-opener__icon">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#filter_icon"></use>
+                            </svg>
+                        </span>
+                        Фильтр
+                    </button>
+                </div>
+
+                <form class="filter">
+                    <div class="filter__top">
+                        <p class="filter__title">Фильтр</p>
+
+                        <button class="js-filter-closer filter__closer" type="button" title="Закрыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#close_icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="filter__grid">
+                        <div class="combobox">
+                            <button class="js-combobox-toggler combobox__title" type="button">
+                                <span>Направление</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down"></use>
+                                </svg>
+                            </button>
+
+                            <div class="combobox__dropdown">
+                                <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_left_icon"></use>
+                                    </svg>
+
+                                    <span>Направление</span>
+                                </button>
+
+                                <div class="combobox__list">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="1" name="way">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Направление 1</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="2" name="way">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Направление 2</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="3" name="way">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Направление 3</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="4" name="way">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Направление 4</span>
+                                    </label>
+                                </div>
+
+                                <div class="combobox__controls">
+                                    <button class="button button--secondary" type="button">Сбросить</button>
+
+                                    <button class="button button--primary" type="button">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="combobox">
+                            <button class="js-combobox-toggler combobox__title" type="button">
+                                <span>Врач</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#triangle_down"></use>
+                                </svg>
+                            </button>
+
+                            <div class="combobox__dropdown">
+                                <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_left_icon"></use>
+                                    </svg>
+
+                                    <span>Врач</span>
+                                </button>
+
+                                <div class="combobox__list">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="1" name="spec">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Врач 1</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="2" name="spec">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Врач 2</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="3" name="spec">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Врач 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="4" name="spec">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">Врач 4</span>
+                                    </label>
+                                </div>
+
+                                <div class="combobox__controls">
+                                    <button class="button button--secondary" type="button">Сбросить</button>
+
+                                    <button class="button button--primary" type="button">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter__results-list">
+                            <button class="filter__result" type="button" title="Сбросить">
+                                <span>Направление 1</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_2_icon"></use>
+                                </svg>
+                            </button>
+
+                            <button class="filter__result" type="button" title="Сбросить">
+                                <span>Врач 2</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_2_icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="filter__results">
+                        <button class="filter__reset" type="reset" title="Сбросить фильтр">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#close_icon"></use>
+                            </svg>
+                        </button>
+
+                        <div class="js-filter-results filter__results-list is-collapsed">
+                            <button class="filter__result" type="button" title="Сбросить">
+                                <span>Направление 1</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_2_icon"></use>
+                                </svg>
+                            </button>
+
+                            <button class="filter__result" type="button" title="Сбросить">
+                                <span>Врач 2</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_2_icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <button class="js-filter-results-toggler filter__collapse" type="button" title="Развернуть" style="display: flex;">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="filter__buttons">
+                        <button class="button button--primary" type="button">Показать результаты</button>
+                        <button class="button button--secondary" type="reset">Сбросить результаты</button>
+                    </div>
+                </form>
+
+                <div class="letters">
+                    <div class="letter">
+                        <div class="letter__letter">А</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Аденома предстательной железы</a></li>
+                            <li><a href="#">Аденомиоз</a></li>
+                            <li><a href="#">Анемия</a></li>
+                            <li><a href="#">Аномальные маточные кровотечения (АМК)</a></li>
+                            <li><a href="#">Апоплексия яичника</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Б</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Беременность и заболевания крови</a></li>
+                            <li><a href="#">Бесплодие женское и мужское</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">В</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Варикоцеле</a></li>
+                            <li><a href="#">Вирус папилломы человека (ВПЧ)</a></li>
+                            <li><a href="#">Внематочная (эктопическая) беременность</a></li>
+                            <li><a href="#">Водянка оболочек яичка</a></li>
+                            <li><a href="#">Воспалительные заболевания женских половых органов</a></li>
+                            <li><a href="#">Воспалительные заболевания органов малого таза (ВЗОМТ)</a></li>
+                            <li><a href="#">Вульвовагинит</a></li>
+                            <li><a href="#">Выкидыш (самопроизвольный аборт)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Г</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Гидронефроз</a></li>
+                            <li><a href="#">Гидроцеле</a></li>
+                            <li><a href="#">Гиперплазия эндометрия матки</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Д</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Дисплазия шейки матки</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">З</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Заболевания бартолиновой железы</a></li>
+                            <li><a href="#">Заболевания шейки матки</a></li>
+                            <li><a href="#">Замершая беременность</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">И</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Истмико-цервикальная недостаточность (ИЦН)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">К</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Кисты яичника</a></li>
+                            <li><a href="#">Климактерический синдром</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">М</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Маточные кровотечения</a></li>
+                            <li><a href="#">Миома матки</a></li>
+                            <li><a href="#">Мочекаменная болезнь</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Н</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Недержание мочи</a></li>
+                            <li><a href="#">Нефроптоз</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">О</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Ожирение</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">П</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Пиелонефрит</a></li>
+                            <li><a href="#">Почечная колика</a></li>
+                            <li><a href="#">Пролапс органов малого таза</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Р</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Расстройства мочеиспускания</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">С</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Синдром хронической тазовой боли</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">У</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Уретрит</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Ф</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Фимоз</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Х</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Хронический холецистит</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Ц</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Цистит</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="letter">
+                        <div class="letter__letter">Э</div>
+                        <ul class="letter__list letter__list--columns">
+                            <li><a href="#">Эрозия шейки матки</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        <img src="images/logo.svg" alt="Клиника высоких медицинских технологий им. Н.И.Пирогова СПбГУ">
+                    </div>
+    
+                    <div class="footer__socials">
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы Вконтакте">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Наш Телеграм">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы на RuTube">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#rt_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="social-link" href="#" target="_blank" rel="noreferrer nofollow" title="Мы в Одноклассниках">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#ok_icon" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer__top-center">
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">УСЛУГИ</li>
+                        <li><a href="#">Взрослое отделение</a></li>
+                        <li><a href="#">Детское отделение</a></li>
+                        <li><a href="#">Стоматология</a></li>
+                        <li><a href="#">Диагностика</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">КЛИНИКА</li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Попечительский совет</a></li>
+                        <li><a href="#">Отделения</a></li>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <li class="footer__menu-title">ПАЦИЕНТАМ</li>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </div>
+                </div>
+    
+                <div class="footer__top-right">
+                    <div class="footer__images">
+                        <a class="ocenka" href="#" target="_blank" rel="noreferrer nofollow" title="Независимая оценка качества оказания услуг медицинскими организациями">
+                            <img src="images/content/footer/ocenka_kachestva.png" alt="Независимая оценка качества оказания услуг медицинскими организациями">
+                        </a>
+    
+                        <a class="gosuslugi" href="#" target="_blank" rel="noreferrer nofollow" title="Госуслуги">
+                            <img src="images/content/footer/gosuslugi.png" alt="Госуслуги">
+                        </a>
+                    </div>
+    
+                    <div class="footer__copyright">
+                        © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer__bottom-menu">
+                    <li><a href="#">Лицензии</a></li>
+                    <li><a href="#">Надзорные органы</a></li>
+                    <li><a href="#">Противодействие коррупции</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Публикации</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+    
+                <div class="footer__copyright">
+                    © 2024 Клиника высоких медицинских<br> технологий им. Н.И. Пирогова
+                </div>
+    
+                <div class="footer__note">
+                    <p>Все материалы сайта (включая дизайн) защищены. Копирование и использование без письменного согласия запрещены. Ссылка на источник обязательна. Сведения носят справочно-образовательный характер. Не используйте их для самодиагностики
+                        или самолечения. Диагностику и лечение определяет только ваш врач! Клиника не несет ответственности за последствия самолечения. Информация размещена согласно Приказу Минздрава России N 956н.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/air-datepicker.js"></script>
+    
+    <script src="js/filter.js"></script>
+    
+    <script src="js/select2.full.min.js"></script>
+    
+    <script src="js/select2-addon.js"></script>
+    
+    <script src="js/main.js"></script>
+
+    <script src="js/alphabeth.js"></script>
+</body>
+
+</html>
