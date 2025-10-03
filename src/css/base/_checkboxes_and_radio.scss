@@ -3,6 +3,7 @@
     display: flex;
     gap: 10px;
     font-size: 14px;
+    position: relative;
 
     input {
         position: absolute;
@@ -71,6 +72,7 @@
     display: flex;
     gap: 10px;
     font-size: 14px;
+    position: relative;
 
     a {
         text-decoration: none;
