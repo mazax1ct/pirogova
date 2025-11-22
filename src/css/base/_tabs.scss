@@ -48,6 +48,29 @@
                 }
             }
         }
+
+        .tabs-nav__radio {
+            input {
+                &:checked ~ .tabs-nav__radio-text {
+                    background-color: var(--accent_2);
+                    color: var(--text);
+                }
+
+                &:not(:checked) ~ .tabs-nav__radio-text {
+                    @include hover {
+                        background-color: var(--accent_2);
+                        color: var(--text);
+                    }
+                }
+            }
+
+            .tabs-nav__radio-text {
+                border-radius: 10px;
+                color: var(--text);
+                min-height: 52px;
+                padding: 4px 16px;
+            }
+        }
     }
 
     &--type_2 {
@@ -73,6 +96,30 @@
                 }
             }
         }
+
+        .tabs-nav__radio {
+            input {
+                &:checked ~ .tabs-nav__radio-text {
+                    background-color: var(--accent);
+                    color: #fff;
+                }
+
+                &:not(:checked) ~ .tabs-nav__radio-text {
+                    @include hover {
+                        background-color: var(--accent_2);
+                        color: var(--text);
+                    }
+                }
+            }
+
+            .tabs-nav__radio-text {
+                border-radius: 10px;
+                color: var(--text);
+                font-weight: 500;
+                min-height: 52px;
+                padding: 4px 16px;
+            }
+        }
     }
 
     &--type_3 {
@@ -96,6 +143,30 @@
                     background-color: var(--accent_2);
                     color: var(--text);
                 }
+            }
+        }
+
+        .tabs-nav__radio {
+            input {
+                &:checked ~ .tabs-nav__radio-text {
+                    background-color: var(--accent);
+                    color: #fff;
+                }
+
+                &:not(:checked) ~ .tabs-nav__radio-text {
+                    @include hover {
+                        background-color: var(--accent_2);
+                        color: var(--text);
+                    }
+                }
+            }
+
+            .tabs-nav__radio-text {
+                border-radius: 10px;
+                color: var(--accent);
+                font-weight: 500;
+                min-height: 52px;
+                padding: 4px 16px;
             }
         }
     }
@@ -132,7 +203,8 @@
         }
     }
 
-    &__button {
+    &__button,
+    &__radio {
         @include button-reset;
         align-items: center;
         display: flex;
@@ -145,5 +217,30 @@
         @include hover {
             text-decoration: none;
         }
+    }
+
+    &__radio {
+        position: relative;
+        z-index: 1;
+
+        input {
+            position: absolute;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            width: 1px;
+
+            &:checked ~ .checkbox__icon {
+                background-color: var(--accent_2);
+            }
+        }
+    }
+
+    &__radio-text {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        transition: background-color 0.3s, color 0.3s;
     }
 }
