@@ -1,15 +1,39 @@
 .article-details {
-    align-items: center;
-    display: flex;
     font-size: 12px;
-    flex-wrap: wrap;
-    gap: 6px;
     margin-bottom: 24px;
     @media(min-width: $md) {
         font-size: 16px;
         font-weight: 700;
-        gap: 15px;
         margin-bottom: 30px;
+    }
+}
+
+.article-authors {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    @media(min-width: $md) {
+        gap: 15px;
+    }
+
+    &__list {
+        @include list-reset;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    @media(min-width: $md) {
+        gap: 15px;
+    }
+
+    & > p {
+        margin: 0;
+    }
+
+    .article-author {
+        display: flex;
     }
 }
 

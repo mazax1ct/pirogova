@@ -223,35 +223,47 @@
 
             <div class="combobox">
                 <button class="js-combobox-toggler combobox__title" type="button">
-                    <span>Дата</span>
+                    <span>Сортировка по дате</span>
                     <svg aria-hidden="true">
                         <use xlink:href="images/sprite.svg#triangle_down" />
                     </svg>
                 </button>
 
-                <div class="combobox__dropdown combobox__dropdown--calendar">
+                <div class="combobox__dropdown">
                     <button class="js-combobox-closer combobox__closer" type="button" title="Закрыть">
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_left_icon" />
                         </svg>
 
-                        <span>Дата</span>
+                        <span>Сортировка по дате</span>
                     </button>
 
-                    <input class="js-date-mask js-date-range" type="text" name="date" placeholder="дд.мм.гггг" style="display: none">
+                    <div class="combobox__list">
+                        <label class="radio">
+                            <input type="radio" value="1" name="date">
+                            <span class="radio__icon"></span>
+                            <span class="radio__text">Сначала старые публикации</span>
+                        </label>
+
+                        <label class="radio">
+                            <input type="radio" value="2" name="date">
+                            <span class="radio__icon"></span>
+                            <span class="radio__text">Сначала новые публикации</span>
+                        </label>
+                    </div>
 
                     <div class="combobox__controls">
-                        <button class="js-dp-clear button button--secondary" type="button">Сбросить</button>
+                        <button class="button button--secondary" type="button">Сбросить</button>
 
                         <button class="button button--primary" type="button">Применить</button>
                     </div>
                 </div>
             </div>
 
-            <div class="tabs-nav tabs-nav--type_1">
+            <!--<div class="tabs-nav tabs-nav--type_1">
                 <button class="tabs-nav__button is-active" type="button">Все отзывы</button>
                 <button class="tabs-nav__button" type="button">Видеотзывы</button>
-            </div>
+            </div>-->
         </div>
 
         <div class="filter__results">
