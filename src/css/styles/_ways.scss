@@ -58,7 +58,7 @@
     }
     @include hover {
         .way-card__icon {
-            opacity: 0.5;
+            opacity: 1;
         }
     }
 
@@ -70,7 +70,7 @@
         justify-content: center;
         height: 200px;
         left: auto;
-        opacity: 0.25;
+        opacity: 0.5;
         position: absolute;
         right: -50px;
         transition: opacity 0.3s;
