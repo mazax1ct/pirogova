@@ -14,7 +14,7 @@
     flex-wrap: wrap;
     gap: 6px;
     @media(min-width: $md) {
-        gap: 15px;
+        gap: 10px;
     }
 
     &__list {
@@ -22,10 +22,7 @@
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
-    }
-    @media(min-width: $md) {
-        gap: 15px;
+        gap: 6px 24px;
     }
 
     & > p {
@@ -41,11 +38,8 @@
     align-items: center;
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 10px;
     text-decoration: none;
-    @media(min-width: $md) {
-        gap: 15px;
-    }
 
     img {
         border-radius: 50%;
