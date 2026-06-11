@@ -13,6 +13,13 @@
         text-align: center;
     }
 
+    &--big {
+        max-width: var(--container_max_width);
+        @media(min-width: $sm) {
+            max-width: var(--container_max_width);
+        }
+    }
+
     &__closer {
         @include button-reset;
         @include active-area;

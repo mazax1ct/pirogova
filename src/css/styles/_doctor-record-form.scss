@@ -1,0 +1,34 @@
+.doctor-record-form {
+    &__title {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        @media(min-width: $sm) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__block {
+        @media(min-width: $md) {
+            border: 1px solid var(--accent);
+            border-radius: 20px;
+            padding: 48px;
+        }
+    }
+
+    .input-group {
+        max-width: 300px;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    .checkbox {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
