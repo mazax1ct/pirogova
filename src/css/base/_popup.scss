@@ -87,5 +87,8 @@
 .fancybox-slide {
     .modal {
         border-radius: 20px;
+        background: #fff;
+        max-width: var(--container_max_width);
+        padding-left: var(--container_padding);
     }
 }
