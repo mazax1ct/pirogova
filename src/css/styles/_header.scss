@@ -93,6 +93,25 @@
         gap: 15px;
     }
 
+    &__icon-165 {
+        height: 24px;
+        min-width: 24px;
+        margin-right: 6px;
+        position: relative;
+        width: 24px;
+        z-index: 1;
+
+        img {
+            display: block;
+            height: 36px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 36px;
+        }
+    }
+
     &__lang {
         display: flex;
         gap: 15px;
