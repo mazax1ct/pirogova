@@ -94,6 +94,7 @@
     }
 
     &__icon-165 {
+        display: block;
         height: 24px;
         min-width: 24px;
         margin-right: 5px;
@@ -101,8 +102,14 @@
         position: relative;
         width: 24px;
         z-index: 1;
+        @include hover {
+            svg {
+                fill: #ccae81;
+            }
+        }
 
-        img {
+        svg {
+            fill: #5c619d;
             display: block;
             height: 36px;
             left: 50%;
@@ -110,6 +117,7 @@
             top: 50%;
             transform: translate(-50%, -50%);
             min-width: 36px;
+            width: 36px;
         }
     }
 
